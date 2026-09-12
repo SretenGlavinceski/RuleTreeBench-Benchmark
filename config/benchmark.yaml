@@ -1,0 +1,29 @@
+seed: 42
+
+attributes:
+  - a1
+  - a2
+  - a3
+  - a4
+  - a5
+  - a6
+
+values:
+  - v1
+  - v2
+  - v3
+
+experiments:
+  exp1_prompts: 400
+  exp2_prompts: 400
+  exp3_independent_prompts: 400
+  exp3_linked_prompts: 200
+  exp4_prompts: 300
+
+total_prompts: 1700
+
+inference:
+  thinking: false
+  temperature: 0
+  sampling: false
+  max_new_tokens: 128
