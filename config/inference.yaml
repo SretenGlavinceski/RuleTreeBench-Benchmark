@@ -1,0 +1,11 @@
+temperature: 0
+seed: 42
+repeat_penalty: 1.0
+
+num_ctx: 4096
+num_predict: 1024
+
+thinking: false
+stream: false
+
+keep_alive: 30m
