@@ -1,3 +1,4 @@
+import sys
 import json
 import os
 import platform
@@ -14,8 +15,9 @@ from src.parser import (
 
 from datetime import datetime, timezone
 
-MODEL_NAME = "gemma3_4b"
-OLLAMA_MODEL = "gemma3:4b"
+MODEL_NAME = None
+OLLAMA_MODEL = None
+SUPPORTS_THINK = False
 
 DATASET_FILES = [
     "data/experiment_1_general.jsonl",
@@ -25,6 +27,17 @@ DATASET_FILES = [
     "data/experiment_4_filtering.jsonl"
 ]
 
+def load_model_entry(model_name):
+    with open("config/models.yaml") as file:
+        entries = yaml.safe_load(file)["models"]
+
+    for entry in entries:
+        if entry["name"] == model_name:
+            return entry
+
+    raise SystemExit(
+        f"Unknown model name: {model_name}"
+    )
 
 def load_config():
     with open("config/inference.yaml") as file:
@@ -92,16 +105,32 @@ def get_model_id():
     )
 
     for line in output.splitlines():
-        if line.startswith(OLLAMA_MODEL):
-            parts = line.split()
+        parts = line.split()
 
-            if len(parts) >= 2:
-                return parts[1]
+        if (
+            len(parts) >= 2
+            and parts[0] == OLLAMA_MODEL
+        ):
+            return parts[1]
 
     return "unknown"
 
 
-def create_manifest(config, result_directory):
+def verify_model_digest(expected_digest):
+    actual = get_model_id()
+
+    if not actual.startswith(expected_digest):
+        raise SystemExit(
+            f"DIGEST MISMATCH for {OLLAMA_MODEL}: "
+            f"expected {expected_digest}, "
+            f"got {actual}. "
+            "Wrong model pulled. Aborting."
+        )
+
+    return actual
+
+
+def create_manifest(config, result_directory, actual_digest):
     manifest_file = os.path.join(
         result_directory,
         "run_manifest.json"
@@ -114,6 +143,8 @@ def create_manifest(config, result_directory):
         "model_name": MODEL_NAME,
         "ollama_model": OLLAMA_MODEL,
         "model_id": get_model_id(),
+        "model_digest": actual_digest,
+        "supports_think": SUPPORTS_THINK,
         "ollama_version": get_ollama_version(),
         "dataset_freeze_commit": "652d697fceeb2d9b3132fd48efc2e108a640b793",
         "code_commit": get_git_commit(),
@@ -142,7 +173,6 @@ def ask_model(prompt, config):
             }
         ],
         "stream": config["stream"],
-        "think": config["thinking"],
         "keep_alive": config["keep_alive"],
         "options": {
             "temperature": config["temperature"],
@@ -152,6 +182,9 @@ def ask_model(prompt, config):
             "num_predict": config["num_predict"]
         }
     }
+
+    if SUPPORTS_THINK:
+        request_data["think"] = config["thinking"]
 
     data = json.dumps(
         request_data
@@ -217,7 +250,74 @@ def parse_answer(item, response_text):
     )
 
 
+def check_response_integrity(result, config):
+    message = result["message"]
+
+    content = message.get("content") or ""
+    thinking = message.get("thinking") or ""
+
+    problems = []
+
+    if (
+        "<think>" in content
+        or "</think>" in content
+    ):
+        problems.append(
+            "reasoning-trace tag found in content"
+        )
+
+    if thinking.strip():
+        problems.append(
+            "message.thinking is non-empty"
+        )
+
+    prompt_tokens = (
+        result.get("prompt_eval_count") or 0
+    )
+
+    output_tokens = (
+        result.get("eval_count") or 0
+    )
+
+    if (
+        prompt_tokens + output_tokens
+        >= config["num_ctx"]
+    ):
+        problems.append(
+            f"context overflow: "
+            f"prompt {prompt_tokens} + "
+            f"output {output_tokens} >= "
+            f"num_ctx {config['num_ctx']}"
+        )
+
+    if problems:
+        raise SystemExit(
+            "PROTOCOL VIOLATION — run aborted: "
+            + "; ".join(problems)
+        )
+
 def main():
+    global MODEL_NAME
+    global OLLAMA_MODEL
+    global SUPPORTS_THINK
+
+    if len(sys.argv) != 2:
+        raise SystemExit(
+            "Usage: python -m src.run_model <model_name>"
+        )
+
+    model_entry = load_model_entry(
+        sys.argv[1]
+    )
+
+    MODEL_NAME = model_entry["name"]
+    OLLAMA_MODEL = model_entry["ollama_model"]
+    SUPPORTS_THINK = model_entry["supports_think"]
+
+    actual_digest = verify_model_digest(
+        model_entry["expected_digest"]
+    )
+
     config = load_config()
     dataset = load_dataset()
 
@@ -240,7 +340,8 @@ def main():
 
     create_manifest(
         config,
-        result_directory
+        result_directory,
+        actual_digest
     )
 
     completed_ids = load_completed_ids(
@@ -264,7 +365,7 @@ def main():
         "a"
     ) as output_file:
 
-        for index in range(3):
+        for index in range(len(dataset)):
             item = dataset[index]
 
             if item["id"] in completed_ids:
@@ -283,6 +384,11 @@ def main():
 
             result, seconds = ask_model_with_retry(
                 item["prompt"],
+                config
+            )
+      
+            check_response_integrity(
+                result,
                 config
             )
 
@@ -319,6 +425,10 @@ def main():
                 "experiment": item["experiment"],
                 "model_name": MODEL_NAME,
                 "ollama_model": OLLAMA_MODEL,
+                "thinking_field": (
+                    result["message"].get("thinking") or ""
+                ),
+                "model_digest": actual_digest,
                 "gold_answer": item["gold_answer"],
                 "parsed_answer": parsed_answer,
                 "correct": correct,
@@ -355,7 +465,7 @@ def main():
                 "wall_time_seconds": round(
                     seconds,
                     2
-                )
+                )  
             }
 
             output_file.write(
@@ -429,7 +539,6 @@ def main():
             )
 
             print()
-
 
 if __name__ == "__main__":
     main()

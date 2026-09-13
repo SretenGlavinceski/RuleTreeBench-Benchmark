@@ -3,7 +3,7 @@ import time
 import urllib.request
 
 
-MODEL = "gemma3:4b"
+MODEL = "qwen3:4b-q4_K_M"
 
 FILES = [
     "data/experiment_1_general.jsonl",
@@ -43,8 +43,8 @@ def ask_model(prompt):
             "temperature": 0,
             "seed": 42,
             "repeat_penalty": 1.0,
-            "num_ctx": 4096,
-            "num_predict": 1024
+            "num_ctx": 8192,
+            "num_predict": 4096
         }
     }
 
@@ -60,7 +60,10 @@ def ask_model(prompt):
 
     start_time = time.time()
 
-    with urllib.request.urlopen(request) as response:
+    with urllib.request.urlopen(
+        request,
+        timeout=3600
+    ) as response:
         result = json.loads(
             response.read().decode("utf-8")
         )
@@ -68,6 +71,27 @@ def ask_model(prompt):
     end_time = time.time()
 
     return result, end_time - start_time
+
+
+def check_response(result):
+    content = result["message"].get("content") or ""
+    thinking = result["message"].get("thinking") or ""
+
+    prompt_tokens = result.get("prompt_eval_count") or 0
+    output_tokens = result.get("eval_count") or 0
+
+    problems = []
+
+    if "<think>" in content or "</think>" in content:
+        problems.append("THINK TAG FOUND")
+
+    if thinking.strip():
+        problems.append("THINKING FIELD NOT EMPTY")
+
+    if prompt_tokens + output_tokens >= 8192:
+        problems.append("CONTEXT LIMIT REACHED")
+
+    return problems
 
 
 items = []
@@ -92,6 +116,7 @@ for i in range(len(items)):
         "/",
         len(items)
     )
+
     print("ID:", item["id"])
     print("GOLD:", item["gold_answer"])
 
@@ -100,6 +125,8 @@ for i in range(len(items)):
     )
 
     response_text = result["message"]["content"]
+
+    problems = check_response(result)
 
     print()
     print("RESPONSE:")
@@ -113,7 +140,12 @@ for i in range(len(items)):
     )
 
     print(
-        "TOKENS:",
+        "PROMPT TOKENS:",
+        result.get("prompt_eval_count")
+    )
+
+    print(
+        "OUTPUT TOKENS:",
         result.get("eval_count")
     )
 
@@ -121,5 +153,23 @@ for i in range(len(items)):
         "DONE REASON:",
         result.get("done_reason")
     )
+
+    print(
+        "THINKING FIELD:",
+        repr(
+            result["message"].get("thinking") or ""
+        )
+    )
+
+    if problems:
+        print(
+            "INTEGRITY PROBLEMS:",
+            problems
+        )
+    else:
+        print(
+            "INTEGRITY:",
+            "OK"
+        )
 
     print()

@@ -1,12 +1,17 @@
 models:
   - name: gemma3_4b
     ollama_model: gemma3:4b
+    supports_think: false
 
   - name: qwen3_4b
-    ollama_model: qwen3:4b
+    ollama_model: qwen3:4b-q4_K_M
+    expected_digest: "2bfd38a7daaf"
+    supports_think: true
 
   - name: qwen3_8b
-    ollama_model: qwen3:8b
+    ollama_model: qwen3:8b-q4_K_M
+    expected_digest: "500a1f067a9f"
+    supports_think: true
 
   - name: gemma4_12b
     ollama_model: gemma4:12b
