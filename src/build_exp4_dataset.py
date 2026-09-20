@@ -26,7 +26,7 @@ def rule_to_dict(rule):
 def build_exp4_dataset():
     dataset = []
 
-    with open("data/experiment_1_general.jsonl") as file:
+    with open("data/generated/experiment_1_general.jsonl") as file:
         for line in file:
             item = json.loads(line)
 
@@ -102,7 +102,7 @@ if __name__ == "__main__":
 
     save_dataset(
         dataset,
-        "data/experiment_4_filtering.jsonl"
+        "data/generated/experiment_4_filtering.jsonl"
     )
 
     print(

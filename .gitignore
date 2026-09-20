@@ -1,6 +1,27 @@
+# Python
 .venv/
+venv/
 __pycache__/
-*.pyc
+*.py[cod]
+
+# Testing
 .pytest_cache/
+
+# IDE/editor
 .idea/
+.vscode/
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Local archives
+*.rar
+*.zip
+
+# Discarded experimental runs
+results/_discarded/

@@ -1,0 +1,22 @@
+{
+    "model_name": "gemma3_4b",
+    "ollama_model": "gemma3:4b",
+    "model_id": "a2af6cc3eb7f",
+    "ollama_version": "ollama version is 0.32.6",
+    "dataset_freeze_commit": "652d697fceeb2d9b3132fd48efc2e108a640b793",
+    "code_commit": "a952b56d1e8ac7c807675613ccf87bdb8e10221d",
+    "run_started_utc": "2026-09-12T22:42:17.289832+00:00",
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "inference_config": {
+        "temperature": 0,
+        "seed": 42,
+        "repeat_penalty": 1.0,
+        "num_ctx": 4096,
+        "num_predict": 1024,
+        "thinking": false,
+        "stream": false,
+        "keep_alive": "30m"
+    }
+}

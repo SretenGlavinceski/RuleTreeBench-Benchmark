@@ -21,9 +21,3 @@ experiments:
   exp4_prompts: 300
 
 total_prompts: 1700
-
-inference:
-  thinking: false
-  temperature: 0
-  sampling: false
-  max_new_tokens: 128

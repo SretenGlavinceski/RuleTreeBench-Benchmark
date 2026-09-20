@@ -350,23 +350,23 @@ def validate_unique_ids(all_items):
 
 def main():
     exp1 = load_jsonl(
-        "data/experiment_1_general.jsonl"
+        "data/generated/experiment_1_general.jsonl"
     )
 
     exp2 = load_jsonl(
-        "data/experiment_2_nearmatch.jsonl"
+        "data/generated/experiment_2_nearmatch.jsonl"
     )
 
     exp3_independent = load_jsonl(
-        "data/experiment_3_independent.jsonl"
+        "data/generated/experiment_3_independent.jsonl"
     )
 
     exp3_linked = load_jsonl(
-        "data/experiment_3_linked.jsonl"
+        "data/generated/experiment_3_linked.jsonl"
     )
 
     exp4 = load_jsonl(
-        "data/experiment_4_filtering.jsonl"
+        "data/generated/experiment_4_filtering.jsonl"
     )
 
     validate_exp1(exp1)

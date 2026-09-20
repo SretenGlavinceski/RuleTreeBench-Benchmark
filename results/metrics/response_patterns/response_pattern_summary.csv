@@ -1,0 +1,14 @@
+analysis,model,group,n,value,unit,note
+qwen3_4b_exp1_errors,Qwen3 4B,Experiment 1 errors,44,44,responses,Total normalized Experiment 1 errors.
+qwen3_4b_last_applicable,Qwen3 4B,Experiment 1 errors,44,31,responses,70.5% selected the last structurally applicable rule.
+qwen3_4b_last_applicable_uniform_expectation,Qwen3 4B,Experiment 1 errors,44,21.25,expected responses,Expected count if each error chose uniformly among the available general rules.
+gemma3_4b_explicit_none_review,Gemma 3 4B,Experiments 1 and 2,294,294,responses,Rows exported for manual verdict-evidence review.
+qwen3_8b_exp3_response_style,Qwen3 8B,answer_only,343,93.294,accuracy_pct,"320 correct, 23 errors."
+qwen3_8b_exp3_response_style,Qwen3 8B,explanation,257,100.0,accuracy_pct,"257 correct, 0 errors."
+exp1_exp2_output_length,Qwen3 4B,correct,746,438.0,median_output_tokens,Uses eval_count from Experiments 1 and 2 only.
+exp1_exp2_output_length,Qwen3 4B,incorrect,54,453.0,median_output_tokens,Uses eval_count from Experiments 1 and 2 only.
+exp1_exp2_output_length,Gemma 3 4B,correct,357,542.0,median_output_tokens,Uses eval_count from Experiments 1 and 2 only.
+exp1_exp2_output_length,Gemma 3 4B,incorrect,443,544.0,median_output_tokens,Uses eval_count from Experiments 1 and 2 only.
+gemma3_4b_winner_position,Gemma 3 4B,1-3,284,47.183,error_rate_pct,134 errors among 284 Experiment 1+2 prompts.
+gemma3_4b_winner_position,Gemma 3 4B,4-7,276,56.159,error_rate_pct,155 errors among 276 Experiment 1+2 prompts.
+gemma3_4b_winner_position,Gemma 3 4B,8-10,240,64.167,error_rate_pct,154 errors among 240 Experiment 1+2 prompts.

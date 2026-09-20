@@ -1,0 +1,17 @@
+model,display_name,condition,eligible_original_errors,rescued,rescue_rate_pct,persistent_failures
+qwen3_4b,Qwen3 4B,L1,14,14,100.0,0
+qwen3_4b,Qwen3 4B,L2,19,19,100.0,0
+qwen3_4b,Qwen3 4B,L4,11,11,100.0,0
+qwen3_4b,Qwen3 4B,all,44,44,100.0,0
+qwen3_8b,Qwen3 8B,L1,2,2,100.0,0
+qwen3_8b,Qwen3 8B,L2,0,0,,0
+qwen3_8b,Qwen3 8B,L4,1,1,100.0,0
+qwen3_8b,Qwen3 8B,all,3,3,100.0,0
+gemma3_4b,Gemma 3 4B,L1,58,49,84.483,9
+gemma3_4b,Gemma 3 4B,L2,47,36,76.596,11
+gemma3_4b,Gemma 3 4B,L4,33,26,78.788,7
+gemma3_4b,Gemma 3 4B,all,138,111,80.435,27
+gemma4_12b,Gemma 4 12B,L1,0,0,,0
+gemma4_12b,Gemma 4 12B,L2,0,0,,0
+gemma4_12b,Gemma 4 12B,L4,0,0,,0
+gemma4_12b,Gemma 4 12B,all,0,0,,0

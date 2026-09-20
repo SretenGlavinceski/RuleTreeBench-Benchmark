@@ -1,0 +1,5 @@
+model,display_name,strict_unparsed,recovered_correct,normalized_but_incorrect,explicit_none,remaining_parse_failures,accepted_answers_changed
+qwen3_4b,Qwen3 4B,21,12,6,3,0,0
+qwen3_8b,Qwen3 8B,246,243,2,0,1,0
+gemma3_4b,Gemma 3 4B,304,0,0,303,1,0
+gemma4_12b,Gemma 4 12B,0,0,0,0,0,0

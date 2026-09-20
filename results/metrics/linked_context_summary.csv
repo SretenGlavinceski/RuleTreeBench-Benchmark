@@ -1,0 +1,5 @@
+model,display_name,families,near_correct_full_wrong,near_correct_full_wrong_near_match,near_correct_full_wrong_distractor,near_correct_full_wrong_explicit_none,near_correct_full_wrong_parse_failure,both_probes_correct_full_wrong,strict_near_match,strict_distractor,strict_explicit_none,strict_parse_failure
+qwen3_4b,Qwen3 4B,100,1,0,0,1,0,1,0,0,1,0
+qwen3_8b,Qwen3 8B,100,1,0,0,0,1,1,0,0,0,1
+gemma3_4b,Gemma 3 4B,100,64,5,8,50,1,46,3,5,37,1
+gemma4_12b,Gemma 4 12B,100,0,0,0,0,0,0,0,0,0,0

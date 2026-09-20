@@ -91,7 +91,7 @@ if __name__ == "__main__":
 
     save_dataset(
         dataset,
-        "data/experiment_2_nearmatch.jsonl"
+        "data/generated/experiment_2_nearmatch.jsonl"
     )
 
     print("Saved", len(dataset), "Experiment 2 prompts")

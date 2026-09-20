@@ -26,7 +26,7 @@ def rule_to_dict(rule):
 def build_exp3_linked_dataset():
     dataset = []
 
-    with open("data/experiment_2_nearmatch.jsonl") as file:
+    with open("data/generated/experiment_2_nearmatch.jsonl") as file:
         for line in file:
             item = json.loads(line)
 
@@ -36,10 +36,7 @@ def build_exp3_linked_dataset():
 
             query = dict_to_query(item["query"])
 
-            # -------------------------
-            # Find exact winner
-            # -------------------------
-
+            # Find the exact winner.
             winner_rule = None
 
             for rule_data in item["rules"]:
@@ -52,17 +49,10 @@ def build_exp3_linked_dataset():
                     "Could not find winner for " + item["id"]
                 )
 
-            # -------------------------
-            # Get exact first near match
-            # -------------------------
-
+            # Reuse the exact N1 near match.
             near_match_rule = dict_to_rule(
                 item["first_near_match"]
             )
-
-            # -------------------------
-            # Winner probe
-            # -------------------------
 
             winner_item = {
                 "id": item["family_id"] + "_linked_winner",
@@ -86,10 +76,6 @@ def build_exp3_linked_dataset():
             }
 
             dataset.append(winner_item)
-
-            # -------------------------
-            # Near-match probe
-            # -------------------------
 
             near_match_item = {
                 "id": item["family_id"] + "_linked_near_match",
@@ -128,7 +114,7 @@ if __name__ == "__main__":
 
     save_dataset(
         dataset,
-        "data/experiment_3_linked.jsonl"
+        "data/generated/experiment_3_linked.jsonl"
     )
 
     print(

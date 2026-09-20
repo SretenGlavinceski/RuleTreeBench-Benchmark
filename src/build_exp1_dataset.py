@@ -68,7 +68,7 @@ if __name__ == "__main__":
 
     save_dataset(
         dataset,
-        "data/experiment_1_general.jsonl"
+        "data/generated/experiment_1_general.jsonl"
     )
 
     print("Saved", len(dataset), "Experiment 1 prompts")

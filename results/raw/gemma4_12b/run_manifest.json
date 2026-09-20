@@ -1,0 +1,24 @@
+{
+    "model_name": "gemma4_12b",
+    "ollama_model": "gemma4:12b-it-q4_K_M",
+    "model_id": "4eb23ef187e2",
+    "model_digest": "4eb23ef187e2",
+    "supports_think": true,
+    "ollama_version": "ollama version is 0.32.6",
+    "dataset_freeze_commit": "652d697fceeb2d9b3132fd48efc2e108a640b793",
+    "code_commit": "948a450eb13c0a92712d8e0f8cb4e226e0b029aa",
+    "run_started_utc": "2026-09-14T18:04:37.820971+00:00",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 165 Stepping 3, GenuineIntel",
+    "inference_config": {
+        "temperature": 0,
+        "seed": 42,
+        "repeat_penalty": 1.0,
+        "num_ctx": 8192,
+        "num_predict": 4096,
+        "thinking": false,
+        "stream": false,
+        "keep_alive": "30m"
+    }
+}

@@ -1,0 +1,5 @@
+model,display_name,responses,unique_ids,truncated,done_reason_not_stop,thinking_trace_leaks,max_prompt_tokens,max_output_tokens,max_prompt_plus_output_tokens
+qwen3_4b,Qwen3 4B,1700,1700,0,0,0,334,790,1124
+qwen3_8b,Qwen3 8B,1700,1700,0,0,0,334,912,1246
+gemma3_4b,Gemma 3 4B,1700,1700,0,0,0,376,902,1278
+gemma4_12b,Gemma 4 12B,1700,1700,0,0,0,379,850,1205

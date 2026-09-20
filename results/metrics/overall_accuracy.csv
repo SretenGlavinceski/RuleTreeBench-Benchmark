@@ -1,0 +1,5 @@
+model,display_name,n,stored_correct,stored_accuracy_pct,normalized_correct,normalized_accuracy_pct,total_errors
+qwen3_4b,Qwen3 4B,1700,1628,95.765,1640,96.471,60
+qwen3_8b,Qwen3 8B,1700,1430,84.118,1673,98.412,27
+gemma3_4b,Gemma 3 4B,1700,1163,68.412,1163,68.412,537
+gemma4_12b,Gemma 4 12B,1700,1700,100.0,1700,100.0,0

@@ -15,16 +15,16 @@ from src.parser import (
 
 from datetime import datetime, timezone
 
-MODEL_NAME = None
-OLLAMA_MODEL = None
+MODEL_NAME = "gemma4_12b"
+OLLAMA_MODEL = "gemma4:12b-it-q4_K_M"
 SUPPORTS_THINK = False
 
 DATASET_FILES = [
-    "data/experiment_1_general.jsonl",
-    "data/experiment_2_nearmatch.jsonl",
-    "data/experiment_3_independent.jsonl",
-    "data/experiment_3_linked.jsonl",
-    "data/experiment_4_filtering.jsonl"
+    "data/generated/experiment_1_general.jsonl",
+    "data/generated/experiment_2_nearmatch.jsonl",
+    "data/generated/experiment_3_independent.jsonl",
+    "data/generated/experiment_3_linked.jsonl",
+    "data/generated/experiment_4_filtering.jsonl"
 ]
 
 def load_model_entry(model_name):
@@ -39,9 +39,15 @@ def load_model_entry(model_name):
         f"Unknown model name: {model_name}"
     )
 
-def load_config():
+def load_config(model_entry):
     with open("config/inference.yaml") as file:
-        return yaml.safe_load(file)
+        config = yaml.safe_load(file)
+
+    for key in ("num_ctx", "num_predict"):
+        if key in model_entry:
+            config[key] = model_entry[key]
+
+    return config
 
 
 def load_dataset():
@@ -250,7 +256,7 @@ def parse_answer(item, response_text):
     )
 
 
-def check_response_integrity(result, config):
+def check_response_integrity(result):
     message = result["message"]
 
     content = message.get("content") or ""
@@ -269,25 +275,6 @@ def check_response_integrity(result, config):
     if thinking.strip():
         problems.append(
             "message.thinking is non-empty"
-        )
-
-    prompt_tokens = (
-        result.get("prompt_eval_count") or 0
-    )
-
-    output_tokens = (
-        result.get("eval_count") or 0
-    )
-
-    if (
-        prompt_tokens + output_tokens
-        >= config["num_ctx"]
-    ):
-        problems.append(
-            f"context overflow: "
-            f"prompt {prompt_tokens} + "
-            f"output {output_tokens} >= "
-            f"num_ctx {config['num_ctx']}"
         )
 
     if problems:
@@ -318,13 +305,14 @@ def main():
         model_entry["expected_digest"]
     )
 
-    config = load_config()
+    config = load_config(model_entry)
     dataset = load_dataset()
 
     assert len(dataset) == 1700
 
     result_directory = os.path.join(
         "results",
+        "raw",
         MODEL_NAME
     )
 
@@ -387,10 +375,7 @@ def main():
                 config
             )
       
-            check_response_integrity(
-                result,
-                config
-            )
+            check_response_integrity(result)
 
             response_text = result[
                 "message"

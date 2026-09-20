@@ -1,0 +1,25 @@
+model,display_name,part,probe_type,n,error_type,errors,error_rate_pct,wilson95_low_pct,wilson95_high_pct
+qwen3_4b,Qwen3 4B,independent,valid_3,100,false_no,0,0.0,0.0,3.699
+qwen3_4b,Qwen3 4B,independent,valid_4,100,false_no,0,0.0,0.0,3.699
+qwen3_4b,Qwen3 4B,independent,one_error,100,false_yes,2,2.0,0.55,7.001
+qwen3_4b,Qwen3 4B,independent,two_error,100,false_yes,0,0.0,0.0,3.699
+qwen3_4b,Qwen3 4B,linked,winner,100,false_no,0,0.0,0.0,3.699
+qwen3_4b,Qwen3 4B,linked,near_match,100,false_yes,2,2.0,0.55,7.001
+qwen3_8b,Qwen3 8B,independent,valid_3,100,false_no,5,5.0,2.154,11.175
+qwen3_8b,Qwen3 8B,independent,valid_4,100,false_no,0,0.0,0.0,3.699
+qwen3_8b,Qwen3 8B,independent,one_error,100,false_yes,3,3.0,1.025,8.452
+qwen3_8b,Qwen3 8B,independent,two_error,100,false_yes,1,1.0,0.177,5.449
+qwen3_8b,Qwen3 8B,linked,winner,100,false_no,6,6.0,2.779,12.477
+qwen3_8b,Qwen3 8B,linked,near_match,100,false_yes,8,8.0,4.109,14.998
+gemma3_4b,Gemma 3 4B,independent,valid_3,100,false_no,1,1.0,0.177,5.449
+gemma3_4b,Gemma 3 4B,independent,valid_4,100,false_no,14,14.0,8.526,22.137
+gemma3_4b,Gemma 3 4B,independent,one_error,100,false_yes,12,12.0,6.999,19.812
+gemma3_4b,Gemma 3 4B,independent,two_error,100,false_yes,0,0.0,0.0,3.699
+gemma3_4b,Gemma 3 4B,linked,winner,100,false_no,22,22.0,15.001,31.07
+gemma3_4b,Gemma 3 4B,linked,near_match,100,false_yes,7,7.0,3.432,13.75
+gemma4_12b,Gemma 4 12B,independent,valid_3,100,false_no,0,0.0,0.0,3.699
+gemma4_12b,Gemma 4 12B,independent,valid_4,100,false_no,0,0.0,0.0,3.699
+gemma4_12b,Gemma 4 12B,independent,one_error,100,false_yes,0,0.0,0.0,3.699
+gemma4_12b,Gemma 4 12B,independent,two_error,100,false_yes,0,0.0,0.0,3.699
+gemma4_12b,Gemma 4 12B,linked,winner,100,false_no,0,0.0,0.0,3.699
+gemma4_12b,Gemma 4 12B,linked,near_match,100,false_yes,0,0.0,0.0,3.699
