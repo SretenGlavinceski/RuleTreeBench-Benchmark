@@ -2,7 +2,7 @@
 
 RuleTreeBench is a synthetic benchmark for studying context-neutral rule reasoning in large language models (LLMs). It uses abstract attributes and values rather than natural-language facts, so the task is determined by the rules given in each prompt.
 
-This repository contains the benchmark generators, frozen benchmark data, local Ollama inference code, raw model responses, analysis code, and the derived metrics used in the accompanying research paper.
+This repository contains the benchmark generators, frozen benchmark data, local Ollama inference code, raw model responses, analysis code, and the derived metrics used in the accompanying research paper. It also includes an external evaluation on the RuleArena Airline domain, with the adapted evaluation dataset, local Ollama runner, final model responses, and run manifests.
 
 ## Task definition
 
@@ -23,7 +23,7 @@ The benchmark uses these operational error categories:
 
 - **Overgeneralization:** selecting a valid but less-specific general rule instead of the winner.
 - **Over-application:** selecting an invalid one-error near match.
-- **Under-application:** returning no applicable rule when a valid winner is present.
+- **Under-application:** producing an explicit no-rule response when a valid winner is present. In the normalized analysis, an empty final `ANSWER:` field is also grouped into the operational `explicit_none` category.
 
 ## Benchmark composition
 
@@ -84,7 +84,7 @@ There are 300 Experiment 4 prompts.
 ## Repository structure
 
 ```text
-RuleTreeBench/
+RuleTreeBench-Benchmark/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
@@ -133,20 +133,37 @@ RuleTreeBench/
 │   │   └── gemma4_12b/
 │   ├── combined/
 │   │   └── combined_results.json
-│   └── metrics/
-│       ├── condition_accuracy.csv
-│       ├── exp3_diagnostics.csv
-│       ├── exp4_rescue.csv
-│       ├── integrity_summary.csv
-│       ├── linked_context_summary.csv
-│       ├── outcome_breakdown.csv
-│       ├── overall_accuracy.csv
-│       ├── paired_transitions.csv
-│       ├── parser_accounting.csv
-│       ├── selection_task_summary.csv
-│       ├── paper_metrics.json
-│       ├── paper_summary.md
-│       └── response_patterns/
+│   ├── metrics/
+│   │   ├── condition_accuracy.csv
+│   │   ├── exp3_diagnostics.csv
+│   │   ├── exp4_rescue.csv
+│   │   ├── integrity_summary.csv
+│   │   ├── linked_context_summary.csv
+│   │   ├── outcome_breakdown.csv
+│   │   ├── overall_accuracy.csv
+│   │   ├── paired_transitions.csv
+│   │   ├── parser_accounting.csv
+│   │   ├── selection_task_summary.csv
+│   │   ├── paper_metrics.json
+│   │   ├── paper_summary.md
+│   │   └── response_patterns/
+│   └── external/
+│       └── rulearena_airline/
+│           ├── qwen3_4b/
+│           ├── qwen3_8b/
+│           ├── gemma3_4b/
+│           └── gemma4_12b/
+│
+├── external_eval/
+│   └── rulearena/
+│       ├── README.md
+│       ├── UPSTREAM.md
+│       ├── prepare_airline_dataset.py
+│       ├── run_airline_ollama.py
+│       ├── generated/
+│       │   ├── rulearena_airline_300.jsonl
+│       │   └── rulearena_airline_300.manifest.json
+│       └── upstream/
 │
 └── analysis/
     ├── build_combined_results.py
@@ -204,6 +221,16 @@ results/raw/<model_name>/
 
 `analysis/analyze_response_patterns.py` generates the secondary exploratory analyses used in the discussion, including response length, winner position, last-applicable-rule selections, and answer-only versus explanation behavior. It also writes CSV files for manual review of claims that depend on free-form explanation text.
 
+### External RuleArena evaluation
+
+`external_eval/rulearena/prepare_airline_dataset.py` adapts the frozen RuleArena Airline problems into the 300-example external evaluation file stored under `external_eval/rulearena/generated/`.
+
+`external_eval/rulearena/run_airline_ollama.py` runs the adapted Airline evaluation through local Ollama and writes each model's responses and run manifest.
+
+`external_eval/rulearena/UPSTREAM.md` records the provenance of the vendored RuleArena files. The corresponding upstream snapshot, including its license, Airline rules, fee tables, and synthesized problems, is preserved under `external_eval/rulearena/upstream/`.
+
+Completed external runs are stored under `results/external/rulearena_airline/<model_name>/`. Each final model directory contains `responses.jsonl` and `manifest.json`.
+
 ### Tests
 
 `tests/test_solver.py` tests applicability, failed-condition counting, specificity, no-rule cases, unique winners, and ties.
@@ -212,7 +239,7 @@ results/raw/<model_name>/
 
 `tests/test_exp1.py`, `tests/test_exp2.py`, and `tests/test_exp3.py` test the structural properties and reproducibility of the experiment generators.
 
-## Benchmark data format
+## RuleTreeBench data format
 
 All benchmark files are stored as **JSON Lines (`.jsonl`)**, with one complete JSON object per line.
 
@@ -268,7 +295,7 @@ Linked probes additionally store `source_family_id` and `source_exp2_id` so they
 
 Experiment 4 stores `source_exp1_id`, which points to the original Experiment 1 prompt before filtering. Its `rules` list contains only rules that apply to the query.
 
-## Raw response format
+## RuleTreeBench raw response format
 
 Each model has a response file at:
 
@@ -290,7 +317,7 @@ Depending on the run version, `thinking_field` and `model_digest` may also be pr
 
 Each model directory also contains `run_manifest.json`, which records the model identifier, Ollama version, dataset freeze commit, run start time, platform information, and inference settings used for that run.
 
-## Combined and normalized results
+## RuleTreeBench combined and normalized results
 
 `results/combined/combined_results.json` joins all 1,700 benchmark records with the results of all four models.
 
@@ -307,7 +334,7 @@ The paper normalization is limited to the final answer field:
 
 For full rule-selection prompts, normalized outcomes are classified as `correct`, `general`, `near_match`, `distractor`, `explicit_none`, or `parse_failure`.
 
-## Derived metric files
+## RuleTreeBench derived metric files
 
 The main analysis writes these files to `results/metrics/`:
 
@@ -328,9 +355,9 @@ The main analysis writes these files to `results/metrics/`:
 
 `results/metrics/response_patterns/` contains the exploratory response-pattern summaries and review CSV files.
 
-## Official models and inference settings
+## RuleTreeBench models and inference settings
 
-The official runs used **Ollama 0.32.6**, temperature **0**, seed **42**, repetition penalty **1.0**, streaming disabled, thinking disabled, and `keep_alive: 30m`.
+The official RuleTreeBench runs used **Ollama 0.32.6**, temperature **0**, seed **42**, repetition penalty **1.0**, streaming disabled, thinking disabled, and `keep_alive: 30m`.
 
 | Repository name | Ollama model | Model digest | Context | Generation cap |
 |---|---|---|---:|---:|
@@ -341,7 +368,7 @@ The official runs used **Ollama 0.32.6**, temperature **0**, seed **42**, repeti
 
 The default values in `config/inference.yaml` are 8192 context tokens and a 4096-token generation cap. `config/models.yaml` automatically overrides these to 4096 / 1024 for Gemma 3 4B.
 
-The exact settings of the completed official runs are preserved in `results/raw/<model_name>/run_manifest.json`.
+The exact settings of the completed RuleTreeBench runs are preserved in `results/raw/<model_name>/run_manifest.json`.
 
 ## Installation
 
@@ -371,7 +398,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Ollama must be installed separately to rerun model inference. The reported runs used Ollama 0.32.6.
+Ollama must be installed separately to rerun model inference. The reported RuleTreeBench runs used Ollama 0.32.6; the external RuleArena run metadata is preserved separately in the manifests under `results/external/rulearena_airline/`.
 
 ## Tests and dataset validation
 
@@ -406,7 +433,7 @@ python -m src.validate_all
 
 The generated files are written directly to `data/generated/`.
 
-## Rerunning model inference
+## Rerunning RuleTreeBench model inference
 
 Run one configured model with:
 
@@ -431,7 +458,7 @@ results/raw/<model_name>/
 
 The runner is resumable: benchmark IDs already present in `responses.jsonl` are skipped. To perform a completely new run, preserve the official result directory first and run from an empty output directory for that model.
 
-## Reproducing the reported analysis from the included artifacts
+## Reproducing the RuleTreeBench analysis from the included artifacts
 
 The repository already contains the frozen benchmark files and the four official raw response files, so the paper metrics can be regenerated without rerunning the models.
 
@@ -481,7 +508,7 @@ python analysis/analyze_response_patterns.py \
 
 This analysis uses only the stored combined results and does not run a model.
 
-## End-to-end workflow
+## RuleTreeBench end-to-end workflow
 
 ```text
 Generate benchmark families
@@ -505,7 +532,7 @@ Generate main metrics and diagnostics
 Generate exploratory response-pattern summaries
 ```
 
-## Frozen benchmark
+## Frozen RuleTreeBench benchmark
 
 The benchmark was frozen before the official model runs. The dataset freeze commit recorded by the run manifests is:
 
@@ -523,7 +550,7 @@ SHA-256 hashes of the five frozen datasets:
 | `experiment_3_linked.jsonl` | `8c3a634527dfd90d3a3c4f767df805203bc2f8fed2afbebeaf08b8dda81fa069` |
 | `experiment_4_filtering.jsonl` | `d459e8f846ca817fc09e57d7cd8064f4d1f683573574620c24c7ccd0de1c43e9` |
 
-## Reported overall normalized results
+## Reported RuleTreeBench normalized results
 
 The included analysis files report the following normalized accuracy across all 1,700 prompts:
 
@@ -536,12 +563,75 @@ The included analysis files report the following normalized accuracy across all 
 
 These pooled values combine experiments with different task structures. Detailed condition-level and diagnostic results are stored in `results/metrics/`.
 
+## External evaluation: RuleArena Airline
+
+To test whether the observed behavior extends beyond the synthetic RuleTreeBench setting, the repository includes a separate external evaluation on the **Airline** domain of [RuleArena](https://github.com/SkyRiver-2000/RuleArena), a benchmark for rule-guided reasoning in real-world scenarios.
+
+This evaluation is intentionally kept separate from the 1,700-prompt RuleTreeBench benchmark. The Airline task uses realistic reference rules and generated passenger scenarios, so its scores should not be interpreted as directly comparable to the pooled RuleTreeBench accuracy above.
+
+### External dataset
+
+The adapted external dataset contains **300 Airline examples**, with 100 examples from each of the three upstream complexity groups (`comp_0`, `comp_1`, and `comp_2`).
+
+```text
+external_eval/rulearena/generated/rulearena_airline_300.jsonl
+```
+
+Its SHA-256 hash is:
+
+```text
+e4cae947a8fad80eb47cada63805a5a0144a394ea08d6030ba4acc346673779e
+```
+
+The dataset-preparation manifest is stored at:
+
+```text
+external_eval/rulearena/generated/rulearena_airline_300.manifest.json
+```
+
+The adapted evaluation procedure is documented in `external_eval/rulearena/README.md`, while `external_eval/rulearena/UPSTREAM.md` records the provenance of the included RuleArena snapshot.
+
+### External inference settings
+
+All four external runs used temperature **0**, seed **42**, repetition penalty **1.0**, an **8192-token context**, a **4096-token generation cap**, streaming disabled, and thinking disabled. Exact per-run model identifiers, digests, runtime metadata, timestamps, dataset hash, and response-file hash are preserved in each `manifest.json`.
+
+| Repository name | Ollama model | Model digest prefix |
+|---|---|---|
+| `qwen3_4b` | `qwen3:4b-q4_K_M` | `2bfd38a7daaf` |
+| `qwen3_8b` | `qwen3:8b-q4_K_M` | `500a1f067a9f` |
+| `gemma3_4b` | `gemma3:4b` | `a2af6cc3eb7f` |
+| `gemma4_12b` | `gemma4:12b-it-q4_K_M` | `4eb23ef187e2` |
+
+### External results
+
+The completed RuleArena Airline runs contain 300 responses per model. The external evaluation produced the following correct-answer counts:
+
+| Model | `comp_0` | `comp_1` | `comp_2` | Correct | Total | Accuracy |
+|---|---:|---:|---:|---:|---:|---:|
+| Qwen3 4B | 1 | 0 | 0 | 1 | 300 | 0.33% |
+| Qwen3 8B | 0 | 0 | 0 | 0 | 300 | 0.00% |
+| Gemma 3 4B | 0 | 0 | 0 | 0 | 300 | 0.00% |
+| Gemma 4 12B | 11 | 2 | 1 | 14 | 300 | 4.67% |
+
+The final external artifacts are stored at:
+
+```text
+results/external/rulearena_airline/<model_name>/
+```
+
+Each directory contains the preserved `responses.jsonl` file and its `manifest.json`. No separate external-analysis script is required to reproduce the stored raw run artifacts; the preparation and inference procedure is documented under `external_eval/rulearena/`.
+
 ## Reproducibility notes
 
-- Raw responses are preserved unchanged in `results/raw/`.
+- RuleTreeBench raw responses are preserved unchanged in `results/raw/`.
+- RuleArena Airline raw responses and manifests are preserved under `results/external/rulearena_airline/`.
 - Incorrect responses were not regenerated during the official runs.
 - Interrupted runs resumed from the remaining benchmark IDs.
 - The analysis does not infer answers from model explanations.
 - Main proportion estimates use Wilson 95% confidence intervals.
 - The reported analysis is descriptive; significance tests are not used as the basis for the conclusions.
 - Temperature 0 and a fixed seed reduce decoding variability but do not guarantee bit-identical output across different hardware, runtime versions, or model builds.
+
+## External benchmark provenance
+
+The external Airline evaluation builds on the open-source [RuleArena](https://github.com/SkyRiver-2000/RuleArena) benchmark by Ruiwen Zhou, Wenyue Hua, Liangming Pan, Sitao Cheng, Xiaobao Wu, En Yu, and William Yang Wang. The vendored upstream files retain their original license and are accompanied by provenance notes in `external_eval/rulearena/UPSTREAM.md`.
