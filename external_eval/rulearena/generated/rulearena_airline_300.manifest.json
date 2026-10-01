@@ -18,13 +18,13 @@
     "airline/synthesized_problems/comp_0.jsonl": "8525ef3fa392180c993cec3cb9f56938a552b5198a5ec380195a5e505762bb35",
     "airline/synthesized_problems/comp_1.jsonl": "ca205ee9da77f4f35d9330d1a92af94f861ce6ef2a583477cbb3c5e3d474c8c3",
     "airline/synthesized_problems/comp_2.jsonl": "63b738c52bfe5a012ba2ae637fc796bf94cd3f368cf8924bb72563d4c569d83d",
-    "airline/fee_tables/bag_1/0.csv": "c45ebc4609403656e542ea7691500703921107571b01b2c1d1b79999f758677b",
-    "airline/fee_tables/bag_1/1.csv": "8a43e162de7497aa63e449cad31593fc9288c53888e21a90f4564baca132b7c8",
-    "airline/fee_tables/bag_2/0.csv": "df0f600a5549887cdbc10516aefb62d41f14008af4813242967467e302438371",
-    "airline/fee_tables/bag_2/1.csv": "9aca4bc0e03afc2c24099e18c2568a8ebf6944e03ec7282b31fecf5cc6faf8f4",
-    "airline/fee_tables/bag_3/0.csv": "8960377620304ed3c10fa82872a81d5061764ea0105ef0b31a4f3dfccd849b80",
-    "airline/fee_tables/bag_3/1.csv": "8960377620304ed3c10fa82872a81d5061764ea0105ef0b31a4f3dfccd849b80",
-    "airline/fee_tables/bag_4/0.csv": "59c2a38fd575d3741d4c58146dd6852cafc4f64ff273ab300a19065e66b949e3",
-    "airline/fee_tables/bag_4/1.csv": "59c2a38fd575d3741d4c58146dd6852cafc4f64ff273ab300a19065e66b949e3"
+    "airline/fee_tables/bag_1/0.csv": "2645d1f7f287adf66570455e674f4108d3dc1f1039b0ac4e66da28b50287d281",
+    "airline/fee_tables/bag_1/1.csv": "373a2f3131ac8b13815f22038770b5520dd6327a5229af9f306bb2286e9939aa",
+    "airline/fee_tables/bag_2/0.csv": "e913b6e0562d8646920cf431e858ffe4b667c83cf0f14d4ff1d8ad58738dd7ec",
+    "airline/fee_tables/bag_2/1.csv": "bb628c2e1a5541dd6a3daacf785d7a4b64d9493306ccfe1ca24149a484b7522f",
+    "airline/fee_tables/bag_3/0.csv": "a971d362d19ef2364700628a9907e17540e9b22be21b5ed0b3fb50f1691bcc01",
+    "airline/fee_tables/bag_3/1.csv": "a971d362d19ef2364700628a9907e17540e9b22be21b5ed0b3fb50f1691bcc01",
+    "airline/fee_tables/bag_4/0.csv": "52a31c4bb85ecd1135f218f8928983baaf5766a5bba00c12b9adda9d40d1d64f",
+    "airline/fee_tables/bag_4/1.csv": "52a31c4bb85ecd1135f218f8928983baaf5766a5bba00c12b9adda9d40d1d64f"
   }
 }
