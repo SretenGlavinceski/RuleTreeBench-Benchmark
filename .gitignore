@@ -25,3 +25,6 @@ Thumbs.db
 
 # Discarded experimental runs
 results/_discarded/
+
+# External evaluation engineering runs
+results/external/rulearena_airline/_engineering/
