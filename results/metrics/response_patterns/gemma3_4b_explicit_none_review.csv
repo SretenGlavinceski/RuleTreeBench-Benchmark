@@ -1,5 +1,5 @@
 id,experiment,condition,winner,winner_conditions,winner_negative_mention_heuristic,raw_response
-exp1_f003_L0,1,L0,R2,a1=v3 AND a3=v2 AND a2=v3 AND a6=v3,True,,,"Let's analyze the rules against the query:
+exp1_f003_L0,1,L0,R2,a1=v3 AND a3=v2 AND a2=v3 AND a6=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a2=v1 AND a6=v3 - Does not match (a5=v1, a2=v3, a6=v3)
 *   **R2:** a1=v3 AND a3=v2 AND a2=v3 AND a6=v3 - Does not match (a1=v3, a3=v2, a2=v3, a6=v3)
@@ -15,7 +15,7 @@ exp1_f003_L0,1,L0,R2,a1=v3 AND a3=v2 AND a2=v3 AND a6=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f003_L1,1,L1,R2,a1=v3 AND a3=v2 AND a2=v3 AND a6=v3,True,,,"Let's analyze the rules against the query:
+exp1_f003_L1,1,L1,R2,a1=v3 AND a3=v2 AND a2=v3 AND a6=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a2=v1 AND a6=v3 - Does not match (a5=v1, a2=v3, a6=v3)
 *   **R2:** a1=v3 AND a3=v2 AND a2=v3 AND a6=v3 - Does not match (a1=v3, a3=v2, a2=v3, a6=v3)
@@ -31,7 +31,7 @@ exp1_f003_L1,1,L1,R2,a1=v3 AND a3=v2 AND a2=v3 AND a6=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f003_L2,1,L2,R2,a1=v3 AND a3=v2 AND a2=v3 AND a6=v3,True,,,"Let's analyze the rules against the query:
+exp1_f003_L2,1,L2,R2,a1=v3 AND a3=v2 AND a2=v3 AND a6=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a2=v1 AND a6=v3 - Does not match (a5=v1, a2=v3, a6=v3)
 *   **R2:** a1=v3 AND a3=v2 AND a2=v3 AND a6=v3 - Does not match (a1=v3, a3=v2, a2=v3, a6=v3)
@@ -47,7 +47,7 @@ exp1_f003_L2,1,L2,R2,a1=v3 AND a3=v2 AND a2=v3 AND a6=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f004_L0,1,L0,R8,a4=v2 AND a2=v3 AND a1=v3 AND a6=v2,True,,,"Let's analyze the rules based on the given query:
+exp1_f004_L0,1,L0,R8,a4=v2 AND a2=v3 AND a1=v3 AND a6=v2,True,"Let's analyze the rules based on the given query:
 
 *   **R1:** a3=v2 AND a4=v3.  This doesn't match because a3=v3 and a4=v2.
 *   **R2:** a4=v1 AND a6=v1 AND a1=v3. This doesn't match because a4=v2, a6=v2 and a1=v3.
@@ -64,7 +64,7 @@ None of the rules match the query.
 
 ANSWER: None
 "
-exp1_f004_L1,1,L1,R8,a4=v2 AND a2=v3 AND a1=v3 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp1_f004_L1,1,L1,R8,a4=v2 AND a2=v3 AND a1=v3 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a4=v3.  This fails because a3=v3 and a4=v2.
 *   **R2:** a2=v3 AND a1=v3 AND a6=v2. This fails because a1=v3, a2=v3, but a6=v2.
@@ -80,7 +80,7 @@ exp1_f004_L1,1,L1,R8,a4=v2 AND a2=v3 AND a1=v3 AND a6=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f004_L2,1,L2,R8,a4=v2 AND a2=v3 AND a1=v3 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp1_f004_L2,1,L2,R8,a4=v2 AND a2=v3 AND a1=v3 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a4=v3.  This fails because a3=v3 and a4=v2.
 *   **R2:** a2=v3 AND a1=v3 AND a6=v2. This fails because a1=v3 and a2=v3, but a3=v3 and a6=v2.
@@ -96,7 +96,7 @@ exp1_f004_L2,1,L2,R8,a4=v2 AND a2=v3 AND a1=v3 AND a6=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f005_L0,1,L0,R2,a2=v1 AND a1=v1 AND a5=v3 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp1_f005_L0,1,L0,R2,a2=v1 AND a1=v1 AND a5=v3 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a5=v1 AND a3=v3.  This fails because a6=v3, a5=v3, and a3=v3.
 *   **R2:** a2=v1 AND a1=v1 AND a5=v3 AND a4=v2. This fails because a2=v1, a1=v1, a5=v3, and a4=v2. However, a1=v1 and a2=v1 match the query.
@@ -112,7 +112,7 @@ exp1_f005_L0,1,L0,R2,a2=v1 AND a1=v1 AND a5=v3 AND a4=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f005_L1,1,L1,R2,a2=v1 AND a1=v1 AND a5=v3 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp1_f005_L1,1,L1,R2,a2=v1 AND a1=v1 AND a5=v3 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a5=v1 AND a3=v3.  This fails because a6=v3, a5=v3, and a3=v3.
 *   **R2:** a2=v1 AND a1=v1 AND a5=v3 AND a4=v2. This fails because a2=v1, a1=v1, a5=v3, and a4=v2.
@@ -128,7 +128,7 @@ exp1_f005_L1,1,L1,R2,a2=v1 AND a1=v1 AND a5=v3 AND a4=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f009_L0,1,L0,R6,a6=v1 AND a2=v1 AND a1=v1 AND a5=v3,True,,,"Let's analyze the rules against the query:
+exp1_f009_L0,1,L0,R6,a6=v1 AND a2=v1 AND a1=v1 AND a5=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a1=v2 AND a4=v2 - Does not match (a5=v3, a1=v1, a4=v2)
 *   **R2:** a4=v3 AND a3=v3 AND a5=v3 - Does not match (a4=v2, a3=v1, a5=v3)
@@ -144,7 +144,7 @@ exp1_f009_L0,1,L0,R6,a6=v1 AND a2=v1 AND a1=v1 AND a5=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f011_L0,1,L0,R7,a1=v2 AND a4=v3 AND a3=v3 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp1_f011_L0,1,L0,R7,a1=v2 AND a4=v3 AND a3=v3 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a5=v1 AND a2=v3.  This fails because a6=v2 and a5=v2, not v1.
 *   **R2:** a5=v3 AND a6=v3 AND a3=v3 AND a2=v3. This fails because a5=v2, a6=v2, and a2=v3.
@@ -160,7 +160,7 @@ exp1_f011_L0,1,L0,R7,a1=v2 AND a4=v3 AND a3=v3 AND a6=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f011_L1,1,L1,R7,a1=v2 AND a4=v3 AND a3=v3 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp1_f011_L1,1,L1,R7,a1=v2 AND a4=v3 AND a3=v3 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a5=v1 AND a2=v3.  This fails because a6=v2 and a5=v2, not v1.
 *   **R2:** a5=v3 AND a6=v3 AND a3=v3 AND a2=v3. This fails because a5=v2, a6=v2, a3=v3, and a2=v3.
@@ -177,7 +177,7 @@ None of the rules apply.
 
 ANSWER: None
 "
-exp1_f013_L0,1,L0,R1,a6=v1 AND a2=v3 AND a3=v2 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp1_f013_L0,1,L0,R1,a6=v1 AND a2=v3 AND a3=v2 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a2=v3 AND a3=v2 AND a4=v3.  This fails because a2 is not v3.
 *   **R2:** a2=v2 AND a5=v3. This fails because a2 is v3 and a5 is v2.
@@ -195,7 +195,7 @@ Since none of the rules apply, we return an empty string.
 ANSWER: 
 
 "
-exp1_f013_L1,1,L1,R1,a6=v1 AND a2=v3 AND a3=v2 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp1_f013_L1,1,L1,R1,a6=v1 AND a2=v3 AND a3=v2 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a2=v3 AND a3=v2 AND a4=v3.  This fails because a2 is not v3.
 *   **R2:** a2=v2 AND a5=v3. This fails because a2 is v3 and a5 is v2.
@@ -213,7 +213,7 @@ Since none of the rules apply, we return an empty string.
 ANSWER: 
 
 "
-exp1_f013_L4,1,L4,R1,a6=v1 AND a2=v3 AND a3=v2 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp1_f013_L4,1,L4,R1,a6=v1 AND a2=v3 AND a3=v2 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a2=v3 AND a3=v2 AND a4=v3.  This fails because a2 is not v3.
 *   **R2:** a2=v2 AND a5=v3. This fails because a2 is v3 and a5 is v2.
@@ -231,7 +231,7 @@ Since none of the rules apply, we return an empty string.
 ANSWER: 
 
 "
-exp1_f014_L0,1,L0,R1,a3=v2 AND a1=v3 AND a4=v1 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp1_f014_L0,1,L0,R1,a3=v2 AND a1=v3 AND a4=v1 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a1=v3 AND a4=v1 AND a6=v2.  This fails because a1 is not v3.
 *   **R2:** a6=v1 AND a4=v3 AND a1=v3. This fails because a6 is not v1.
@@ -247,7 +247,7 @@ exp1_f014_L0,1,L0,R1,a3=v2 AND a1=v3 AND a4=v1 AND a6=v2,True,,,"Let's analyze t
 Since none of the rules apply, we return an empty answer.
 
 ANSWER: None"
-exp1_f015_L0,1,L0,R10,a6=v1 AND a2=v3 AND a4=v2 AND a1=v3,True,,,"Let's analyze the rules against the query:
+exp1_f015_L0,1,L0,R10,a6=v1 AND a2=v3 AND a4=v2 AND a1=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a1=v1 AND a2=v3 AND a3=v2.  This doesn't match because a5=v2, a1=v3, a2=v3, and a3=v2.
 *   **R2:** a4=v1 AND a1=v1 AND a6=v1. This doesn't match because a4=v2, a1=v3, and a6=v1.
@@ -264,7 +264,7 @@ None of the rules match the query.
 
 ANSWER: None
 "
-exp1_f015_L1,1,L1,R10,a6=v1 AND a2=v3 AND a4=v2 AND a1=v3,True,,,"Let's analyze the rules against the query:
+exp1_f015_L1,1,L1,R10,a6=v1 AND a2=v3 AND a4=v2 AND a1=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a1=v1 AND a2=v3 AND a3=v2.  This doesn't match because a5=v2, a1=v3, a2=v3, and a3=v2.
 *   **R2:** a4=v1 AND a1=v1 AND a6=v1. This doesn't match because a4=v2, a1=v3, and a6=v1.
@@ -281,7 +281,7 @@ None of the rules match the query.
 
 ANSWER: None
 "
-exp1_f015_L2,1,L2,R10,a6=v1 AND a2=v3 AND a4=v2 AND a1=v3,True,,,"Let's analyze the rules against the query:
+exp1_f015_L2,1,L2,R10,a6=v1 AND a2=v3 AND a4=v2 AND a1=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a1=v1 AND a2=v3 AND a3=v2.  This doesn't match because a5=v2, a1=v3, a2=v3, and a3=v2.
 *   **R2:** a4=v1 AND a1=v1 AND a6=v1. This doesn't match because a4=v2, a1=v3, and a6=v1.
@@ -297,7 +297,7 @@ exp1_f015_L2,1,L2,R10,a6=v1 AND a2=v3 AND a4=v2 AND a1=v3,True,,,"Let's analyze 
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f015_L4,1,L4,R10,a6=v1 AND a2=v3 AND a4=v2 AND a1=v3,True,,,"Let's analyze the rules against the query:
+exp1_f015_L4,1,L4,R10,a6=v1 AND a2=v3 AND a4=v2 AND a1=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a1=v1 AND a2=v3 AND a3=v2.  This fails because a5=v2, a1=v3, a2=v3, and a3=v2.
 *   **R2:** a2=v3 AND a4=v2 AND a1=v3. This fails because a1=v3, a2=v3, a4=v2, but a1=v3 is not the only condition.
@@ -313,7 +313,7 @@ exp1_f015_L4,1,L4,R10,a6=v1 AND a2=v3 AND a4=v2 AND a1=v3,True,,,"Let's analyze 
 None of the rules apply.
 
 ANSWER: None"
-exp1_f016_L0,1,L0,R10,a2=v1 AND a6=v3 AND a5=v3 AND a1=v1,True,,,"Let's analyze the rules against the query:
+exp1_f016_L0,1,L0,R10,a2=v1 AND a6=v3 AND a5=v3 AND a1=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v3 AND a3=v1 AND a2=v1 AND a6=v3.  This fails because a4=v2, a3=v3, a2=v1, and a6=v3.
 *   **R2:** a4=v1 AND a3=v2 AND a2=v1. This fails because a4=v2, a3=v3, and a2=v1.
@@ -329,7 +329,7 @@ exp1_f016_L0,1,L0,R10,a2=v1 AND a6=v3 AND a5=v3 AND a1=v1,True,,,"Let's analyze 
 None of the rules apply.
 
 ANSWER: None"
-exp1_f017_L0,1,L0,R4,a5=v1 AND a3=v2 AND a6=v1 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp1_f017_L0,1,L0,R4,a5=v1 AND a3=v2 AND a6=v1 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a2=v1 AND a4=v1 AND a1=v2.  This fails because a2=v3 and a6=v1.
 *   **R2:** a1=v1 AND a6=v2. This fails because a1=v2 and a6=v1.
@@ -345,7 +345,7 @@ exp1_f017_L0,1,L0,R4,a5=v1 AND a3=v2 AND a6=v1 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f017_L1,1,L1,R4,a5=v1 AND a3=v2 AND a6=v1 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp1_f017_L1,1,L1,R4,a5=v1 AND a3=v2 AND a6=v1 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a2=v1 AND a4=v1 AND a1=v2.  This fails because a2=v3 and a6=v1.
 *   **R2:** a1=v1 AND a6=v2. This fails because a1=v2 and a6=v1.
@@ -361,7 +361,7 @@ exp1_f017_L1,1,L1,R4,a5=v1 AND a3=v2 AND a6=v1 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f017_L2,1,L2,R4,a5=v1 AND a3=v2 AND a6=v1 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp1_f017_L2,1,L2,R4,a5=v1 AND a3=v2 AND a6=v1 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a2=v1 AND a4=v1 AND a1=v2.  This fails because a6=v1, a2=v3, a4=v1, and a1=v2.
 *   **R2:** a1=v1 AND a6=v2. This fails because a1=v2, a6=v1.
@@ -377,7 +377,7 @@ exp1_f017_L2,1,L2,R4,a5=v1 AND a3=v2 AND a6=v1 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f019_L0,1,L0,R7,a1=v2 AND a6=v2 AND a3=v1 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp1_f019_L0,1,L0,R7,a1=v2 AND a6=v2 AND a3=v1 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v1 AND a5=v1 AND a6=v2.  This fails because a4=v2, a5=v3, and a6=v2.
 *   **R2:** a6=v3 AND a5=v2 AND a2=v3. This fails because a6=v2, a5=v3, and a2=v3.
@@ -393,7 +393,7 @@ exp1_f019_L0,1,L0,R7,a1=v2 AND a6=v2 AND a3=v1 AND a4=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f020_L0,1,L0,R10,a3=v2 AND a5=v2 AND a2=v1 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp1_f020_L0,1,L0,R10,a3=v2 AND a5=v2 AND a2=v1 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v1 AND a1=v3 AND a2=v1.  This fails because a3=v2, a1=v1, and a2=v1.
 *   **R2:** a4=v2 AND a6=v3 AND a5=v2 AND a3=v2. This fails because a4=v3, a6=v1, a5=v2, and a3=v2.
@@ -409,7 +409,7 @@ exp1_f020_L0,1,L0,R10,a3=v2 AND a5=v2 AND a2=v1 AND a4=v3,True,,,"Let's analyze 
 None of the rules apply.
 
 ANSWER: None"
-exp1_f022_L0,1,L0,R9,a6=v3 AND a5=v3 AND a3=v3 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp1_f022_L0,1,L0,R9,a6=v3 AND a5=v3 AND a3=v3 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a1=v3 AND a5=v3 - Does not match (a3=v3, a1=v2, a5=v3)
 *   **R2:** a3=v1 AND a1=v3 AND a2=v3 AND a5=v3 - Does not match (a3=v3, a1=v2, a2=v3, a5=v3)
@@ -425,7 +425,7 @@ exp1_f022_L0,1,L0,R9,a6=v3 AND a5=v3 AND a3=v3 AND a4=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f022_L1,1,L1,R9,a6=v3 AND a5=v3 AND a3=v3 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp1_f022_L1,1,L1,R9,a6=v3 AND a5=v3 AND a3=v3 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a1=v3 AND a5=v3 - Does not match (a3=v3, a1=v2, a5=v3)
 *   **R2:** a3=v1 AND a1=v3 AND a2=v3 AND a5=v3 - Does not match (a3=v3, a1=v2, a2=v3, a5=v3)
@@ -441,7 +441,7 @@ exp1_f022_L1,1,L1,R9,a6=v3 AND a5=v3 AND a3=v3 AND a4=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f022_L2,1,L2,R9,a6=v3 AND a5=v3 AND a3=v3 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp1_f022_L2,1,L2,R9,a6=v3 AND a5=v3 AND a3=v3 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a1=v3 AND a5=v3 - Does not match (a3=v3, a1=v2, a5=v3)
 *   **R2:** a3=v1 AND a1=v3 AND a2=v3 AND a5=v3 - Does not match (a3=v3, a1=v2, a2=v3, a5=v3)
@@ -457,7 +457,7 @@ exp1_f022_L2,1,L2,R9,a6=v3 AND a5=v3 AND a3=v3 AND a4=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f022_L4,1,L4,R9,a6=v3 AND a5=v3 AND a3=v3 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp1_f022_L4,1,L4,R9,a6=v3 AND a5=v3 AND a3=v3 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a5=v3 AND a4=v2.  This fails because a4=v2 but a5=v3 and a6=v3.
 *   **R2:** a3=v1 AND a1=v3 AND a2=v3 AND a5=v3. This fails because a3=v3 but a1=v2, a2=v3, and a5=v3.
@@ -474,7 +474,7 @@ None of the rules apply.
 
 ANSWER: None
 "
-exp1_f023_L0,1,L0,R1,a5=v2 AND a2=v3 AND a3=v3 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp1_f023_L0,1,L0,R1,a5=v2 AND a2=v3 AND a3=v3 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a2=v3 AND a3=v3 AND a6=v1.  This fails because a5=v2 and a6=v1, but a2=v3 and a3=v3.
 *   **R2:** a5=v1 AND a2=v1 AND a4=v1 AND a1=v3. This fails because a5=v2 and a1=v3, but a2=v3 and a4=v1.
@@ -490,7 +490,7 @@ exp1_f023_L0,1,L0,R1,a5=v2 AND a2=v3 AND a3=v3 AND a6=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f025_L0,1,L0,R9,a5=v3 AND a2=v3 AND a6=v3 AND a4=v1,True,,,"Let's analyze the rules against the query:
+exp1_f025_L0,1,L0,R9,a5=v3 AND a2=v3 AND a6=v3 AND a4=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a2=v1 AND a5=v3 AND a1=v2.  This fails because a6=v2 is false and a2=v1 is false.
 *   **R2:** a1=v3 AND a3=v2 AND a5=v3. This fails because a1=v3 is false and a3=v2 is false.
@@ -507,7 +507,7 @@ Since none of the rules apply, we return an empty string.
 
 ANSWER: 
 "
-exp1_f025_L1,1,L1,R9,a5=v3 AND a2=v3 AND a6=v3 AND a4=v1,True,,,"Let's analyze the rules against the query:
+exp1_f025_L1,1,L1,R9,a5=v3 AND a2=v3 AND a6=v3 AND a4=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a2=v1 AND a5=v3 AND a1=v2.  This fails because a6=v2 is false, a2=v1 is false, and a1=v2 is false.
 *   **R2:** a1=v3 AND a3=v2 AND a5=v3. This fails because a1=v3 is false, a3=v2 is false, and a5=v3 is true.
@@ -523,7 +523,7 @@ exp1_f025_L1,1,L1,R9,a5=v3 AND a2=v3 AND a6=v3 AND a4=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f029_L0,1,L0,R4,a4=v1 AND a1=v2 AND a3=v3 AND a2=v3,True,,,"Let's analyze the rules against the query:
+exp1_f029_L0,1,L0,R4,a4=v1 AND a1=v2 AND a3=v3 AND a2=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a6=v3 AND a2=v3 - Does not match (a5=v2, a6=v1, a2=v3)
 *   **R2:** a2=v1 AND a6=v3 AND a3=v3 AND a1=v2 - Does not match (a2=v3, a6=v1, a3=v3, a1=v2)
@@ -539,7 +539,7 @@ exp1_f029_L0,1,L0,R4,a4=v1 AND a1=v2 AND a3=v3 AND a2=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f031_L0,1,L0,R7,a6=v2 AND a4=v1 AND a5=v3 AND a2=v1,True,,,"Let's analyze the rules against the query:
+exp1_f031_L0,1,L0,R7,a6=v2 AND a4=v1 AND a5=v3 AND a2=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a6=v1 AND a4=v1 AND a2=v1.  This doesn't match because a5=v3, a6=v2, a4=v1, and a2=v1.
 *   **R2:** a5=v2 AND a3=v1 AND a6=v2. This doesn't match because a5=v3, a3=v3, and a6=v2.
@@ -555,7 +555,7 @@ exp1_f031_L0,1,L0,R7,a6=v2 AND a4=v1 AND a5=v3 AND a2=v1,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f035_L0,1,L0,R9,a2=v2 AND a5=v1 AND a3=v1 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp1_f035_L0,1,L0,R9,a2=v2 AND a5=v1 AND a3=v1 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a6=v3 AND a1=v2.  This fails because a3=v1, a6=v1, and a1=v2.
 *   **R2:** a2=v1 AND a3=v3. This fails because a2=v2, a3=v1.
@@ -571,7 +571,7 @@ exp1_f035_L0,1,L0,R9,a2=v2 AND a5=v1 AND a3=v1 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f035_L1,1,L1,R9,a2=v2 AND a5=v1 AND a3=v1 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp1_f035_L1,1,L1,R9,a2=v2 AND a5=v1 AND a3=v1 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a6=v3 AND a1=v2.  This fails because a3=v1, a6=v1, and a1=v2.
 *   **R2:** a2=v1 AND a3=v3. This fails because a2=v2, a3=v1.
@@ -587,7 +587,7 @@ exp1_f035_L1,1,L1,R9,a2=v2 AND a5=v1 AND a3=v1 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f035_L2,1,L2,R9,a2=v2 AND a5=v1 AND a3=v1 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp1_f035_L2,1,L2,R9,a2=v2 AND a5=v1 AND a3=v1 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** IF a2=v2 AND a3=v1 AND a1=v2.  This fails because a3=v1, not v2.
 *   **R2:** IF a2=v1 AND a3=v3. This fails because a2=v2 and a3=v1.
@@ -603,7 +603,7 @@ exp1_f035_L2,1,L2,R9,a2=v2 AND a5=v1 AND a3=v1 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f036_L0,1,L0,R9,a1=v2 AND a4=v1 AND a2=v2 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp1_f036_L0,1,L0,R9,a1=v2 AND a4=v1 AND a2=v2 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a4=v3 AND a6=v3.  This doesn't match (a5=v1, a4=v1, a6=v3).
 *   **R2:** a3=v3 AND a2=v3 AND a6=v3. This doesn't match (a3=v1, a2=v2, a6=v3).
@@ -620,7 +620,7 @@ None of the rules match the query.
 
 ANSWER: None
 "
-exp1_f036_L2,1,L2,R9,a1=v2 AND a4=v1 AND a2=v2 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp1_f036_L2,1,L2,R9,a1=v2 AND a4=v1 AND a2=v2 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v1 AND a2=v2 AND a3=v1.  This fails because a2=v2 is true, a3=v1 is true, but a4=v1 is true.  This rule is not applicable.
 *   **R2:** a3=v3 AND a2=v3 AND a6=v3. This fails because a3=v1, a2=v2, and a6=v3. This rule is not applicable.
@@ -638,7 +638,7 @@ Since none of the rules apply, we return an empty string.
 ANSWER: 
 
 "
-exp1_f037_L0,1,L0,R6,a2=v1 AND a5=v1 AND a4=v3 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp1_f037_L0,1,L0,R6,a2=v1 AND a5=v1 AND a4=v3 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a5=v2 - Does not match (a4=v3, a5=v1)
 *   **R2:** a5=v2 AND a4=v1 AND a2=v1 - Does not match (a5=v1, a4=v3, a2=v1)
@@ -654,7 +654,7 @@ exp1_f037_L0,1,L0,R6,a2=v1 AND a5=v1 AND a4=v3 AND a6=v1,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f038_L0,1,L0,R7,a5=v2 AND a1=v2 AND a2=v1 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp1_f038_L0,1,L0,R7,a5=v2 AND a1=v2 AND a2=v1 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v1 AND a4=v2 AND a2=v1.  This fails because a1=v2, a4=v3, and a2=v1.
 *   **R2:** a4=v2 AND a6=v2 AND a2=v1 AND a5=v2. This fails because a4=v3, a6=v3, a2=v1, and a5=v2.
@@ -671,7 +671,7 @@ None of the rules apply.
 
 ANSWER: None
 "
-exp1_f038_L1,1,L1,R7,a5=v2 AND a1=v2 AND a2=v1 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp1_f038_L1,1,L1,R7,a5=v2 AND a1=v2 AND a2=v1 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v1 AND a4=v2 AND a2=v1.  This fails because a1=v2 and a4=v3, and a2=v1.
 *   **R2:** a4=v2 AND a6=v2 AND a2=v1 AND a5=v2. This fails because a4=v3 and a6=v3.
@@ -687,7 +687,7 @@ exp1_f038_L1,1,L1,R7,a5=v2 AND a1=v2 AND a2=v1 AND a4=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f038_L2,1,L2,R7,a5=v2 AND a1=v2 AND a2=v1 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp1_f038_L2,1,L2,R7,a5=v2 AND a1=v2 AND a2=v1 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v1 AND a4=v2 AND a2=v1.  This fails because a1=v2, a4=v3, and a2=v1.
 *   **R2:** a4=v2 AND a6=v2 AND a2=v1 AND a5=v2. This fails because a4=v3, a6=v3, a2=v1, and a5=v2.
@@ -703,7 +703,7 @@ exp1_f038_L2,1,L2,R7,a5=v2 AND a1=v2 AND a2=v1 AND a4=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f042_L0,1,L0,R10,a4=v1 AND a5=v2 AND a2=v2 AND a3=v3,True,,,"Let's analyze the rules against the query:
+exp1_f042_L0,1,L0,R10,a4=v1 AND a5=v2 AND a2=v2 AND a3=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v1 AND a5=v3 AND a6=v2.  This doesn't match because a1=v3, a5=v2, and a6=v2.
 *   **R2:** a5=v3 AND a1=v1 AND a3=v3 AND a6=v2. This doesn't match because a5=v2, a1=v3, a3=v3, and a6=v2.
@@ -720,7 +720,7 @@ None of the rules match the query.
 
 ANSWER: None
 "
-exp1_f043_L1,1,L1,R7,a5=v1 AND a3=v1 AND a1=v3 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp1_f043_L1,1,L1,R7,a5=v1 AND a3=v1 AND a1=v3 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v1 AND a5=v2 AND a6=v2.  This fails because a2=v3 and a5=v1, a6=v2.
 *   **R2:** a5=v1 AND a1=v3 AND a6=v2. This fails because a2=v3 and a5=v1, a1=v3, a6=v2.
@@ -736,7 +736,7 @@ exp1_f043_L1,1,L1,R7,a5=v1 AND a3=v1 AND a1=v3 AND a6=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f044_L0,1,L0,R4,a1=v3 AND a6=v3 AND a4=v2 AND a3=v2,True,,,"Let's analyze the rules against the query:
+exp1_f044_L0,1,L0,R4,a1=v3 AND a6=v3 AND a4=v2 AND a3=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** IF a6=v2 AND a2=v1.  This fails because a6=v3 and a2=v2.
 *   **R2:** IF a6=v1 AND a1=v2 AND a5=v2. This fails because a6=v3 and a1=v3.
@@ -752,7 +752,7 @@ exp1_f044_L0,1,L0,R4,a1=v3 AND a6=v3 AND a4=v2 AND a3=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f046_L0,1,L0,R2,a6=v3 AND a2=v2 AND a4=v2 AND a1=v1,True,,,"Let's analyze the rules against the query:
+exp1_f046_L0,1,L0,R2,a6=v3 AND a2=v2 AND a4=v2 AND a1=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v1 AND a1=v3 AND a6=v3 AND a3=v3.  This fails because a4=v2, a1=v1, a6=v3, and a3=v3.
 *   **R2:** a6=v3 AND a2=v2 AND a4=v2 AND a1=v1. This fails because a6=v3, a2=v2, a4=v2, and a1=v1.
@@ -768,7 +768,7 @@ exp1_f046_L0,1,L0,R2,a6=v3 AND a2=v2 AND a4=v2 AND a1=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f047_L0,1,L0,R1,a3=v2 AND a5=v3 AND a1=v1 AND a2=v2,True,,,"Let's analyze the rules against the query:
+exp1_f047_L0,1,L0,R1,a3=v2 AND a5=v3 AND a1=v1 AND a2=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a5=v3 AND a1=v1 AND a2=v2.  This fails because a3=v2, a5=v3, a1=v1, and a2=v2 are all true, but the query has a2=v2 and a3=v2.
 *   **R2:** a3=v1 AND a1=v2 AND a5=v3. This fails because a3=v2, a1=v1, and a5=v3 are not all true.
@@ -784,7 +784,7 @@ exp1_f047_L0,1,L0,R1,a3=v2 AND a5=v3 AND a1=v1 AND a2=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f048_L0,1,L0,R5,a4=v1 AND a1=v1 AND a2=v3 AND a3=v3,True,,,"Let's analyze the rules against the query:
+exp1_f048_L0,1,L0,R5,a4=v1 AND a1=v1 AND a2=v3 AND a3=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a1=v3 AND a5=v1 AND a3=v3.  This fails because a6=v1, a1=v1, a5=v1, and a3=v3.
 *   **R2:** a3=v2 AND a1=v2 AND a4=v1. This fails because a3=v3, a1=v1, and a4=v1.
@@ -800,7 +800,7 @@ exp1_f048_L0,1,L0,R5,a4=v1 AND a1=v1 AND a2=v3 AND a3=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f048_L1,1,L1,R5,a4=v1 AND a1=v1 AND a2=v3 AND a3=v3,True,,,"Let's analyze the rules against the query:
+exp1_f048_L1,1,L1,R5,a4=v1 AND a1=v1 AND a2=v3 AND a3=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a1=v3 AND a5=v1 AND a3=v3.  This fails because a6=v1, a1=v1, a5=v1, and a3=v3.
 *   **R2:** a4=v1 AND a2=v3 AND a3=v3. This fails because a4=v1, a2=v3, and a3=v3, but a1 is not v3.
@@ -816,7 +816,7 @@ exp1_f048_L1,1,L1,R5,a4=v1 AND a1=v1 AND a2=v3 AND a3=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f048_L4,1,L4,R5,a4=v1 AND a1=v1 AND a2=v3 AND a3=v3,True,,,"Let's evaluate the rules against the query:
+exp1_f048_L4,1,L4,R5,a4=v1 AND a1=v1 AND a2=v3 AND a3=v3,True,"Let's evaluate the rules against the query:
 
 *   **R1:** a6=v2 AND a1=v3 AND a5=v1 AND a3=v3.  This fails because a6=v1, a1=v1, a5=v1, and a3=v3.
 *   **R2:** a4=v1 AND a2=v3 AND a3=v3. This fails because a4=v1, a2=v3, and a3=v3, but the conditions are not all met.
@@ -832,7 +832,7 @@ exp1_f048_L4,1,L4,R5,a4=v1 AND a1=v1 AND a2=v3 AND a3=v3,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp1_f049_L0,1,L0,R1,a6=v1 AND a3=v2 AND a1=v2 AND a4=v1,True,,,"Let's analyze the rules against the query:
+exp1_f049_L0,1,L0,R1,a6=v1 AND a3=v2 AND a1=v2 AND a4=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a3=v2 AND a1=v2 AND a4=v1.  This fails because a6=v1, a3=v2, a1=v2, a4=v1.  Only a3=v2 and a1=v2 match the query, but R1 requires ALL conditions to be met.
 *   **R2:** a4=v2 AND a6=v3 AND a2=v2. This fails because a4=v1, a6=v1, a2=v2.
@@ -848,7 +848,7 @@ exp1_f049_L0,1,L0,R1,a6=v1 AND a3=v2 AND a1=v2 AND a4=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f049_L1,1,L1,R1,a6=v1 AND a3=v2 AND a1=v2 AND a4=v1,True,,,"Let's analyze the rules against the query:
+exp1_f049_L1,1,L1,R1,a6=v1 AND a3=v2 AND a1=v2 AND a4=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a3=v2 AND a1=v2 AND a4=v1.  This fails because a3=v2 and a1=v2, but a6=v1 and a4=v1.
 *   **R2:** a4=v2 AND a6=v3 AND a2=v2. This fails because a4=v1 and a6=v1.
@@ -864,7 +864,7 @@ exp1_f049_L1,1,L1,R1,a6=v1 AND a3=v2 AND a1=v2 AND a4=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f050_L0,1,L0,R9,a6=v1 AND a3=v3 AND a4=v3 AND a2=v1,True,,,"Let's analyze the rules against the query:
+exp1_f050_L0,1,L0,R9,a6=v1 AND a3=v3 AND a4=v3 AND a2=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a1=v3.  This fails because a5=v3 and a1=v1.
 *   **R2:** a6=v2 AND a5=v2 AND a2=v1. This fails because a6=v1, a5=v3, and a2=v1.
@@ -880,7 +880,7 @@ exp1_f050_L0,1,L0,R9,a6=v1 AND a3=v3 AND a4=v3 AND a2=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f051_L0,1,L0,R5,a5=v1 AND a2=v2 AND a1=v1 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp1_f051_L0,1,L0,R5,a5=v1 AND a2=v2 AND a1=v1 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a4=v3 AND a1=v1.  This fails because a6=v1, a4=v1, and a1=v1.
 *   **R2:** a3=v3 AND a2=v3 AND a5=v1 AND a6=v1. This fails because a3=v1, a2=v2, a5=v1, and a6=v1.
@@ -896,7 +896,7 @@ exp1_f051_L0,1,L0,R5,a5=v1 AND a2=v2 AND a1=v1 AND a3=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f051_L1,1,L1,R5,a5=v1 AND a2=v2 AND a1=v1 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp1_f051_L1,1,L1,R5,a5=v1 AND a2=v2 AND a1=v1 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a4=v3 AND a1=v1 - Does not match (a6=v1, a4=v1, a1=v1)
 *   **R2:** a3=v3 AND a2=v3 AND a5=v1 AND a6=v1 - Does not match (a3=v1, a2=v2, a5=v1, a6=v1)
@@ -912,7 +912,7 @@ exp1_f051_L1,1,L1,R5,a5=v1 AND a2=v2 AND a1=v1 AND a3=v1,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f053_L0,1,L0,R6,a5=v2 AND a4=v1 AND a2=v1 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp1_f053_L0,1,L0,R6,a5=v2 AND a4=v1 AND a2=v1 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v1 AND a3=v2 AND a4=v1.  This fails because a1=v2, a3=v1, and a4=v1.
 *   **R2:** a4=v3 AND a3=v2 AND a1=v2. This fails because a4=v1, a3=v1, and a1=v2.
@@ -928,7 +928,7 @@ exp1_f053_L0,1,L0,R6,a5=v2 AND a4=v1 AND a2=v1 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f056_L0,1,L0,R6,a2=v1 AND a3=v3 AND a5=v3 AND a4=v1,True,,,"Let's analyze the rules against the query:
+exp1_f056_L0,1,L0,R6,a2=v1 AND a3=v3 AND a5=v3 AND a4=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v1 AND a6=v2 AND a5=v3 AND a1=v2.  This fails because a6=v2 is false.
 *   **R2:** a4=v3 AND a1=v3 AND a3=v3. This fails because a4=v1 and a1=v2.
@@ -945,7 +945,7 @@ Since none of the rules apply, we return an empty string.
 
 ANSWER: 
 "
-exp1_f058_L0,1,L0,R9,a1=v1 AND a2=v2 AND a5=v1 AND a3=v3,True,,,"Let's evaluate the rules against the query:
+exp1_f058_L0,1,L0,R9,a1=v1 AND a2=v2 AND a5=v1 AND a3=v3,True,"Let's evaluate the rules against the query:
 
 *   **R1:** a1=v2 AND a4=v2 AND a3=v3.  This fails because a1=v1, a4=v1, and a3=v3.
 *   **R2:** a5=v2 AND a1=v2 AND a6=v3 AND a3=v3. This fails because a5=v1, a1=v1, and a6=v3.
@@ -961,7 +961,7 @@ exp1_f058_L0,1,L0,R9,a1=v1 AND a2=v2 AND a5=v1 AND a3=v3,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp1_f061_L0,1,L0,R7,a4=v3 AND a6=v1 AND a3=v2 AND a1=v1,True,,,"Let's analyze the rules against the query:
+exp1_f061_L0,1,L0,R7,a4=v3 AND a6=v1 AND a3=v2 AND a1=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** IF a3=v1 AND a6=v3 AND a1=v1.  This fails because a3=v2, a6=v1, and a1=v1.
 *   **R2:** IF a1=v2 AND a5=v3 AND a3=v2. This fails because a1=v1, a5=v2, and a3=v2.
@@ -977,7 +977,7 @@ exp1_f061_L0,1,L0,R7,a4=v3 AND a6=v1 AND a3=v2 AND a1=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f061_L1,1,L1,R7,a4=v3 AND a6=v1 AND a3=v2 AND a1=v1,True,,,"Let's analyze the rules against the query:
+exp1_f061_L1,1,L1,R7,a4=v3 AND a6=v1 AND a3=v2 AND a1=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v1 AND a6=v3 AND a1=v1.  This fails because a3=v2 and a6=v1, not v3.
 *   **R2:** a1=v2 AND a5=v3 AND a3=v2. This fails because a1=v1, a5=v2, and a3=v2.
@@ -993,7 +993,7 @@ exp1_f061_L1,1,L1,R7,a4=v3 AND a6=v1 AND a3=v2 AND a1=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f061_L2,1,L2,R7,a4=v3 AND a6=v1 AND a3=v2 AND a1=v1,True,,,"Let's analyze the rules against the query:
+exp1_f061_L2,1,L2,R7,a4=v3 AND a6=v1 AND a3=v2 AND a1=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v1 AND a6=v3 AND a1=v1.  This fails because a3=v2 and a6=v1, not v3.
 *   **R2:** a6=v1 AND a3=v2 AND a1=v1. This fails because a3=v2 and a6=v1, but a1=v1 is true.
@@ -1009,7 +1009,7 @@ exp1_f061_L2,1,L2,R7,a4=v3 AND a6=v1 AND a3=v2 AND a1=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f063_L0,1,L0,R7,a5=v2 AND a6=v1 AND a2=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp1_f063_L0,1,L0,R7,a5=v2 AND a6=v1 AND a2=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v1 AND a5=v3 AND a4=v2.  This fails because a2=v3, a5=v2, and a4=v2.
 *   **R2:** a5=v1 AND a6=v3 AND a2=v3. This fails because a5=v2, a6=v1, and a2=v3.
@@ -1025,7 +1025,7 @@ exp1_f063_L0,1,L0,R7,a5=v2 AND a6=v1 AND a2=v3 AND a3=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f063_L4,1,L4,R7,a5=v2 AND a6=v1 AND a2=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp1_f063_L4,1,L4,R7,a5=v2 AND a6=v1 AND a2=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a2=v3 AND a3=v1.  This fails because a2=v3 (matches) but a3=v1 (matches) and a6=v1 (matches) but a4=v2 (doesn't match).
 *   **R2:** a5=v2 AND a6=v1 AND a2=v3. This fails because a5=v2 (matches) and a6=v1 (matches) and a2=v3 (matches) but a3=v1 (doesn't match) and a4=v2 (doesn't match).
@@ -1042,7 +1042,7 @@ None of the rules apply.
 
 ANSWER: None
 "
-exp1_f065_L0,1,L0,R3,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,,,"Let's analyze the rules against the query:
+exp1_f065_L0,1,L0,R3,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a2=v3 AND a6=v2 AND a3=v3.  This fails because a5=v2, a2=v1, a6=v2, and a3=v3.
 *   **R2:** a6=v3 AND a3=v2 AND a1=v3. This fails because a6=v2, a3=v3, and a1=v3.
@@ -1058,7 +1058,7 @@ exp1_f065_L0,1,L0,R3,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f065_L1,1,L1,R3,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,,,"Let's analyze the rules against the query:
+exp1_f065_L1,1,L1,R3,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a2=v3 AND a6=v2 AND a3=v3.  This fails because a5=v2, a2=v1, a6=v2, and a3=v3.
 *   **R2:** a6=v3 AND a3=v2 AND a1=v3. This fails because a6=v2, a3=v3, and a1=v3.
@@ -1074,7 +1074,7 @@ exp1_f065_L1,1,L1,R3,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f065_L2,1,L2,R3,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,,,"Let's analyze the rules against the query:
+exp1_f065_L2,1,L2,R3,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a2=v3 AND a6=v2 AND a3=v3.  This fails because a5=v2, a2=v1, a6=v2, and a3=v3.
 *   **R2:** a6=v3 AND a3=v2 AND a1=v3. This fails because a6=v2, a3=v3, and a1=v3.
@@ -1090,7 +1090,7 @@ exp1_f065_L2,1,L2,R3,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f065_L4,1,L4,R3,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,,,"Let's analyze the rules against the query:
+exp1_f065_L4,1,L4,R3,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a2=v3 AND a6=v2 AND a3=v3.  This fails because a5=v2, a2=v1, a6=v2, and a3=v3.
 *   **R2:** a6=v2 AND a5=v2 AND a2=v1. This fails because a6=v2, a5=v2, and a2=v1, but it doesn't have all the conditions.
@@ -1107,7 +1107,7 @@ None of the rules apply.
 
 ANSWER: None
 "
-exp1_f066_L0,1,L0,R9,a6=v2 AND a5=v3 AND a1=v1 AND a2=v3,True,,,"Let's analyze the rules against the query:
+exp1_f066_L0,1,L0,R9,a6=v2 AND a5=v3 AND a1=v1 AND a2=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a2=v1 AND a5=v3.  This doesn't match because a2=v3 and a3=v3.
 *   **R2:** a4=v3 AND a6=v3 AND a5=v3 AND a2=v3. This doesn't match because a4=v1 and a6=v2.
@@ -1123,7 +1123,7 @@ exp1_f066_L0,1,L0,R9,a6=v2 AND a5=v3 AND a1=v1 AND a2=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f069_L0,1,L0,R1,a5=v2 AND a1=v1 AND a2=v3 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp1_f069_L0,1,L0,R1,a5=v2 AND a1=v1 AND a2=v3 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a1=v1 AND a2=v3 AND a4=v3.  This fails because a1=v1 does not match the condition a1=v1.
 *   **R2:** a1=v2 AND a3=v1 AND a4=v3 AND a2=v3. This fails because a1=v2 does not match the condition a1=v1.
@@ -1139,7 +1139,7 @@ exp1_f069_L0,1,L0,R1,a5=v2 AND a1=v1 AND a2=v3 AND a4=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f069_L1,1,L1,R1,a5=v2 AND a1=v1 AND a2=v3 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp1_f069_L1,1,L1,R1,a5=v2 AND a1=v1 AND a2=v3 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a1=v1 AND a2=v3 AND a4=v3.  This fails because a1=v1 but a6=v1 is not satisfied.
 *   **R2:** a1=v2 AND a3=v1 AND a4=v3 AND a2=v3. This fails because a1=v1 and a2=v3 but a1=v2 is not satisfied.
@@ -1155,7 +1155,7 @@ exp1_f069_L1,1,L1,R1,a5=v2 AND a1=v1 AND a2=v3 AND a4=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f070_L0,1,L0,R8,a6=v1 AND a1=v3 AND a2=v2 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp1_f070_L0,1,L0,R8,a6=v1 AND a1=v3 AND a2=v2 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** IF a3=v1 AND a2=v1.  This fails because a3=v3 and a2=v2.
 *   **R2:** IF a5=v1 AND a4=v1 AND a3=v3. This fails because a4=v2 and a5=v3.
@@ -1171,7 +1171,7 @@ exp1_f070_L0,1,L0,R8,a6=v1 AND a1=v3 AND a2=v2 AND a4=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f070_L1,1,L1,R8,a6=v1 AND a1=v3 AND a2=v2 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp1_f070_L1,1,L1,R8,a6=v1 AND a1=v3 AND a2=v2 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** IF a3=v1 AND a2=v1.  This fails because a3=v3 and a2=v2.
 *   **R2:** IF a6=v1 AND a1=v3 AND a2=v2. This fails because a6=v1, a1=v3, and a2=v2 match, but it's not the most specific rule.
@@ -1187,7 +1187,7 @@ exp1_f070_L1,1,L1,R8,a6=v1 AND a1=v3 AND a2=v2 AND a4=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f070_L2,1,L2,R8,a6=v1 AND a1=v3 AND a2=v2 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp1_f070_L2,1,L2,R8,a6=v1 AND a1=v3 AND a2=v2 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** IF a3=v1 AND a2=v1.  This fails because a3=v3 and a2=v2.
 *   **R2:** IF a6=v1 AND a1=v3 AND a2=v2. This fails because a6=v1, a1=v3, and a2=v2 match, but it's not the most specific rule.
@@ -1204,7 +1204,7 @@ None of the rules apply.
 
 ANSWER: None
 "
-exp1_f070_L4,1,L4,R8,a6=v1 AND a1=v3 AND a2=v2 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp1_f070_L4,1,L4,R8,a6=v1 AND a1=v3 AND a2=v2 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v1 AND a2=v1.  This fails because a3=v3 and a2=v2.
 *   **R2:** a6=v1 AND a1=v3 AND a2=v2. This fails because a6=v1, a1=v3, a2=v2, but the conditions are not all met.
@@ -1220,7 +1220,7 @@ exp1_f070_L4,1,L4,R8,a6=v1 AND a1=v3 AND a2=v2 AND a4=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f071_L0,1,L0,R2,a2=v3 AND a5=v2 AND a6=v2 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp1_f071_L0,1,L0,R2,a2=v3 AND a5=v2 AND a6=v2 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v3 AND a3=v1 AND a1=v3 AND a5=v2.  This doesn't match because a4=v2, a3=v3, a1=v3, and a5=v2.
 *   **R2:** a2=v3 AND a5=v2 AND a6=v2 AND a4=v2. This doesn't match because a2=v3, a5=v2, a6=v2, and a4=v2.
@@ -1236,7 +1236,7 @@ exp1_f071_L0,1,L0,R2,a2=v3 AND a5=v2 AND a6=v2 AND a4=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f071_L1,1,L1,R2,a2=v3 AND a5=v2 AND a6=v2 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp1_f071_L1,1,L1,R2,a2=v3 AND a5=v2 AND a6=v2 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v3 AND a3=v1 AND a1=v3 AND a5=v2.  This doesn't match because a4=v2, a3=v3, a1=v3, and a5=v2.
 *   **R2:** a2=v3 AND a5=v2 AND a6=v2 AND a4=v2. This doesn't match because a2=v3, a5=v2, a6=v2, and a4=v2.
@@ -1252,7 +1252,7 @@ exp1_f071_L1,1,L1,R2,a2=v3 AND a5=v2 AND a6=v2 AND a4=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f071_L2,1,L2,R2,a2=v3 AND a5=v2 AND a6=v2 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp1_f071_L2,1,L2,R2,a2=v3 AND a5=v2 AND a6=v2 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v3 AND a3=v1 AND a1=v3 AND a5=v2.  This doesn't match because a4=v2, a3=v3, a1=v3, and a5=v2.
 *   **R2:** a2=v3 AND a5=v2 AND a6=v2 AND a4=v2. This doesn't match because a2=v3, a5=v2, a6=v2, and a4=v2.
@@ -1269,7 +1269,7 @@ None of the rules match the query.
 
 ANSWER: None
 "
-exp1_f071_L4,1,L4,R2,a2=v3 AND a5=v2 AND a6=v2 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp1_f071_L4,1,L4,R2,a2=v3 AND a5=v2 AND a6=v2 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v3 AND a3=v1 AND a1=v3 AND a5=v2.  This rule fails because a3=v3, not v1, and a4=v2, not v3.
 *   **R2:** a2=v3 AND a5=v2 AND a6=v2 AND a4=v2. This rule fails because a2=v3, but a3=v3, not v3.
@@ -1285,7 +1285,7 @@ exp1_f071_L4,1,L4,R2,a2=v3 AND a5=v2 AND a6=v2 AND a4=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f078_L0,1,L0,R7,a5=v1 AND a3=v2 AND a2=v3 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp1_f078_L0,1,L0,R7,a5=v1 AND a3=v2 AND a2=v3 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v2 AND a2=v1 AND a6=v1.  This doesn't match because a1=v3, a2=v3, and a6=v1.
 *   **R2:** a3=v1 AND a4=v1 AND a6=v1. This doesn't match because a3=v2, a4=v3, and a6=v1.
@@ -1301,7 +1301,7 @@ exp1_f078_L0,1,L0,R7,a5=v1 AND a3=v2 AND a2=v3 AND a4=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f079_L0,1,L0,R9,a5=v3 AND a6=v1 AND a4=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp1_f079_L0,1,L0,R9,a5=v3 AND a6=v1 AND a4=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a6=v3 AND a4=v3 - Does not match (a5=v3, a6=v1, a4=v3)
 *   **R2:** a3=v3 AND a1=v1 - Does not match (a3=v1, a1=v3)
@@ -1317,7 +1317,7 @@ exp1_f079_L0,1,L0,R9,a5=v3 AND a6=v1 AND a4=v3 AND a3=v1,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f079_L1,1,L1,R9,a5=v3 AND a6=v1 AND a4=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp1_f079_L1,1,L1,R9,a5=v3 AND a6=v1 AND a4=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a6=v3 AND a4=v3 - Does not match (a5=v3, a6=v1, a4=v3)
 *   **R2:** a3=v3 AND a1=v1 - Does not match (a3=v1, a1=v3)
@@ -1333,7 +1333,7 @@ exp1_f079_L1,1,L1,R9,a5=v3 AND a6=v1 AND a4=v3 AND a3=v1,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f079_L2,1,L2,R9,a5=v3 AND a6=v1 AND a4=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp1_f079_L2,1,L2,R9,a5=v3 AND a6=v1 AND a4=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a6=v3 AND a4=v3 - Does not match (a5=v3, a6=v1, a4=v3)
 *   **R2:** a3=v3 AND a1=v1 - Does not match (a3=v1, a1=v3)
@@ -1349,7 +1349,7 @@ exp1_f079_L2,1,L2,R9,a5=v3 AND a6=v1 AND a4=v3 AND a3=v1,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f081_L0,1,L0,R5,a5=v1 AND a6=v3 AND a2=v2 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp1_f081_L0,1,L0,R5,a5=v1 AND a6=v3 AND a2=v2 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v1 AND a5=v3 AND a1=v2.  This doesn't match because a3=v3, a5=v1, and a1=v2.
 *   **R2:** a3=v1 AND a5=v3 AND a4=v3. This doesn't match because a3=v3, a5=v1, and a4=v3.
@@ -1365,7 +1365,7 @@ exp1_f081_L0,1,L0,R5,a5=v1 AND a6=v3 AND a2=v2 AND a1=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f081_L1,1,L1,R5,a5=v1 AND a6=v3 AND a2=v2 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp1_f081_L1,1,L1,R5,a5=v1 AND a6=v3 AND a2=v2 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a6=v3 AND a2=v2.  This fails because a2=v2 is false.
 *   **R2:** a3=v1 AND a5=v3 AND a4=v3. This fails because a3=v1 is false.
@@ -1381,7 +1381,7 @@ exp1_f081_L1,1,L1,R5,a5=v1 AND a6=v3 AND a2=v2 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f081_L2,1,L2,R5,a5=v1 AND a6=v3 AND a2=v2 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp1_f081_L2,1,L2,R5,a5=v1 AND a6=v3 AND a2=v2 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a6=v3 AND a2=v2 - Does not match (a2=v2, but a2=v2)
 *   **R2:** a3=v1 AND a5=v3 AND a4=v3 - Does not match (a3=v3, but a3=v1)
@@ -1397,7 +1397,7 @@ exp1_f081_L2,1,L2,R5,a5=v1 AND a6=v3 AND a2=v2 AND a1=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f081_L4,1,L4,R5,a5=v1 AND a6=v3 AND a2=v2 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp1_f081_L4,1,L4,R5,a5=v1 AND a6=v3 AND a2=v2 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a6=v3 AND a2=v2.  This fails because a2 is not v2.
 *   **R2:** a6=v3 AND a2=v2 AND a1=v2. This fails because a1 is not v2.
@@ -1413,7 +1413,7 @@ exp1_f081_L4,1,L4,R5,a5=v1 AND a6=v3 AND a2=v2 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f082_L0,1,L0,R1,a5=v1 AND a3=v1 AND a1=v2 AND a2=v1,True,,,"Let's analyze the rules against the query:
+exp1_f082_L0,1,L0,R1,a5=v1 AND a3=v1 AND a1=v2 AND a2=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a3=v1 AND a1=v2 AND a2=v1.  This fails because a5=v1 is true, a3=v1 is true, a1=v2 is true, and a2=v1 is true, but the conditions are not all met.
 *   **R2:** a3=v3 AND a4=v1 AND a2=v1. This fails because a3=v3 is false.
@@ -1431,7 +1431,7 @@ Since none of the rules apply, we return an empty string.
 ANSWER: 
 
 "
-exp1_f082_L1,1,L1,R1,a5=v1 AND a3=v1 AND a1=v2 AND a2=v1,True,,,"Let's analyze the rules against the query:
+exp1_f082_L1,1,L1,R1,a5=v1 AND a3=v1 AND a1=v2 AND a2=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a3=v1 AND a1=v2 AND a2=v1.  This rule has 4 conditions.  It does *not* match because a4=v2 and a6=v3.
 *   **R2:** a3=v3 AND a4=v1 AND a2=v1. This rule has 3 conditions. It does *not* match because a3=v1 and a4=v2 and a2=v1.
@@ -1447,7 +1447,7 @@ exp1_f082_L1,1,L1,R1,a5=v1 AND a3=v1 AND a1=v2 AND a2=v1,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f084_L0,1,L0,R7,a2=v3 AND a4=v3 AND a5=v2 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp1_f084_L0,1,L0,R7,a2=v3 AND a4=v3 AND a5=v2 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a6=v3 AND a3=v2.  This fails because a4=v3, a6=v2, and a3=v2.
 *   **R2:** a5=v3 AND a6=v3 AND a2=v3 AND a4=v3. This fails because a5=v2, a6=v2, a2=v3, and a4=v3.
@@ -1463,7 +1463,7 @@ exp1_f084_L0,1,L0,R7,a2=v3 AND a4=v3 AND a5=v2 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f084_L1,1,L1,R7,a2=v3 AND a4=v3 AND a5=v2 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp1_f084_L1,1,L1,R7,a2=v3 AND a4=v3 AND a5=v2 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a6=v3 AND a3=v2 - Does not match (a4=v3, a6=v2, a3=v2)
 *   **R2:** a5=v3 AND a6=v3 AND a2=v3 AND a4=v3 - Does not match (a5=v2, a6=v2, a2=v3, a4=v3)
@@ -1479,7 +1479,7 @@ exp1_f084_L1,1,L1,R7,a2=v3 AND a4=v3 AND a5=v2 AND a1=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f084_L2,1,L2,R7,a2=v3 AND a4=v3 AND a5=v2 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp1_f084_L2,1,L2,R7,a2=v3 AND a4=v3 AND a5=v2 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a6=v3 AND a3=v2.  This fails because a4=v3, a6=v2, and a3=v2.
 *   **R2:** a5=v3 AND a6=v3 AND a2=v3 AND a4=v3. This fails because a5=v2, a6=v2, a2=v3, and a4=v3.
@@ -1495,7 +1495,7 @@ exp1_f084_L2,1,L2,R7,a2=v3 AND a4=v3 AND a5=v2 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f086_L0,1,L0,R6,a5=v1 AND a1=v2 AND a3=v2 AND a2=v2,True,,,"Let's analyze the rules against the query:
+exp1_f086_L0,1,L0,R6,a5=v1 AND a1=v2 AND a3=v2 AND a2=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** IF a3=v1 AND a5=v2 - Does not match (a3=v2, a5=v1)
 *   **R2:** IF a6=v3 AND a5=v3 AND a3=v2 - Does not match (a6=v2, a5=v1, a3=v2)
@@ -1511,7 +1511,7 @@ exp1_f086_L0,1,L0,R6,a5=v1 AND a1=v2 AND a3=v2 AND a2=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f087_L0,1,L0,R8,a3=v3 AND a6=v1 AND a4=v1 AND a2=v3,True,,,"Let's analyze the rules against the query:
+exp1_f087_L0,1,L0,R8,a3=v3 AND a6=v1 AND a4=v1 AND a2=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v3 AND a1=v1 AND a3=v3 - Does not match (a4=v1, a1=v3, a3=v3)
 *   **R2:** a6=v3 AND a5=v2 AND a2=v3 AND a3=v3 - Does not match (a6=v1, a5=v1, a2=v3, a3=v3)
@@ -1527,7 +1527,7 @@ exp1_f087_L0,1,L0,R8,a3=v3 AND a6=v1 AND a4=v1 AND a2=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f088_L0,1,L0,R9,a1=v2 AND a5=v2 AND a2=v3 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp1_f088_L0,1,L0,R9,a1=v2 AND a5=v2 AND a2=v3 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a5=v3 AND a1=v2 - Does not match (a6=v1, a5=v2, a1=v2)
 *   **R2:** a1=v3 AND a3=v1 AND a5=v2 - Does not match (a1=v2, a3=v3, a5=v2)
@@ -1543,7 +1543,7 @@ exp1_f088_L0,1,L0,R9,a1=v2 AND a5=v2 AND a2=v3 AND a6=v1,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f089_L0,1,L0,R6,a6=v3 AND a4=v3 AND a3=v1 AND a2=v2,True,,,"Let's analyze the rules against the query:
+exp1_f089_L0,1,L0,R6,a6=v3 AND a4=v3 AND a3=v1 AND a2=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v1 AND a1=v3 AND a5=v3 AND a2=v2.  This fails because a4=v3, a1=v2, a5=v3, and a2=v2.
 *   **R2:** a4=v2 AND a6=v1 AND a2=v2 AND a5=v3. This fails because a4=v3, a6=v3, a2=v2, and a5=v3.
@@ -1559,7 +1559,7 @@ exp1_f089_L0,1,L0,R6,a6=v3 AND a4=v3 AND a3=v1 AND a2=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f089_L2,1,L2,R6,a6=v3 AND a4=v3 AND a3=v1 AND a2=v2,True,,,"Let's analyze the rules against the query:
+exp1_f089_L2,1,L2,R6,a6=v3 AND a4=v3 AND a3=v1 AND a2=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v1 AND a1=v3 AND a5=v3 AND a2=v2.  This fails because a4=v3, a1=v2, a5=v3, and a2=v2.
 *   **R2:** a4=v2 AND a6=v1 AND a2=v2 AND a5=v3. This fails because a4=v3, a6=v3, a2=v2, and a5=v3.
@@ -1575,7 +1575,7 @@ exp1_f089_L2,1,L2,R6,a6=v3 AND a4=v3 AND a3=v1 AND a2=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f090_L0,1,L0,R9,a2=v3 AND a1=v2 AND a4=v3 AND a5=v3,True,,,"Let's analyze the rules against the query:
+exp1_f090_L0,1,L0,R9,a2=v3 AND a1=v2 AND a4=v3 AND a5=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** IF a2=v1 AND a3=v3.  This fails because a2=v3 and a3=v2.
 *   **R2:** IF a4=v2 AND a2=v1 AND a3=v2. This fails because a4=v3, a2=v3, and a3=v2.
@@ -1591,7 +1591,7 @@ exp1_f090_L0,1,L0,R9,a2=v3 AND a1=v2 AND a4=v3 AND a5=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f090_L1,1,L1,R9,a2=v3 AND a1=v2 AND a4=v3 AND a5=v3,True,,,"Let's analyze the rules against the query:
+exp1_f090_L1,1,L1,R9,a2=v3 AND a1=v2 AND a4=v3 AND a5=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v1 AND a3=v3.  This fails because a2=v3 and a3=v2.
 *   **R2:** a2=v3 AND a1=v2 AND a5=v3. This fails because a1=v2 and a2=v3 and a5=v3, but a3=v2.
@@ -1607,7 +1607,7 @@ exp1_f090_L1,1,L1,R9,a2=v3 AND a1=v2 AND a4=v3 AND a5=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f091_L2,1,L2,R6,a2=v2 AND a6=v3 AND a4=v2 AND a1=v3,True,,,"Let's analyze the rules against the query:
+exp1_f091_L2,1,L2,R6,a2=v2 AND a6=v3 AND a4=v2 AND a1=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** IF a2=v2 AND a6=v3 AND a4=v2.  This fails because a6=v3 (matches) but a2=v2 (matches) and a4=v2 (matches) but a1=v3 (doesn't match).
 *   **R2:** IF a6=v3 AND a4=v2 AND a1=v3. This fails because a1=v3 (matches) but a2=v2 (doesn't match).
@@ -1624,7 +1624,7 @@ Since none of the rules match, we return an empty string.
 
 ANSWER: 
 "
-exp1_f093_L0,1,L0,R3,a2=v1 AND a6=v3 AND a3=v3 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp1_f093_L0,1,L0,R3,a2=v1 AND a6=v3 AND a3=v3 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v1 AND a6=v1 AND a4=v2.  This fails because a1=v2, a6=v3, and a4=v2.
 *   **R2:** a3=v2 AND a4=v1 AND a5=v3. This fails because a3=v3, a4=v2, and a5=v3.
@@ -1640,7 +1640,7 @@ exp1_f093_L0,1,L0,R3,a2=v1 AND a6=v3 AND a3=v3 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f094_L0,1,L0,R8,a5=v3 AND a1=v3 AND a6=v1 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp1_f094_L0,1,L0,R8,a5=v3 AND a1=v3 AND a6=v1 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v3 AND a1=v2 AND a4=v3.  This fails because a1=v3, not v2.
 *   **R2:** a1=v2 AND a2=v3 AND a3=v1. This fails because a1=v3, a2=v1, and a3=v1.
@@ -1656,7 +1656,7 @@ exp1_f094_L0,1,L0,R8,a5=v3 AND a1=v3 AND a6=v1 AND a4=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f095_L0,1,L0,R10,a4=v3 AND a6=v2 AND a5=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp1_f095_L0,1,L0,R10,a4=v3 AND a6=v2 AND a5=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a2=v2 AND a5=v3.  This fails because a2=v3 and a3=v1.
 *   **R2:** a4=v2 AND a1=v3. This fails because a1=v2 and a4=v3.
@@ -1672,7 +1672,7 @@ exp1_f095_L0,1,L0,R10,a4=v3 AND a6=v2 AND a5=v3 AND a3=v1,True,,,"Let's analyze 
 None of the rules apply.
 
 ANSWER: None"
-exp1_f095_L1,1,L1,R10,a4=v3 AND a6=v2 AND a5=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp1_f095_L1,1,L1,R10,a4=v3 AND a6=v2 AND a5=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a2=v2 AND a5=v3.  This fails because a2=v3, not v2.
 *   **R2:** a4=v2 AND a1=v3. This fails because a1=v2, not v3.
@@ -1688,7 +1688,7 @@ exp1_f095_L1,1,L1,R10,a4=v3 AND a6=v2 AND a5=v3 AND a3=v1,True,,,"Let's analyze 
 None of the rules apply.
 
 ANSWER: None"
-exp1_f095_L4,1,L4,R10,a4=v3 AND a6=v2 AND a5=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp1_f095_L4,1,L4,R10,a4=v3 AND a6=v2 AND a5=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a5=v3 AND a3=v1.  This fails because a6=v2 but a5=v3 and a3=v1.
 *   **R2:** a4=v2 AND a1=v3. This fails because a4=v3 and a1=v2.
@@ -1704,7 +1704,7 @@ exp1_f095_L4,1,L4,R10,a4=v3 AND a6=v2 AND a5=v3 AND a3=v1,True,,,"Let's analyze 
 None of the rules apply.
 
 ANSWER: None"
-exp1_f096_L0,1,L0,R8,a2=v3 AND a4=v1 AND a1=v3 AND a6=v3,True,,,"Let's evaluate each rule against the query:
+exp1_f096_L0,1,L0,R8,a2=v3 AND a4=v1 AND a1=v3 AND a6=v3,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a4=v3 AND a3=v2 AND a6=v3.  This fails because a4=v1, a3=v1, and a6=v3.
 *   **R2:** a1=v1 AND a4=v2 AND a2=v3. This fails because a1=v3, a4=v1, and a2=v3.
@@ -1720,7 +1720,7 @@ exp1_f096_L0,1,L0,R8,a2=v3 AND a4=v1 AND a1=v3 AND a6=v3,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp1_f098_L0,1,L0,R9,a4=v3 AND a2=v1 AND a1=v1 AND a5=v2,True,,,"Let's analyze the rules against the query:
+exp1_f098_L0,1,L0,R9,a4=v3 AND a2=v1 AND a1=v1 AND a5=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a5=v1 AND a1=v1 - Does not match (a6=v1, a5=v2, a1=v1)
 *   **R2:** a3=v2 AND a2=v3 AND a4=v3 - Does not match (a3=v1, a2=v1, a4=v3)
@@ -1736,7 +1736,7 @@ exp1_f098_L0,1,L0,R9,a4=v3 AND a2=v1 AND a1=v1 AND a5=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp1_f098_L1,1,L1,R9,a4=v3 AND a2=v1 AND a1=v1 AND a5=v2,True,,,"Let's analyze the rules against the query:
+exp1_f098_L1,1,L1,R9,a4=v3 AND a2=v1 AND a1=v1 AND a5=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a5=v1 AND a1=v1 - This rule does *not* apply because a6=v3 and a5=v1, but a1=v1.
 *   **R2:** a3=v2 AND a2=v3 AND a4=v3 - This rule does *not* apply because a3=v1, a2=v1, and a4=v3.
@@ -1752,7 +1752,7 @@ exp1_f098_L1,1,L1,R9,a4=v3 AND a2=v1 AND a1=v1 AND a5=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f099_L0,1,L0,R2,a1=v2 AND a5=v2 AND a6=v1 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp1_f099_L0,1,L0,R2,a1=v2 AND a5=v2 AND a6=v1 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a5=v3 AND a2=v3 AND a3=v1.  This fails because a6=v1, a5=v2, a2=v3, and a3=v1.
 *   **R2:** a1=v2 AND a5=v2 AND a6=v1 AND a3=v1. This fails because a1=v2, a5=v2, a6=v1, and a3=v1.
@@ -1768,7 +1768,7 @@ exp1_f099_L0,1,L0,R2,a1=v2 AND a5=v2 AND a6=v1 AND a3=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f099_L1,1,L1,R2,a1=v2 AND a5=v2 AND a6=v1 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp1_f099_L1,1,L1,R2,a1=v2 AND a5=v2 AND a6=v1 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a5=v3 AND a2=v3 AND a3=v1.  This fails because a6=v1, a5=v2, a2=v3, and a3=v1.
 *   **R2:** a1=v2 AND a5=v2 AND a6=v1 AND a3=v1. This fails because a1=v2, a5=v2, a6=v1, and a3=v1.
@@ -1784,7 +1784,7 @@ exp1_f099_L1,1,L1,R2,a1=v2 AND a5=v2 AND a6=v1 AND a3=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp1_f099_L2,1,L2,R2,a1=v2 AND a5=v2 AND a6=v1 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp1_f099_L2,1,L2,R2,a1=v2 AND a5=v2 AND a6=v1 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a5=v3 AND a2=v3 AND a3=v1.  This fails because a6=v1, a5=v2, a2=v3, and a3=v1.
 *   **R2:** a1=v2 AND a5=v2 AND a6=v1 AND a3=v1. This fails because a1=v2, a5=v2, a6=v1, and a3=v1.
@@ -1800,7 +1800,7 @@ exp1_f099_L2,1,L2,R2,a1=v2 AND a5=v2 AND a6=v1 AND a3=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f002_N0,2,N0,R10,a4=v1 AND a3=v1 AND a1=v3 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp2_f002_N0,2,N0,R10,a4=v1 AND a3=v1 AND a1=v3 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a1=v2 AND a4=v1 AND a2=v2.  This fails because a5=v3 and a1=v2.
 *   **R2:** a6=v1 AND a3=v3 AND a2=v2 AND a5=v1. This fails because a6=v2 and a3=v1.
@@ -1816,7 +1816,7 @@ exp2_f002_N0,2,N0,R10,a4=v1 AND a3=v1 AND a1=v3 AND a6=v2,True,,,"Let's analyze 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f002_N1,2,N1,R10,a4=v1 AND a3=v1 AND a1=v3 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp2_f002_N1,2,N1,R10,a4=v1 AND a3=v1 AND a1=v3 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a1=v2 AND a4=v1 AND a2=v2 - Does not match (a5=v1, a1=v3, a4=v1, a2=v2)
 *   **R2:** a6=v1 AND a3=v3 AND a2=v2 AND a5=v1 - Does not match (a6=v2, a3=v1, a2=v2, a5=v1)
@@ -1832,7 +1832,7 @@ exp2_f002_N1,2,N1,R10,a4=v1 AND a3=v1 AND a1=v3 AND a6=v2,True,,,"Let's analyze 
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f003_N1,2,N1,R5,a2=v3 AND a4=v1 AND a6=v1 AND a5=v3,True,,,"Let's analyze the rules against the query:
+exp2_f003_N1,2,N1,R5,a2=v3 AND a4=v1 AND a6=v1 AND a5=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a2=v2 AND a4=v1 AND a1=v1.  This fails because a5=v3, a2=v3, a4=v1, and a1=v1.
 *   **R2:** a4=v2 AND a6=v2 AND a5=v3 AND a3=v2. This fails because a4=v1, a6=v1, a5=v3, and a3=v2.
@@ -1848,7 +1848,7 @@ exp2_f003_N1,2,N1,R5,a2=v3 AND a4=v1 AND a6=v1 AND a5=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f003_N2,2,N2,R5,a2=v3 AND a4=v1 AND a6=v1 AND a5=v3,True,,,"Let's analyze the rules against the query:
+exp2_f003_N2,2,N2,R5,a2=v3 AND a4=v1 AND a6=v1 AND a5=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a2=v2 AND a4=v1 AND a1=v1.  This fails because a5=v2 (not v3), a2=v3 (not v2), a4=v1 (matches), and a1=v1 (matches).
 *   **R2:** a4=v2 AND a6=v2 AND a5=v3 AND a3=v2. This fails because a4=v1 (not v2), a6=v1 (not v2), a5=v3 (matches), and a3=v2 (matches).
@@ -1865,7 +1865,7 @@ None of the rules apply.
 
 ANSWER: None
 "
-exp2_f003_N4,2,N4,R5,a2=v3 AND a4=v1 AND a6=v1 AND a5=v3,True,,,"Let's analyze the rules against the query:
+exp2_f003_N4,2,N4,R5,a2=v3 AND a4=v1 AND a6=v1 AND a5=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a2=v2 AND a4=v1 AND a1=v1.  This fails because a5=v2 (not v3), a2=v3 (not v2), a4=v1 (matches), and a1=v1 (matches).
 *   **R2:** a4=v2 AND a6=v2 AND a5=v3 AND a3=v2. This fails because a4=v1 (not v2), a6=v1 (not v2), a5=v3 (matches), and a3=v2 (matches).
@@ -1882,7 +1882,7 @@ None of the rules apply.
 
 ANSWER: None
 "
-exp2_f005_N4,2,N4,R9,a5=v3 AND a1=v2 AND a3=v3 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp2_f005_N4,2,N4,R9,a5=v3 AND a1=v2 AND a3=v3 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a2=v1 AND a6=v3.  This fails because a5=v3, a2=v3, and a6=v3.
 *   **R2:** a6=v2 AND a1=v3. This fails because a6=v3, a1=v2.
@@ -1898,7 +1898,7 @@ exp2_f005_N4,2,N4,R9,a5=v3 AND a1=v2 AND a3=v3 AND a4=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f006_N0,2,N0,R2,a2=v1 AND a4=v1 AND a3=v2 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp2_f006_N0,2,N0,R2,a2=v1 AND a4=v1 AND a3=v2 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a6=v3 AND a1=v3 AND a2=v1.  This fails because a6=v1, not v3.
 *   **R2:** a2=v1 AND a4=v1 AND a3=v2 AND a6=v1. This fails because a6=v1, not v3.
@@ -1914,7 +1914,7 @@ exp2_f006_N0,2,N0,R2,a2=v1 AND a4=v1 AND a3=v2 AND a6=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f006_N1,2,N1,R2,a2=v1 AND a4=v1 AND a3=v2 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp2_f006_N1,2,N1,R2,a2=v1 AND a4=v1 AND a3=v2 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a6=v3 AND a1=v3 AND a2=v1.  This fails because a6=v1, not v3.
 *   **R2:** a2=v1 AND a4=v1 AND a3=v2 AND a6=v1. This fails because a6=v1, not v3.
@@ -1930,7 +1930,7 @@ exp2_f006_N1,2,N1,R2,a2=v1 AND a4=v1 AND a3=v2 AND a6=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f006_N2,2,N2,R2,a2=v1 AND a4=v1 AND a3=v2 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp2_f006_N2,2,N2,R2,a2=v1 AND a4=v1 AND a3=v2 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a6=v3 AND a1=v3 AND a2=v1.  This fails because a5=v2, a6=v1, and a1=v3.
 *   **R2:** a2=v1 AND a4=v1 AND a3=v2 AND a6=v1. This fails because a5=v2, a6=v1, a3=v2, a4=v1, a2=v1.
@@ -1946,7 +1946,7 @@ exp2_f006_N2,2,N2,R2,a2=v1 AND a4=v1 AND a3=v2 AND a6=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f008_N0,2,N0,R6,a5=v2 AND a4=v2 AND a6=v2 AND a1=v3,True,,,"Let's analyze the rules against the query:
+exp2_f008_N0,2,N0,R6,a5=v2 AND a4=v2 AND a6=v2 AND a1=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v3 AND a4=v3 AND a3=v1 AND a6=v2.  This fails because a2=v1, a4=v2, a3=v1, and a6=v2.
 *   **R2:** a3=v2 AND a2=v2. This fails because a3=v1 and a2=v1.
@@ -1962,7 +1962,7 @@ exp2_f008_N0,2,N0,R6,a5=v2 AND a4=v2 AND a6=v2 AND a1=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f010_N0,2,N0,R6,a3=v1 AND a5=v3 AND a6=v1 AND a2=v2,True,,,"Let's analyze the rules against the query:
+exp2_f010_N0,2,N0,R6,a3=v1 AND a5=v3 AND a6=v1 AND a2=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a4=v3 AND a1=v1 AND a5=v3.  This fails because a6=v1, a4=v2, and a5=v3.
 *   **R2:** a3=v3 AND a1=v2 AND a5=v3 AND a6=v1. This fails because a3=v1, a1=v1, and a6=v1.
@@ -1978,7 +1978,7 @@ exp2_f010_N0,2,N0,R6,a3=v1 AND a5=v3 AND a6=v1 AND a2=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f011_N0,2,N0,R9,a4=v2 AND a3=v2 AND a1=v3 AND a5=v2,True,,,"Let's analyze the rules against the query:
+exp2_f011_N0,2,N0,R9,a4=v2 AND a3=v2 AND a1=v3 AND a5=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a2=v1 AND a3=v2 AND a1=v3.  This fails because a6=v3, a2=v2, a3=v2, and a1=v3.
 *   **R2:** a2=v1 AND a3=v3 AND a5=v2 AND a6=v3. This fails because a2=v2, a3=v2, a5=v2, and a6=v3.
@@ -1994,7 +1994,7 @@ exp2_f011_N0,2,N0,R9,a4=v2 AND a3=v2 AND a1=v3 AND a5=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f011_N1,2,N1,R9,a4=v2 AND a3=v2 AND a1=v3 AND a5=v2,True,,,"Let's analyze the rules against the query:
+exp2_f011_N1,2,N1,R9,a4=v2 AND a3=v2 AND a1=v3 AND a5=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a2=v1 AND a3=v2 AND a1=v3.  This fails because a6=v3, a2=v2, a3=v2, and a1=v3.
 *   **R2:** a2=v1 AND a3=v3 AND a5=v2 AND a6=v3. This fails because a2=v2, a3=v2, a5=v2, and a6=v3.
@@ -2010,7 +2010,7 @@ exp2_f011_N1,2,N1,R9,a4=v2 AND a3=v2 AND a1=v3 AND a5=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f012_N4,2,N4,R6,a1=v2 AND a4=v2 AND a3=v3 AND a2=v1,True,,,"Let's analyze the rules against the query:
+exp2_f012_N4,2,N4,R6,a1=v2 AND a4=v2 AND a3=v3 AND a2=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v1 AND a4=v1 AND a5=v3 AND a1=v2.  This fails because a3=v3, a4=v2, and a5=v3.
 *   **R2:** a1=v2 AND a4=v2 AND a3=v1 AND a2=v1. This fails because a3=v3, a2=v1.
@@ -2026,7 +2026,7 @@ exp2_f012_N4,2,N4,R6,a1=v2 AND a4=v2 AND a3=v3 AND a2=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f013_N0,2,N0,R9,a6=v3 AND a4=v2 AND a2=v2 AND a5=v3,True,,,"Let's analyze the rules against the query:
+exp2_f013_N0,2,N0,R9,a6=v3 AND a4=v2 AND a2=v2 AND a5=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a2=v3 AND a1=v1 AND a5=v3.  This fails because a6=v3 and a2=v2.
 *   **R2:** a1=v3 AND a2=v1 AND a3=v3 AND a6=v3. This fails because a1=v1, a2=v2, a3=v3, and a6=v3.
@@ -2042,7 +2042,7 @@ exp2_f013_N0,2,N0,R9,a6=v3 AND a4=v2 AND a2=v2 AND a5=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f013_N1,2,N1,R9,a6=v3 AND a4=v2 AND a2=v2 AND a5=v3,True,,,"Let's evaluate each rule against the query:
+exp2_f013_N1,2,N1,R9,a6=v3 AND a4=v2 AND a2=v2 AND a5=v3,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a6=v2 AND a2=v3 AND a1=v1 AND a5=v3.  This fails because a6=v3, a2=v2, a1=v1, and a5=v3.
 *   **R2:** a1=v3 AND a2=v1 AND a3=v3 AND a6=v3. This fails because a1=v1, a2=v2, a3=v3, and a6=v3.
@@ -2058,7 +2058,7 @@ exp2_f013_N1,2,N1,R9,a6=v3 AND a4=v2 AND a2=v2 AND a5=v3,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f013_N2,2,N2,R9,a6=v3 AND a4=v2 AND a2=v2 AND a5=v3,True,,,"Let's analyze the rules against the query:
+exp2_f013_N2,2,N2,R9,a6=v3 AND a4=v2 AND a2=v2 AND a5=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a2=v3 AND a1=v1 AND a5=v3.  This fails because a6=v3, a2=v2, a1=v1, and a5=v3.
 *   **R2:** a1=v3 AND a2=v1 AND a3=v3 AND a6=v3. This fails because a1=v1, a2=v2, a3=v3, and a6=v3.
@@ -2074,7 +2074,7 @@ exp2_f013_N2,2,N2,R9,a6=v3 AND a4=v2 AND a2=v2 AND a5=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f013_N4,2,N4,R9,a6=v3 AND a4=v2 AND a2=v2 AND a5=v3,True,,,"Let's evaluate each rule against the query:
+exp2_f013_N4,2,N4,R9,a6=v3 AND a4=v2 AND a2=v2 AND a5=v3,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a6=v2 AND a2=v3 AND a1=v1 AND a5=v3.  This fails because a6=v3, a2=v2, a1=v1, and a5=v3.
 *   **R2:** a6=v3 AND a4=v3 AND a2=v2 AND a5=v3. This fails because a6=v3, a4=v2, a2=v2, and a5=v3.
@@ -2090,7 +2090,7 @@ exp2_f013_N4,2,N4,R9,a6=v3 AND a4=v2 AND a2=v2 AND a5=v3,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f014_N0,2,N0,R3,a2=v1 AND a6=v3 AND a5=v3 AND a1=v1,True,,,"Let's analyze the rules against the query:
+exp2_f014_N0,2,N0,R3,a2=v1 AND a6=v3 AND a5=v3 AND a1=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v3 AND a4=v3 AND a3=v3 AND a5=v3 - Does not match (a1=v1, a4=v2, a3=v3, a5=v3)
 *   **R2:** a1=v3 AND a5=v2 AND a6=v3 AND a3=v3 - Does not match (a1=v1, a5=v3, a6=v3, a3=v3)
@@ -2106,7 +2106,7 @@ exp2_f014_N0,2,N0,R3,a2=v1 AND a6=v3 AND a5=v3 AND a1=v1,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f014_N1,2,N1,R3,a2=v1 AND a6=v3 AND a5=v3 AND a1=v1,True,,,"Let's evaluate the rules against the query:
+exp2_f014_N1,2,N1,R3,a2=v1 AND a6=v3 AND a5=v3 AND a1=v1,True,"Let's evaluate the rules against the query:
 
 *   **R1:** a1=v3 AND a4=v3 AND a3=v3 AND a5=v3.  This fails because a1=v1, a4=v2, a3=v3, and a5=v3.
 *   **R2:** a1=v3 AND a5=v2 AND a6=v3 AND a3=v3. This fails because a1=v1, a5=v3, a6=v3, and a3=v3.
@@ -2122,7 +2122,7 @@ exp2_f014_N1,2,N1,R3,a2=v1 AND a6=v3 AND a5=v3 AND a1=v1,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f015_N2,2,N2,R7,a3=v2 AND a6=v2 AND a1=v3 AND a2=v3,True,,,"Let's analyze the rules against the query:
+exp2_f015_N2,2,N2,R7,a3=v2 AND a6=v2 AND a1=v3 AND a2=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** IF a6=v3 AND a1=v2.  This fails because a6=v2 and a1=v3.
 *   **R2:** IF a3=v2 AND a6=v2 AND a1=v3 AND a2=v2. This fails because a1=v3 and a2=v3.
@@ -2138,7 +2138,7 @@ exp2_f015_N2,2,N2,R7,a3=v2 AND a6=v2 AND a1=v3 AND a2=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f015_N4,2,N4,R7,a3=v2 AND a6=v2 AND a1=v3 AND a2=v3,True,,,"Let's analyze the rules against the query:
+exp2_f015_N4,2,N4,R7,a3=v2 AND a6=v2 AND a1=v3 AND a2=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a1=v2.  This fails because a6=v2 and a1=v3.
 *   **R2:** a3=v2 AND a6=v2 AND a1=v3 AND a2=v2. This fails because a1=v3 and a2=v3.
@@ -2154,7 +2154,7 @@ exp2_f015_N4,2,N4,R7,a3=v2 AND a6=v2 AND a1=v3 AND a2=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f016_N0,2,N0,R1,a2=v1 AND a5=v1 AND a1=v2 AND a4=v2,True,,,"Let's evaluate the rules against the query:
+exp2_f016_N0,2,N0,R1,a2=v1 AND a5=v1 AND a1=v2 AND a4=v2,True,"Let's evaluate the rules against the query:
 
 *   **R1:** a2=v1 AND a5=v1 AND a1=v2 AND a4=v2.  This fails because a1=v2 is true, a2=v1 is true, a5=v1 is true, and a4=v2 is true, but the conditions are not all met.
 *   **R2:** a1=v3 AND a6=v1 AND a2=v1 AND a5=v1. This fails because a1=v3 is false.
@@ -2170,7 +2170,7 @@ exp2_f016_N0,2,N0,R1,a2=v1 AND a5=v1 AND a1=v2 AND a4=v2,True,,,"Let's evaluate 
 Since none of the rules apply, we return:
 
 ANSWER: None"
-exp2_f016_N1,2,N1,R1,a2=v1 AND a5=v1 AND a1=v2 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp2_f016_N1,2,N1,R1,a2=v1 AND a5=v1 AND a1=v2 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v1 AND a5=v1 AND a1=v2 AND a4=v2.  This fails because a1=v2, a2=v1, a5=v1, a4=v2 but a3=v1 is not met.
 *   **R2:** a1=v3 AND a6=v1 AND a2=v1 AND a5=v1. This fails because a1=v2, a2=v1, a5=v1, a6=v3 is not met.
@@ -2186,7 +2186,7 @@ exp2_f016_N1,2,N1,R1,a2=v1 AND a5=v1 AND a1=v2 AND a4=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f016_N2,2,N2,R1,a2=v1 AND a5=v1 AND a1=v2 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp2_f016_N2,2,N2,R1,a2=v1 AND a5=v1 AND a1=v2 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v1 AND a5=v1 AND a1=v2 AND a4=v2.  This fails because a6 is not equal to v1.
 *   **R2:** a1=v3 AND a6=v1 AND a2=v1 AND a5=v1. This fails because a1 is not equal to v3, a6 is not equal to v1, and a2 is not equal to v1.
@@ -2202,7 +2202,7 @@ exp2_f016_N2,2,N2,R1,a2=v1 AND a5=v1 AND a1=v2 AND a4=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f016_N4,2,N4,R1,a2=v1 AND a5=v1 AND a1=v2 AND a4=v2,True,,,"Let's evaluate the rules against the query:
+exp2_f016_N4,2,N4,R1,a2=v1 AND a5=v1 AND a1=v2 AND a4=v2,True,"Let's evaluate the rules against the query:
 
 *   **R1:** a2=v1 AND a5=v1 AND a1=v2 AND a4=v2.  This fails because a1=v2 is true, but a5=v1 is true, a1=v2 is true, and a4=v2 is true.  This rule is partially met, but not fully.
 *   **R2:** a2=v1 AND a5=v1 AND a1=v1 AND a4=v2. This fails because a1=v1 is true, but a1=v2 is true.
@@ -2218,7 +2218,7 @@ exp2_f016_N4,2,N4,R1,a2=v1 AND a5=v1 AND a1=v2 AND a4=v2,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f017_N0,2,N0,R9,a1=v2 AND a5=v1 AND a2=v3 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp2_f017_N0,2,N0,R9,a1=v2 AND a5=v1 AND a2=v3 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v3 AND a2=v2 AND a3=v3 - Does not match (a2=v3, a1=v2, a3=v3)
 *   **R2:** a1=v3 AND a3=v1 AND a5=v1 AND a6=v3 - Does not match (a1=v2, a3=v3, a5=v1, a6=v3)
@@ -2234,7 +2234,7 @@ exp2_f017_N0,2,N0,R9,a1=v2 AND a5=v1 AND a2=v3 AND a4=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f020_N0,2,N0,R7,a2=v2 AND a1=v1 AND a6=v3 AND a3=v3,True,,,"Let's evaluate each rule against the query:
+exp2_f020_N0,2,N0,R7,a2=v2 AND a1=v1 AND a6=v3 AND a3=v3,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a1=v2 AND a3=v2 AND a5=v3 AND a6=v3.  This fails because a1=v1, a3=v3, a5=v3, and a6=v3.
 *   **R2:** a2=v3 AND a5=v2 AND a1=v1 AND a6=v3. This fails because a2=v2, a5=v3, a1=v1, and a6=v3.
@@ -2250,7 +2250,7 @@ exp2_f020_N0,2,N0,R7,a2=v2 AND a1=v1 AND a6=v3 AND a3=v3,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f020_N1,2,N1,R7,a2=v2 AND a1=v1 AND a6=v3 AND a3=v3,True,,,"Let's evaluate each rule against the query:
+exp2_f020_N1,2,N1,R7,a2=v2 AND a1=v1 AND a6=v3 AND a3=v3,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a1=v2 AND a3=v2 AND a5=v3 AND a6=v3.  This fails because a1=v1, a3=v3, a5=v3, and a6=v3.
 *   **R2:** a2=v3 AND a5=v2 AND a1=v1 AND a6=v3. This fails because a2=v2, a5=v3, a1=v1, and a6=v3.
@@ -2266,7 +2266,7 @@ exp2_f020_N1,2,N1,R7,a2=v2 AND a1=v1 AND a6=v3 AND a3=v3,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f020_N2,2,N2,R7,a2=v2 AND a1=v1 AND a6=v3 AND a3=v3,True,,,"Let's evaluate each rule against the query:
+exp2_f020_N2,2,N2,R7,a2=v2 AND a1=v1 AND a6=v3 AND a3=v3,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a1=v2 AND a3=v2 AND a5=v3 AND a6=v3.  This fails because a1=v1, a3=v3, a5=v3, and a6=v3.
 *   **R2:** a2=v3 AND a5=v2 AND a1=v1 AND a6=v3. This fails because a2=v2, a5=v3, a1=v1, and a6=v3.
@@ -2282,7 +2282,7 @@ exp2_f020_N2,2,N2,R7,a2=v2 AND a1=v1 AND a6=v3 AND a3=v3,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f020_N4,2,N4,R7,a2=v2 AND a1=v1 AND a6=v3 AND a3=v3,True,,,"Let's analyze the rules against the query:
+exp2_f020_N4,2,N4,R7,a2=v2 AND a1=v1 AND a6=v3 AND a3=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v2 AND a3=v2 AND a5=v3 AND a6=v3.  This fails because a1=v1, a3=v3, a5=v3, and a6=v3.
 *   **R2:** a2=v2 AND a1=v1 AND a6=v1 AND a3=v3. This fails because a2=v2.
@@ -2298,7 +2298,7 @@ exp2_f020_N4,2,N4,R7,a2=v2 AND a1=v1 AND a6=v3 AND a3=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f022_N4,2,N4,R3,a6=v1 AND a5=v3 AND a2=v1 AND a3=v2,True,,,"Let's analyze the rules against the query:
+exp2_f022_N4,2,N4,R3,a6=v1 AND a5=v3 AND a2=v1 AND a3=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a5=v3 AND a2=v3 AND a3=v2.  This fails because a2=v3 and a3=v2, not v1.
 *   **R2:** a6=v1 AND a5=v3 AND a2=v1 AND a3=v1. This fails because a3=v2, not v1.
@@ -2314,7 +2314,7 @@ exp2_f022_N4,2,N4,R3,a6=v1 AND a5=v3 AND a2=v1 AND a3=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f023_N0,2,N0,R1,a6=v1 AND a4=v3 AND a1=v3 AND a2=v2,True,,,"Let's analyze the rules against the query:
+exp2_f023_N0,2,N0,R1,a6=v1 AND a4=v3 AND a1=v3 AND a2=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a4=v3 AND a1=v3 AND a2=v2.  This fails because a6=v1, a4=v3, a1=v3, and a2=v2 are all true, but the rule requires all conditions to be met.
 *   **R2:** a3=v1 AND a6=v3 AND a4=v3 AND a1=v3. This fails because a3=v2, not v1.
@@ -2330,7 +2330,7 @@ exp2_f023_N0,2,N0,R1,a6=v1 AND a4=v3 AND a1=v3 AND a2=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f024_N1,2,N1,R3,a4=v1 AND a2=v2 AND a6=v1 AND a1=v3,True,,,"Let's analyze the rules against the query:
+exp2_f024_N1,2,N1,R3,a4=v1 AND a2=v2 AND a6=v1 AND a1=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v3 AND a4=v3 AND a1=v3 AND a6=v1.  This fails because a2=v2 and a4=v1.
 *   **R2:** a5=v3 AND a2=v3 AND a1=v3 AND a4=v1. This fails because a5=v1 and a2=v2.
@@ -2346,7 +2346,7 @@ exp2_f024_N1,2,N1,R3,a4=v1 AND a2=v2 AND a6=v1 AND a1=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f025_N0,2,N0,R4,a5=v1 AND a3=v1 AND a2=v1 AND a6=v3,True,,,"Let's analyze the rules against the query:
+exp2_f025_N0,2,N0,R4,a5=v1 AND a3=v1 AND a2=v1 AND a6=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v3 AND a4=v2 AND a1=v3 AND a6=v3.  This fails because a2=v1, a4=v1, and a1=v3.
 *   **R2:** a2=v3 AND a1=v2 AND a5=v1 AND a6=v3. This fails because a2=v1, a1=v2, and a5=v1.
@@ -2362,7 +2362,7 @@ exp2_f025_N0,2,N0,R4,a5=v1 AND a3=v1 AND a2=v1 AND a6=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f025_N1,2,N1,R4,a5=v1 AND a3=v1 AND a2=v1 AND a6=v3,True,,,"Let's analyze the rules against the query:
+exp2_f025_N1,2,N1,R4,a5=v1 AND a3=v1 AND a2=v1 AND a6=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v3 AND a4=v2 AND a1=v3 AND a6=v3.  This fails because a2=v1, a4=v1, and a1=v3.
 *   **R2:** a2=v3 AND a1=v2 AND a5=v1 AND a6=v3. This fails because a2=v1, a1=v3, and a5=v1.
@@ -2378,7 +2378,7 @@ exp2_f025_N1,2,N1,R4,a5=v1 AND a3=v1 AND a2=v1 AND a6=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f026_N1,2,N1,R8,a5=v2 AND a1=v2 AND a6=v2 AND a2=v3,True,,,"Let's analyze the rules against the query:
+exp2_f026_N1,2,N1,R8,a5=v2 AND a1=v2 AND a6=v2 AND a2=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v3 AND a2=v1 AND a3=v3 AND a5=v2.  This fails because a1=v2 and a2=v3.
 *   **R2:** a4=v2 AND a5=v3 AND a3=v3 AND a6=v2. This fails because a4=v3 and a5=v2.
@@ -2394,7 +2394,7 @@ exp2_f026_N1,2,N1,R8,a5=v2 AND a1=v2 AND a6=v2 AND a2=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f029_N1,2,N1,R7,a1=v2 AND a2=v3 AND a5=v2 AND a4=v1,True,,,"Let's analyze the rules against the query:
+exp2_f029_N1,2,N1,R7,a1=v2 AND a2=v3 AND a5=v2 AND a4=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a3=v3 AND a2=v3 AND a1=v2.  This fails because a6=v3, a3=v2, a2=v3, and a1=v2.
 *   **R2:** a6=v1 AND a3=v1 AND a5=v2 AND a4=v1. This fails because a6=v3, a3=v2, a5=v2, and a4=v1.
@@ -2410,7 +2410,7 @@ exp2_f029_N1,2,N1,R7,a1=v2 AND a2=v3 AND a5=v2 AND a4=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f030_N0,2,N0,R9,a5=v2 AND a1=v1 AND a4=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp2_f030_N0,2,N0,R9,a5=v2 AND a1=v1 AND a4=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a1=v3 AND a6=v2 AND a2=v2.  This fails because a1=v1, a2=v2, a3=v1, a4=v3, a5=v2, a6=v2.
 *   **R2:** a6=v3 AND a5=v1 AND a4=v3 AND a3=v1. This fails because a6=v2, a5=v2, a4=v3, a3=v1.
@@ -2426,7 +2426,7 @@ exp2_f030_N0,2,N0,R9,a5=v2 AND a1=v1 AND a4=v3 AND a3=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f030_N1,2,N1,R9,a5=v2 AND a1=v1 AND a4=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp2_f030_N1,2,N1,R9,a5=v2 AND a1=v1 AND a4=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a1=v3 AND a6=v2 AND a2=v2.  This fails because a1=v1, a2=v2, a3=v1, a4=v3, a5=v2, a6=v2.
 *   **R2:** a6=v3 AND a5=v1 AND a4=v3 AND a3=v1. This fails because a6=v2, a5=v2, a4=v3, a3=v1.
@@ -2442,7 +2442,7 @@ exp2_f030_N1,2,N1,R9,a5=v2 AND a1=v1 AND a4=v3 AND a3=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f030_N2,2,N2,R9,a5=v2 AND a1=v1 AND a4=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp2_f030_N2,2,N2,R9,a5=v2 AND a1=v1 AND a4=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a1=v1 AND a4=v3 AND a3=v3.  This fails because a3=v1, not v3.
 *   **R2:** a6=v3 AND a5=v1 AND a4=v3 AND a3=v1. This fails because a6=v2, not v3.
@@ -2458,7 +2458,7 @@ exp2_f030_N2,2,N2,R9,a5=v2 AND a1=v1 AND a4=v3 AND a3=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f030_N4,2,N4,R9,a5=v2 AND a1=v1 AND a4=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp2_f030_N4,2,N4,R9,a5=v2 AND a1=v1 AND a4=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a1=v1 AND a4=v3 AND a3=v3.  This fails because a3=v1, not v3.
 *   **R2:** a6=v3 AND a5=v1 AND a4=v3 AND a3=v1. This fails because a6=v2, not v3.
@@ -2475,7 +2475,7 @@ None of the rules apply.
 
 ANSWER: None
 "
-exp2_f031_N0,2,N0,R3,a5=v2 AND a2=v3 AND a1=v1 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp2_f031_N0,2,N0,R3,a5=v2 AND a2=v3 AND a1=v1 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v1 AND a6=v3 AND a3=v1 AND a4=v2.  This fails because a2=v3 and a6=v1.
 *   **R2:** a1=v2 AND a5=v3 AND a4=v2 AND a2=v3. This fails because a1=v1, a2=v3, a5=v2, and a6=v1.
@@ -2491,7 +2491,7 @@ exp2_f031_N0,2,N0,R3,a5=v2 AND a2=v3 AND a1=v1 AND a4=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f031_N1,2,N1,R3,a5=v2 AND a2=v3 AND a1=v1 AND a4=v2,True,,,"Let's evaluate each rule against the query:
+exp2_f031_N1,2,N1,R3,a5=v2 AND a2=v3 AND a1=v1 AND a4=v2,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a2=v1 AND a6=v3 AND a3=v1 AND a4=v2.  This fails because a2=v3 and a6=v1.
 *   **R2:** a1=v2 AND a5=v3 AND a4=v2 AND a2=v3. This fails because a1=v1, a5=v2, a2=v3.
@@ -2507,7 +2507,7 @@ exp2_f031_N1,2,N1,R3,a5=v2 AND a2=v3 AND a1=v1 AND a4=v2,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f031_N2,2,N2,R3,a5=v2 AND a2=v3 AND a1=v1 AND a4=v2,True,,,"Let's evaluate each rule against the query:
+exp2_f031_N2,2,N2,R3,a5=v2 AND a2=v3 AND a1=v1 AND a4=v2,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a2=v1 AND a6=v3 AND a3=v1 AND a4=v2.  This fails because a2=v3 and a6=v1.
 *   **R2:** a1=v2 AND a5=v3 AND a4=v2 AND a2=v3. This fails because a1=v1, a5=v2, and a2=v3.
@@ -2523,7 +2523,7 @@ exp2_f031_N2,2,N2,R3,a5=v2 AND a2=v3 AND a1=v1 AND a4=v2,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f031_N4,2,N4,R3,a5=v2 AND a2=v3 AND a1=v1 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp2_f031_N4,2,N4,R3,a5=v2 AND a2=v3 AND a1=v1 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v1 AND a6=v3 AND a3=v1 AND a4=v2.  This fails because a2=v3 and a6=v1.
 *   **R2:** a1=v2 AND a5=v3 AND a4=v2 AND a2=v3. This fails because a1=v1, a2=v3, a5=v2, and a6=v1.
@@ -2539,7 +2539,7 @@ exp2_f031_N4,2,N4,R3,a5=v2 AND a2=v3 AND a1=v1 AND a4=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f032_N0,2,N0,R7,a6=v1 AND a5=v2 AND a2=v3 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f032_N0,2,N0,R7,a6=v1 AND a5=v2 AND a2=v3 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a3=v2 AND a6=v1 AND a1=v1.  This fails because a2=v3 and a3=v1.
 *   **R2:** a5=v3 AND a3=v3 AND a6=v1 AND a2=v3. This fails because a5=v2 and a2=v3.
@@ -2555,7 +2555,7 @@ exp2_f032_N0,2,N0,R7,a6=v1 AND a5=v2 AND a2=v3 AND a4=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f032_N1,2,N1,R7,a6=v1 AND a5=v2 AND a2=v3 AND a4=v3,True,,,"Let's evaluate each rule against the query:
+exp2_f032_N1,2,N1,R7,a6=v1 AND a5=v2 AND a2=v3 AND a4=v3,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a2=v2 AND a3=v2 AND a6=v1 AND a1=v1.  This fails because a2=v3 and a3=v1.
 *   **R2:** a5=v3 AND a3=v3 AND a6=v1 AND a2=v3. This fails because a5=v2 and a2=v3.
@@ -2571,7 +2571,7 @@ exp2_f032_N1,2,N1,R7,a6=v1 AND a5=v2 AND a2=v3 AND a4=v3,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f032_N2,2,N2,R7,a6=v1 AND a5=v2 AND a2=v3 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f032_N2,2,N2,R7,a6=v1 AND a5=v2 AND a2=v3 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a3=v2 AND a6=v1 AND a1=v1.  This fails because a2=v3 and a3=v1.
 *   **R2:** a5=v3 AND a3=v3 AND a6=v1 AND a2=v3. This fails because a5=v2 and a2=v3.
@@ -2587,7 +2587,7 @@ exp2_f032_N2,2,N2,R7,a6=v1 AND a5=v2 AND a2=v3 AND a4=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f032_N4,2,N4,R7,a6=v1 AND a5=v2 AND a2=v3 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f032_N4,2,N4,R7,a6=v1 AND a5=v2 AND a2=v3 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a3=v2 AND a6=v1 AND a1=v1.  This fails because a2=v3 and a3=v1, and a1=v1.
 *   **R2:** a5=v3 AND a3=v3 AND a6=v1 AND a2=v3. This fails because a5=v2 and a2=v3, and a3=v1.
@@ -2603,7 +2603,7 @@ exp2_f032_N4,2,N4,R7,a6=v1 AND a5=v2 AND a2=v3 AND a4=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f033_N4,2,N4,R1,a4=v3 AND a1=v3 AND a5=v2 AND a3=v3,True,,,"Let's analyze the rules against the query:
+exp2_f033_N4,2,N4,R1,a4=v3 AND a1=v3 AND a5=v2 AND a3=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v3 AND a1=v3 AND a5=v2 AND a3=v3 - Does not match (a2=v3, a6=v3)
 *   **R2:** a4=v1 AND a5=v1 AND a6=v3 AND a1=v3 - Does not match (a2=v3, a3=v3, a4=v3, a5=v2, a6=v3)
@@ -2619,7 +2619,7 @@ exp2_f033_N4,2,N4,R1,a4=v3 AND a1=v3 AND a5=v2 AND a3=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f034_N1,2,N1,R6,a5=v3 AND a3=v1 AND a1=v2 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f034_N1,2,N1,R6,a5=v3 AND a3=v1 AND a1=v2 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a3=v2 AND a2=v3 AND a6=v1.  This fails because a5=v3, a3=v1, a2=v3, and a6=v1.
 *   **R2:** a3=v2 AND a6=v3 AND a1=v2 AND a4=v3. This fails because a3=v1, a6=v1, a1=v2, and a4=v3.
@@ -2635,7 +2635,7 @@ exp2_f034_N1,2,N1,R6,a5=v3 AND a3=v1 AND a1=v2 AND a4=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f034_N2,2,N2,R6,a5=v3 AND a3=v1 AND a1=v2 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f034_N2,2,N2,R6,a5=v3 AND a3=v1 AND a1=v2 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a3=v2 AND a2=v3 AND a6=v1.  This fails because a5=v3, a3=v1, a2=v3, and a6=v1.
 *   **R2:** a3=v2 AND a6=v3 AND a1=v2 AND a4=v3. This fails because a3=v1, a6=v1, a1=v2, and a4=v3.
@@ -2651,7 +2651,7 @@ exp2_f034_N2,2,N2,R6,a5=v3 AND a3=v1 AND a1=v2 AND a4=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f034_N4,2,N4,R6,a5=v3 AND a3=v1 AND a1=v2 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f034_N4,2,N4,R6,a5=v3 AND a3=v1 AND a1=v2 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a3=v2 AND a1=v2 AND a4=v3 - Does not match (a3=v1, a5=v3, a1=v2, a4=v3)
 *   **R2:** a3=v2 AND a6=v3 AND a1=v2 AND a4=v3 - Does not match (a3=v1, a6=v1, a1=v2, a4=v3)
@@ -2667,7 +2667,7 @@ exp2_f034_N4,2,N4,R6,a5=v3 AND a3=v1 AND a1=v2 AND a4=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f035_N4,2,N4,R2,a3=v1 AND a4=v1 AND a2=v2 AND a1=v3,True,,,"Let's analyze the rules against the query:
+exp2_f035_N4,2,N4,R2,a3=v1 AND a4=v1 AND a2=v2 AND a1=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v1 AND a4=v1 AND a2=v3 AND a1=v3.  This does NOT match because a2=v2, not v3.
 *   **R2:** a3=v1 AND a4=v1 AND a2=v2 AND a1=v3. This does NOT match because a2=v2, not v3.
@@ -2683,7 +2683,7 @@ exp2_f035_N4,2,N4,R2,a3=v1 AND a4=v1 AND a2=v2 AND a1=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f037_N0,2,N0,R9,a4=v3 AND a1=v3 AND a2=v1 AND a6=v2,True,,,"Let's evaluate each rule against the query:
+exp2_f037_N0,2,N0,R9,a4=v3 AND a1=v3 AND a2=v1 AND a6=v2,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a1=v1 AND a2=v3 AND a3=v1 AND a4=v3.  This fails because a1=v3, a2=v1, a3=v1, a4=v3.
 *   **R2:** a4=v2 AND a1=v2 AND a3=v1 AND a6=v2. This fails because a4=v3, a1=v3, a3=v1, a6=v2.
@@ -2699,7 +2699,7 @@ exp2_f037_N0,2,N0,R9,a4=v3 AND a1=v3 AND a2=v1 AND a6=v2,True,,,"Let's evaluate 
 No rules apply.
 
 ANSWER: None"
-exp2_f037_N1,2,N1,R9,a4=v3 AND a1=v3 AND a2=v1 AND a6=v2,True,,,"Let's evaluate each rule against the query:
+exp2_f037_N1,2,N1,R9,a4=v3 AND a1=v3 AND a2=v1 AND a6=v2,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a1=v1 AND a2=v3 AND a3=v1 AND a4=v3.  This fails because a1=v3, a2=v1, and a3=v1.
 *   **R2:** a4=v2 AND a1=v2 AND a3=v1 AND a6=v2. This fails because a4=v3, a1=v3, and a6=v2.
@@ -2715,7 +2715,7 @@ exp2_f037_N1,2,N1,R9,a4=v3 AND a1=v3 AND a2=v1 AND a6=v2,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f037_N2,2,N2,R9,a4=v3 AND a1=v3 AND a2=v1 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp2_f037_N2,2,N2,R9,a4=v3 AND a1=v3 AND a2=v1 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v1 AND a2=v3 AND a3=v1 AND a4=v3.  This fails because a1=v3, a2=v1, a3=v1, a4=v3.
 *   **R2:** a4=v2 AND a1=v3 AND a2=v1 AND a6=v2. This fails because a4=v3, a1=v3, a2=v1, a6=v2.
@@ -2731,7 +2731,7 @@ exp2_f037_N2,2,N2,R9,a4=v3 AND a1=v3 AND a2=v1 AND a6=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f038_N0,2,N0,R1,a4=v2 AND a2=v3 AND a1=v2 AND a3=v2,True,,,"Let's analyze the rules against the query:
+exp2_f038_N0,2,N0,R1,a4=v2 AND a2=v3 AND a1=v2 AND a3=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a2=v3 AND a1=v2 AND a3=v2.  This fails because a1=v2 is true, a2=v3 is true, a3=v2 is true, and a4=v2 is true, but the conditions are not all met.
 *   **R2:** a5=v1 AND a2=v2 AND a4=v2 AND a1=v2. This fails because a5=v1 is false.
@@ -2747,7 +2747,7 @@ exp2_f038_N0,2,N0,R1,a4=v2 AND a2=v3 AND a1=v2 AND a3=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f038_N1,2,N1,R1,a4=v2 AND a2=v3 AND a1=v2 AND a3=v2,True,,,"Let's analyze the rules against the query:
+exp2_f038_N1,2,N1,R1,a4=v2 AND a2=v3 AND a1=v2 AND a3=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a2=v3 AND a1=v2 AND a3=v2.  This fails because a5 is not v2.
 *   **R2:** a5=v1 AND a2=v2 AND a4=v2 AND a1=v2. This fails because a5 is not v1 and a2 is not v3.
@@ -2763,7 +2763,7 @@ exp2_f038_N1,2,N1,R1,a4=v2 AND a2=v3 AND a1=v2 AND a3=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f038_N2,2,N2,R1,a4=v2 AND a2=v3 AND a1=v2 AND a3=v2,True,,,"Let's analyze the rules against the query:
+exp2_f038_N2,2,N2,R1,a4=v2 AND a2=v3 AND a1=v2 AND a3=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a2=v3 AND a1=v2 AND a3=v2.  This fails because a5 is not v2.
 *   **R2:** a5=v1 AND a2=v2 AND a4=v2 AND a1=v2. This fails because a5 is not v1 and a2 is not v3.
@@ -2779,7 +2779,7 @@ exp2_f038_N2,2,N2,R1,a4=v2 AND a2=v3 AND a1=v2 AND a3=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f039_N0,2,N0,R9,a4=v3 AND a6=v3 AND a5=v2 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp2_f039_N0,2,N0,R9,a4=v3 AND a6=v3 AND a5=v2 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v1 AND a4=v2 AND a6=v3 AND a5=v2.  This fails because a1=v2, a4=v3, a6=v3, and a5=v2.
 *   **R2:** a4=v1 AND a1=v3 AND a6=v3 AND a5=v2. This fails because a4=v3, a1=v2, a6=v3, and a5=v2.
@@ -2795,7 +2795,7 @@ exp2_f039_N0,2,N0,R9,a4=v3 AND a6=v3 AND a5=v2 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f039_N1,2,N1,R9,a4=v3 AND a6=v3 AND a5=v2 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp2_f039_N1,2,N1,R9,a4=v3 AND a6=v3 AND a5=v2 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v1 AND a4=v2 AND a6=v3 AND a5=v2.  This fails because a1=v2, a4=v3, a6=v3, and a5=v2.
 *   **R2:** a4=v1 AND a1=v3 AND a6=v3 AND a5=v2. This fails because a4=v3, a1=v2, a6=v3, and a5=v2.
@@ -2811,7 +2811,7 @@ exp2_f039_N1,2,N1,R9,a4=v3 AND a6=v3 AND a5=v2 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f039_N2,2,N2,R9,a4=v3 AND a6=v3 AND a5=v2 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp2_f039_N2,2,N2,R9,a4=v3 AND a6=v3 AND a5=v2 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v1 AND a4=v2 AND a6=v3 AND a5=v2.  This fails because a1=v2, a4=v3, a6=v3, and a5=v2.
 *   **R2:** a4=v1 AND a1=v3 AND a6=v3 AND a5=v2. This fails because a1=v2, a4=v3, a6=v3, and a5=v2.
@@ -2827,7 +2827,7 @@ exp2_f039_N2,2,N2,R9,a4=v3 AND a6=v3 AND a5=v2 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f039_N4,2,N4,R9,a4=v3 AND a6=v3 AND a5=v2 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp2_f039_N4,2,N4,R9,a4=v3 AND a6=v3 AND a5=v2 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v1 AND a4=v2 AND a6=v3 AND a5=v2.  This fails because a1=v2, a4=v3, a6=v3, and a5=v2.
 *   **R2:** a4=v1 AND a1=v3 AND a6=v3 AND a5=v2. This fails because a1=v2, a4=v3, a6=v3, and a5=v2.
@@ -2843,7 +2843,7 @@ exp2_f039_N4,2,N4,R9,a4=v3 AND a6=v3 AND a5=v2 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f040_N0,2,N0,R9,a6=v2 AND a2=v1 AND a4=v2 AND a1=v1,True,,,"Let's analyze the rules against the query:
+exp2_f040_N0,2,N0,R9,a6=v2 AND a2=v1 AND a4=v2 AND a1=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a5=v3 AND a3=v3 AND a4=v2.  This fails because a5=v3 and a2=v2, but a5=v1 and a2=v1 in the query.
 *   **R2:** a4=v3 AND a1=v2 AND a2=v1. This fails because a4=v2 and a1=v1.
@@ -2859,7 +2859,7 @@ exp2_f040_N0,2,N0,R9,a6=v2 AND a2=v1 AND a4=v2 AND a1=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f040_N1,2,N1,R9,a6=v2 AND a2=v1 AND a4=v2 AND a1=v1,True,,,"Let's analyze the rules against the query:
+exp2_f040_N1,2,N1,R9,a6=v2 AND a2=v1 AND a4=v2 AND a1=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a5=v3 AND a3=v3 AND a4=v2.  This fails because a5=v3 and a3=v3 are not true.
 *   **R2:** a4=v3 AND a1=v2 AND a2=v1. This fails because a4=v2 and a1=v1 are not true.
@@ -2875,7 +2875,7 @@ exp2_f040_N1,2,N1,R9,a6=v2 AND a2=v1 AND a4=v2 AND a1=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f040_N2,2,N2,R9,a6=v2 AND a2=v1 AND a4=v2 AND a1=v1,True,,,"Let's analyze the rules against the query:
+exp2_f040_N2,2,N2,R9,a6=v2 AND a2=v1 AND a4=v2 AND a1=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a5=v3 AND a3=v3 AND a4=v2.  This fails because a5=v3 and a3=v3 are not true.
 *   **R2:** a4=v3 AND a1=v2 AND a2=v1. This fails because a4=v2 and a1=v1 are not true.
@@ -2891,7 +2891,7 @@ exp2_f040_N2,2,N2,R9,a6=v2 AND a2=v1 AND a4=v2 AND a1=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f041_N0,2,N0,R8,a3=v1 AND a2=v1 AND a1=v2 AND a4=v3,True,,,"Let's evaluate each rule against the query:
+exp2_f041_N0,2,N0,R8,a3=v1 AND a2=v1 AND a1=v2 AND a4=v3,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a2=v3 AND a4=v1 AND a3=v1 AND a5=v1.  This fails because a2=v1, not v3.
 *   **R2:** a3=v3 AND a5=v3 AND a1=v2. This fails because a3=v1, not v3, and a5=v1, not v3.
@@ -2909,7 +2909,7 @@ Since none of the rules apply, we return an empty string.
 ANSWER: 
 
 "
-exp2_f041_N2,2,N2,R8,a3=v1 AND a2=v1 AND a1=v2 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f041_N2,2,N2,R8,a3=v1 AND a2=v1 AND a1=v2 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v3 AND a4=v1 AND a3=v1 AND a5=v1.  This fails because a2=v1, not v3.
 *   **R2:** a3=v3 AND a5=v3 AND a1=v2. This fails because a3=v1, not v3, and a5=v1, not v3.
@@ -2926,7 +2926,7 @@ None of the rules apply.
 
 ANSWER: None
 "
-exp2_f041_N4,2,N4,R8,a3=v1 AND a2=v1 AND a1=v2 AND a4=v3,True,,,"Let's evaluate each rule against the query:
+exp2_f041_N4,2,N4,R8,a3=v1 AND a2=v1 AND a1=v2 AND a4=v3,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a2=v3 AND a4=v1 AND a3=v1 AND a5=v1.  This fails because a2=v1, not v3.
 *   **R2:** a3=v3 AND a5=v3 AND a1=v2. This fails because a3=v1, not v3, and a5=v1, not v3.
@@ -2943,7 +2943,7 @@ Since none of the rules apply, we return an empty string.
 
 ANSWER: 
 "
-exp2_f042_N0,2,N0,R5,a6=v1 AND a5=v1 AND a1=v1 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f042_N0,2,N0,R5,a6=v1 AND a5=v1 AND a1=v1 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v3 AND a4=v1 AND a3=v3 AND a2=v3 - Does not match (a1=v1, a4=v3, a3=v3, a2=v3)
 *   **R2:** a5=v2 AND a4=v2 AND a1=v1 AND a2=v3 - Does not match (a5=v1, a4=v3, a1=v1, a2=v3)
@@ -2959,7 +2959,7 @@ exp2_f042_N0,2,N0,R5,a6=v1 AND a5=v1 AND a1=v1 AND a4=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f042_N1,2,N1,R5,a6=v1 AND a5=v1 AND a1=v1 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f042_N1,2,N1,R5,a6=v1 AND a5=v1 AND a1=v1 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v3 AND a4=v1 AND a3=v3 AND a2=v3 - Does not match (a1=v1, a4=v3, a3=v3, a2=v3)
 *   **R2:** a5=v2 AND a4=v2 AND a1=v1 AND a2=v3 - Does not match (a5=v1, a4=v3, a1=v1, a2=v3)
@@ -2975,7 +2975,7 @@ exp2_f042_N1,2,N1,R5,a6=v1 AND a5=v1 AND a1=v1 AND a4=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f042_N2,2,N2,R5,a6=v1 AND a5=v1 AND a1=v1 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f042_N2,2,N2,R5,a6=v1 AND a5=v1 AND a1=v1 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v3 AND a4=v1 AND a3=v3 AND a2=v3 - Does not match (a1=v1, a4=v3, a3=v3, a2=v3)
 *   **R2:** a5=v2 AND a4=v2 AND a1=v1 AND a2=v3 - Does not match (a5=v1, a4=v3, a1=v1, a2=v3)
@@ -2991,7 +2991,7 @@ exp2_f042_N2,2,N2,R5,a6=v1 AND a5=v1 AND a1=v1 AND a4=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f043_N2,2,N2,R7,a3=v1 AND a4=v3 AND a1=v1 AND a6=v3,True,,,"Let's analyze the rules against the query:
+exp2_f043_N2,2,N2,R7,a3=v1 AND a4=v3 AND a1=v1 AND a6=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v3 AND a4=v1 AND a3=v1 AND a6=v3.  This fails because a2=v1, a4=v3, and a3=v1.
 *   **R2:** a3=v1 AND a4=v3 AND a1=v1 AND a6=v1. This fails because a2=v1, a5=v2, and a6=v3.
@@ -3007,7 +3007,7 @@ exp2_f043_N2,2,N2,R7,a3=v1 AND a4=v3 AND a1=v1 AND a6=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f044_N0,2,N0,R10,a6=v2 AND a1=v1 AND a3=v1 AND a5=v2,True,,,"Let's analyze the rules against the query:
+exp2_f044_N0,2,N0,R10,a6=v2 AND a1=v1 AND a3=v1 AND a5=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v2 AND a6=v3 AND a4=v1 AND a5=v2 - Does not apply because a1=v1, a6=v2, a4=v1, a5=v2.
 *   **R2:** a4=v3 AND a3=v3 AND a6=v2 AND a5=v2 - Does not apply because a4=v1, a3=v1, a6=v2, a5=v2.
@@ -3023,7 +3023,7 @@ exp2_f044_N0,2,N0,R10,a6=v2 AND a1=v1 AND a3=v1 AND a5=v2,True,,,"Let's analyze 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f046_N0,2,N0,R7,a5=v1 AND a3=v2 AND a2=v3 AND a6=v1,True,,,"Let's analyze the rules and the query:
+exp2_f046_N0,2,N0,R7,a5=v1 AND a3=v2 AND a2=v3 AND a6=v1,True,"Let's analyze the rules and the query:
 
 *   **R1:** a6=v3 AND a4=v2 AND a2=v3 AND a5=v1 - Does not match (a6=v1, a4=v3, a2=v3, a5=v1)
 *   **R2:** a3=v3 AND a1=v2 AND a5=v1 AND a4=v3 - Does not match (a3=v2, a1=v3, a5=v1, a4=v3)
@@ -3039,7 +3039,7 @@ exp2_f046_N0,2,N0,R7,a5=v1 AND a3=v2 AND a2=v3 AND a6=v1,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f046_N2,2,N2,R7,a5=v1 AND a3=v2 AND a2=v3 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp2_f046_N2,2,N2,R7,a5=v1 AND a3=v2 AND a2=v3 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a4=v2 AND a2=v3 AND a5=v1.  This doesn't match because a4=v3, a2=v3, and a6=v1.
 *   **R2:** a3=v3 AND a1=v2 AND a5=v1 AND a4=v3. This doesn't match because a3=v2, a1=v3, and a5=v1.
@@ -3055,7 +3055,7 @@ exp2_f046_N2,2,N2,R7,a5=v1 AND a3=v2 AND a2=v3 AND a6=v1,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f046_N4,2,N4,R7,a5=v1 AND a3=v2 AND a2=v3 AND a6=v1,True,,,"Let's evaluate each rule against the query:
+exp2_f046_N4,2,N4,R7,a5=v1 AND a3=v2 AND a2=v3 AND a6=v1,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a5=v2 AND a3=v2 AND a2=v3 AND a6=v1.  This fails because a5=v1, a3=v2, a2=v3, and a6=v1.
 *   **R2:** a5=v1 AND a3=v2 AND a2=v3 AND a6=v3. This fails because a6=v1, not v3.
@@ -3071,7 +3071,7 @@ exp2_f046_N4,2,N4,R7,a5=v1 AND a3=v2 AND a2=v3 AND a6=v1,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f048_N0,2,N0,R2,a2=v2 AND a1=v1 AND a4=v1 AND a5=v1,True,,,"Let's analyze the rules against the query:
+exp2_f048_N0,2,N0,R2,a2=v2 AND a1=v1 AND a4=v1 AND a5=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v3 AND a4=v3 AND a5=v1 AND a3=v1.  This fails because a1=v1, a4=v1, a5=v1, and a3=v1.
 *   **R2:** a2=v2 AND a1=v1 AND a4=v1 AND a5=v1. This fails because a2=v2.
@@ -3087,7 +3087,7 @@ exp2_f048_N0,2,N0,R2,a2=v2 AND a1=v1 AND a4=v1 AND a5=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f049_N0,2,N0,R2,a5=v3 AND a3=v1 AND a1=v1 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp2_f049_N0,2,N0,R2,a5=v3 AND a3=v1 AND a1=v1 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v1 AND a5=v1 AND a6=v2 AND a1=v1.  This fails because a2=v2 and a5=v3 and a6=v2.
 *   **R2:** a5=v3 AND a3=v1 AND a1=v1 AND a6=v2. This fails because a2=v2.
@@ -3103,7 +3103,7 @@ exp2_f049_N0,2,N0,R2,a5=v3 AND a3=v1 AND a1=v1 AND a6=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f049_N2,2,N2,R2,a5=v3 AND a3=v1 AND a1=v1 AND a6=v2,True,,,"Let's analyze each rule against the query:
+exp2_f049_N2,2,N2,R2,a5=v3 AND a3=v1 AND a1=v1 AND a6=v2,True,"Let's analyze each rule against the query:
 
 *   **R1:** a2=v1 AND a5=v1 AND a6=v2 AND a1=v1.  This fails because a2=v2 and a6=v2.
 *   **R2:** a5=v3 AND a3=v1 AND a1=v1 AND a6=v2. This fails because a5=v3 and a6=v2.
@@ -3119,7 +3119,7 @@ exp2_f049_N2,2,N2,R2,a5=v3 AND a3=v1 AND a1=v1 AND a6=v2,True,,,"Let's analyze e
 None of the rules apply.
 
 ANSWER: None"
-exp2_f049_N4,2,N4,R2,a5=v3 AND a3=v1 AND a1=v1 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp2_f049_N4,2,N4,R2,a5=v3 AND a3=v1 AND a1=v1 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v1 AND a5=v1 AND a6=v2 AND a1=v1.  This fails because a2=v1 is false (a2=v2).
 *   **R2:** a5=v3 AND a3=v1 AND a1=v1 AND a6=v2. This fails because a2=v2 is false.
@@ -3135,7 +3135,7 @@ exp2_f049_N4,2,N4,R2,a5=v3 AND a3=v1 AND a1=v1 AND a6=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f050_N0,2,N0,R7,a5=v3 AND a1=v2 AND a6=v2 AND a3=v3,True,,,"Let's analyze the rules against the query:
+exp2_f050_N0,2,N0,R7,a5=v3 AND a1=v2 AND a6=v2 AND a3=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v3 AND a5=v2 AND a6=v2 AND a1=v2.  This fails because a2=v2 and a5=v3 and a6=v2 and a1=v2.
 *   **R2:** a6=v3 AND a2=v3 AND a1=v2 AND a3=v3. This fails because a6=v2 and a2=v2 and a1=v2 and a3=v3.
@@ -3151,7 +3151,7 @@ exp2_f050_N0,2,N0,R7,a5=v3 AND a1=v2 AND a6=v2 AND a3=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f050_N1,2,N1,R7,a5=v3 AND a1=v2 AND a6=v2 AND a3=v3,True,,,"Let's analyze the rules against the query:
+exp2_f050_N1,2,N1,R7,a5=v3 AND a1=v2 AND a6=v2 AND a3=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v3 AND a5=v2 AND a6=v2 AND a1=v2.  This fails because a2=v2, a5=v3, a6=v2, and a1=v2.
 *   **R2:** a6=v3 AND a2=v3 AND a1=v2 AND a3=v3. This fails because a6=v2, a2=v2, a1=v2, and a3=v3.
@@ -3167,7 +3167,7 @@ exp2_f050_N1,2,N1,R7,a5=v3 AND a1=v2 AND a6=v2 AND a3=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f050_N2,2,N2,R7,a5=v3 AND a1=v2 AND a6=v2 AND a3=v3,True,,,"Let's analyze the rules against the query:
+exp2_f050_N2,2,N2,R7,a5=v3 AND a1=v2 AND a6=v2 AND a3=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a1=v3 AND a6=v2 AND a3=v3 - Does not match (a5=v3, a1=v2, a6=v2, a3=v3)
 *   **R2:** a6=v3 AND a2=v3 AND a1=v2 AND a3=v3 - Does not match (a6=v2, a2=v2, a1=v2, a3=v3)
@@ -3183,7 +3183,7 @@ exp2_f050_N2,2,N2,R7,a5=v3 AND a1=v2 AND a6=v2 AND a3=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f052_N1,2,N1,R8,a6=v1 AND a2=v1 AND a5=v1 AND a3=v2,True,,,"Let's analyze the rules against the query:
+exp2_f052_N1,2,N1,R8,a6=v1 AND a2=v1 AND a5=v1 AND a3=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a4=v2 - Does not apply because a6=v1 and a4=v1.
 *   **R2:** a6=v1 AND a2=v1 AND a5=v1 AND a3=v3 - Does not apply because a3=v2.
@@ -3199,7 +3199,7 @@ exp2_f052_N1,2,N1,R8,a6=v1 AND a2=v1 AND a5=v1 AND a3=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f052_N2,2,N2,R8,a6=v1 AND a2=v1 AND a5=v1 AND a3=v2,True,,,"Let's analyze the rules against the query:
+exp2_f052_N2,2,N2,R8,a6=v1 AND a2=v1 AND a5=v1 AND a3=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a4=v2.  This fails because a6=v1 and a4=v1.
 *   **R2:** a6=v1 AND a2=v1 AND a5=v1 AND a3=v3. This fails because a3=v2.
@@ -3215,7 +3215,7 @@ exp2_f052_N2,2,N2,R8,a6=v1 AND a2=v1 AND a5=v1 AND a3=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f052_N4,2,N4,R8,a6=v1 AND a2=v1 AND a5=v1 AND a3=v2,True,,,"Let's analyze the rules against the query:
+exp2_f052_N4,2,N4,R8,a6=v1 AND a2=v1 AND a5=v1 AND a3=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a4=v2.  This fails because a6=v1 and a4=v1.
 *   **R2:** a6=v1 AND a2=v1 AND a5=v1 AND a3=v3. This fails because a3=v2.
@@ -3231,7 +3231,7 @@ exp2_f052_N4,2,N4,R8,a6=v1 AND a2=v1 AND a5=v1 AND a3=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f054_N0,2,N0,R10,a4=v3 AND a2=v3 AND a6=v1 AND a5=v3,True,,,"Let's analyze the rules against the query:
+exp2_f054_N0,2,N0,R10,a4=v3 AND a2=v3 AND a6=v1 AND a5=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a2=v1 AND a1=v3 AND a5=v3 - Does not match (a4=v3, a2=v3, a1=v3, a5=v3)
 *   **R2:** a6=v2 AND a4=v1 AND a1=v3 - Does not match (a6=v1, a4=v3, a1=v3)
@@ -3248,7 +3248,7 @@ None of the rules match the query.
 
 ANSWER: None
 "
-exp2_f054_N1,2,N1,R10,a4=v3 AND a2=v3 AND a6=v1 AND a5=v3,True,,,"Let's analyze the rules against the query:
+exp2_f054_N1,2,N1,R10,a4=v3 AND a2=v3 AND a6=v1 AND a5=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a2=v3 AND a6=v1 AND a5=v3 - Does not match (a4=v3, a2=v3, a6=v1, a5=v3)
 *   **R2:** a6=v2 AND a4=v1 AND a1=v3 - Does not match (a6=v1, a4=v3, a1=v3)
@@ -3264,7 +3264,7 @@ exp2_f054_N1,2,N1,R10,a4=v3 AND a2=v3 AND a6=v1 AND a5=v3,True,,,"Let's analyze 
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f054_N2,2,N2,R10,a4=v3 AND a2=v3 AND a6=v1 AND a5=v3,True,,,"Let's analyze the rules against the query:
+exp2_f054_N2,2,N2,R10,a4=v3 AND a2=v3 AND a6=v1 AND a5=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a2=v3 AND a6=v1 AND a5=v3 - Does not match (a4=v3, a2=v3, a6=v1, a5=v3)
 *   **R2:** a6=v2 AND a4=v1 AND a1=v3 - Does not match (a6=v1, a4=v3, a1=v3)
@@ -3280,7 +3280,7 @@ exp2_f054_N2,2,N2,R10,a4=v3 AND a2=v3 AND a6=v1 AND a5=v3,True,,,"Let's analyze 
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f054_N4,2,N4,R10,a4=v3 AND a2=v3 AND a6=v1 AND a5=v3,True,,,"Let's analyze the rules against the query:
+exp2_f054_N4,2,N4,R10,a4=v3 AND a2=v3 AND a6=v1 AND a5=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a2=v3 AND a6=v1 AND a5=v3 - Does not match (a4=v3, a2=v3, a6=v1, a5=v3)
 *   **R2:** a6=v2 AND a4=v1 AND a1=v3 - Does not match (a6=v1, a4=v3, a1=v3)
@@ -3297,7 +3297,7 @@ None of the rules match the query.
 
 ANSWER: None
 "
-exp2_f056_N0,2,N0,R8,a6=v1 AND a1=v3 AND a2=v1 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp2_f056_N0,2,N0,R8,a6=v1 AND a1=v3 AND a2=v1 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a3=v3 AND a1=v3 AND a2=v1.  This fails because a5=v1, a3=v1, and a1=v3.
 *   **R2:** a6=v2 AND a2=v2 AND a3=v1 AND a5=v1. This fails because a6=v1, a2=v1, and a5=v1.
@@ -3313,7 +3313,7 @@ exp2_f056_N0,2,N0,R8,a6=v1 AND a1=v3 AND a2=v1 AND a4=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f057_N0,2,N0,R10,a3=v3 AND a5=v1 AND a2=v3 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp2_f057_N0,2,N0,R10,a3=v3 AND a5=v1 AND a2=v3 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a6=v1 AND a4=v2 AND a3=v3.  This fails because a5=v1, a6=v3, and a3=v3.
 *   **R2:** a2=v2 AND a3=v1 AND a5=v1 AND a6=v3. This fails because a2=v3, a3=v3, and a5=v1.
@@ -3329,7 +3329,7 @@ exp2_f057_N0,2,N0,R10,a3=v3 AND a5=v1 AND a2=v3 AND a1=v2,True,,,"Let's analyze 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f057_N1,2,N1,R10,a3=v3 AND a5=v1 AND a2=v3 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp2_f057_N1,2,N1,R10,a3=v3 AND a5=v1 AND a2=v3 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a6=v1 AND a4=v2 AND a3=v3.  This fails because a5=v1, a6=v3, and a3=v3.
 *   **R2:** a3=v3 AND a5=v1 AND a2=v2 AND a1=v2. This fails because a2=v3.
@@ -3345,7 +3345,7 @@ exp2_f057_N1,2,N1,R10,a3=v3 AND a5=v1 AND a2=v3 AND a1=v2,True,,,"Let's analyze 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f058_N0,2,N0,R7,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,,,"Let's analyze the rules against the query:
+exp2_f058_N0,2,N0,R7,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a6=v3 AND a4=v1 AND a3=v3.  This fails because a5=v2, a6=v2, a4=v1, and a3=v3.
 *   **R2:** a6=v3 AND a2=v2 AND a3=v3 AND a4=v1. This fails because a6=v2, a2=v1, a3=v3, and a4=v1.
@@ -3361,7 +3361,7 @@ exp2_f058_N0,2,N0,R7,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f058_N1,2,N1,R7,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,,,"Let's analyze the rules against the query:
+exp2_f058_N1,2,N1,R7,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a6=v3 AND a4=v1 AND a3=v3.  This fails because a5=v2, a6=v2, a4=v1, and a3=v3.
 *   **R2:** a6=v3 AND a2=v2 AND a3=v3 AND a4=v1. This fails because a6=v2, a2=v1, a3=v3, and a4=v1.
@@ -3377,7 +3377,7 @@ exp2_f058_N1,2,N1,R7,a4=v1 AND a6=v2 AND a5=v2 AND a2=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f060_N0,2,N0,R9,a5=v3 AND a2=v2 AND a6=v1 AND a4=v1,True,,,"Let's evaluate each rule against the query:
+exp2_f060_N0,2,N0,R9,a5=v3 AND a2=v2 AND a6=v1 AND a4=v1,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a2=v1 AND a6=v2 AND a5=v3 AND a4=v1.  This fails because a2=v2 and a6=v1, not v2.
 *   **R2:** a1=v3 AND a2=v3 AND a3=v3 AND a5=v3. This fails because a1=v2, a2=v2, and a3=v3.
@@ -3393,7 +3393,7 @@ exp2_f060_N0,2,N0,R9,a5=v3 AND a2=v2 AND a6=v1 AND a4=v1,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f060_N1,2,N1,R9,a5=v3 AND a2=v2 AND a6=v1 AND a4=v1,True,,,"Let's analyze the rules against the query:
+exp2_f060_N1,2,N1,R9,a5=v3 AND a2=v2 AND a6=v1 AND a4=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v1 AND a6=v2 AND a5=v3 AND a4=v1.  This fails because a2=v2 and a6=v1.
 *   **R2:** a1=v3 AND a2=v3 AND a3=v3 AND a5=v3. This fails because a1=v2, a2=v2, and a3=v3.
@@ -3409,7 +3409,7 @@ exp2_f060_N1,2,N1,R9,a5=v3 AND a2=v2 AND a6=v1 AND a4=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f060_N2,2,N2,R9,a5=v3 AND a2=v2 AND a6=v1 AND a4=v1,True,,,"Let's evaluate each rule against the query:
+exp2_f060_N2,2,N2,R9,a5=v3 AND a2=v2 AND a6=v1 AND a4=v1,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a2=v1 AND a6=v2 AND a5=v3 AND a4=v1.  This fails because a2=v2 and a6=v1.
 *   **R2:** a5=v3 AND a2=v2 AND a6=v1 AND a4=v3. This fails because a4=v1 and a6=v1.
@@ -3425,7 +3425,7 @@ exp2_f060_N2,2,N2,R9,a5=v3 AND a2=v2 AND a6=v1 AND a4=v1,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f060_N4,2,N4,R9,a5=v3 AND a2=v2 AND a6=v1 AND a4=v1,True,,,"Let's analyze the rules against the query:
+exp2_f060_N4,2,N4,R9,a5=v3 AND a2=v2 AND a6=v1 AND a4=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v1 AND a6=v2 AND a5=v3 AND a4=v1.  This fails because a2=v2 and a6=v1.
 *   **R2:** a5=v3 AND a2=v2 AND a6=v1 AND a4=v3. This fails because a4=v1.
@@ -3441,7 +3441,7 @@ exp2_f060_N4,2,N4,R9,a5=v3 AND a2=v2 AND a6=v1 AND a4=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f061_N0,2,N0,R5,a5=v2 AND a4=v1 AND a1=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp2_f061_N0,2,N0,R5,a5=v2 AND a4=v1 AND a1=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a5=v1 AND a1=v3 AND a3=v1.  This fails because a4=v1, a5=v2, a1=v3, and a3=v1.
 *   **R2:** a4=v2 AND a6=v2 AND a2=v1 AND a1=v3. This fails because a4=v1, a6=v1, a2=v1, and a1=v3.
@@ -3457,7 +3457,7 @@ exp2_f061_N0,2,N0,R5,a5=v2 AND a4=v1 AND a1=v3 AND a3=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f061_N1,2,N1,R5,a5=v2 AND a4=v1 AND a1=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp2_f061_N1,2,N1,R5,a5=v2 AND a4=v1 AND a1=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a5=v1 AND a1=v3 AND a3=v1.  This does *not* match because a4=v1, a5=v2, a1=v3, and a3=v1.
 *   **R2:** a4=v2 AND a6=v2 AND a2=v1 AND a1=v3. This does *not* match because a4=v1, a6=v1, a2=v1, and a1=v3.
@@ -3473,7 +3473,7 @@ exp2_f061_N1,2,N1,R5,a5=v2 AND a4=v1 AND a1=v3 AND a3=v1,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f061_N2,2,N2,R5,a5=v2 AND a4=v1 AND a1=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp2_f061_N2,2,N2,R5,a5=v2 AND a4=v1 AND a1=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a5=v1 AND a1=v3 AND a3=v1.  This fails because a4=v1, a5=v2, a1=v3, and a3=v1.
 *   **R2:** a4=v2 AND a6=v2 AND a2=v1 AND a1=v3. This fails because a4=v1, a6=v1, a2=v1, and a1=v3.
@@ -3489,7 +3489,7 @@ exp2_f061_N2,2,N2,R5,a5=v2 AND a4=v1 AND a1=v3 AND a3=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f061_N4,2,N4,R5,a5=v2 AND a4=v1 AND a1=v3 AND a3=v1,True,,,"Let's analyze the rules against the query:
+exp2_f061_N4,2,N4,R5,a5=v2 AND a4=v1 AND a1=v3 AND a3=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a5=v1 AND a1=v3 AND a3=v1 - Does not match (a4=v1, a5=v2, a1=v3, a3=v1)
 *   **R2:** a5=v2 AND a4=v2 AND a1=v3 AND a3=v1 - Does not match (a4=v1, a5=v2, a1=v3, a3=v1)
@@ -3505,7 +3505,7 @@ exp2_f061_N4,2,N4,R5,a5=v2 AND a4=v1 AND a1=v3 AND a3=v1,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f062_N1,2,N1,R9,a3=v2 AND a4=v3 AND a6=v3 AND a1=v3,True,,,"Let's analyze the rules against the query:
+exp2_f062_N1,2,N1,R9,a3=v2 AND a4=v3 AND a6=v3 AND a1=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v1 AND a4=v3 AND a6=v3 AND a1=v3.  This fails because a3=v2, not v1.
 *   **R2:** a6=v1 AND a5=v3 AND a1=v3. This fails because a6=v3, not v1, and a5=v1, not v3.
@@ -3521,7 +3521,7 @@ exp2_f062_N1,2,N1,R9,a3=v2 AND a4=v3 AND a6=v3 AND a1=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f063_N1,2,N1,R8,a2=v3 AND a1=v3 AND a3=v3 AND a5=v1,True,,,"Let's analyze the rules against the query:
+exp2_f063_N1,2,N1,R8,a2=v3 AND a1=v3 AND a3=v3 AND a5=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a2=v1 AND a5=v1 AND a4=v3.  This fails because a3=v3, a2=v3, a5=v1, and a4=v3.
 *   **R2:** a3=v1 AND a2=v1 AND a4=v3 AND a6=v3. This fails because a3=v3, a2=v3, a4=v3, and a6=v3.
@@ -3537,7 +3537,7 @@ exp2_f063_N1,2,N1,R8,a2=v3 AND a1=v3 AND a3=v3 AND a5=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f064_N0,2,N0,R1,a4=v1 AND a3=v2 AND a5=v3 AND a1=v3,True,,,"Let's evaluate each rule against the query:
+exp2_f064_N0,2,N0,R1,a4=v1 AND a3=v2 AND a5=v3 AND a1=v3,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a4=v1 AND a3=v2 AND a5=v3 AND a1=v3.  This fails because a2 is not v3.
 *   **R2:** a5=v1 AND a1=v2 AND a3=v2 AND a2=v3. This fails because a5 is not v1 and a1 is not v2.
@@ -3553,7 +3553,7 @@ exp2_f064_N0,2,N0,R1,a4=v1 AND a3=v2 AND a5=v3 AND a1=v3,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f065_N0,2,N0,R3,a3=v3 AND a4=v2 AND a2=v2 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp2_f065_N0,2,N0,R3,a3=v3 AND a4=v2 AND a2=v2 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v1 AND a2=v3 AND a5=v2 AND a3=v3.  This fails because a4=v2, a2=v2, a5=v2, and a3=v3.
 *   **R2:** a1=v3 AND a4=v1 AND a3=v3. This fails because a1=v1, a4=v2, and a3=v3.
@@ -3569,7 +3569,7 @@ exp2_f065_N0,2,N0,R3,a3=v3 AND a4=v2 AND a2=v2 AND a6=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f065_N1,2,N1,R3,a3=v3 AND a4=v2 AND a2=v2 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp2_f065_N1,2,N1,R3,a3=v3 AND a4=v2 AND a2=v2 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v1 AND a4=v2 AND a2=v2 AND a6=v2.  This fails because a3=v3, not v1.
 *   **R2:** a1=v3 AND a4=v1 AND a3=v3. This fails because a1=v1, not v3.
@@ -3585,7 +3585,7 @@ exp2_f065_N1,2,N1,R3,a3=v3 AND a4=v2 AND a2=v2 AND a6=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f066_N1,2,N1,R6,a3=v1 AND a6=v3 AND a4=v2 AND a2=v2,True,,,"Let's analyze the rules against the query:
+exp2_f066_N1,2,N1,R6,a3=v1 AND a6=v3 AND a4=v2 AND a2=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v1 AND a6=v1 AND a3=v1 AND a5=v2.  This fails because a2=v2 and a6=v3.
 *   **R2:** a3=v3 AND a5=v3 AND a2=v2 AND a1=v1. This fails because a3=v1 and a2=v2.
@@ -3601,7 +3601,7 @@ exp2_f066_N1,2,N1,R6,a3=v1 AND a6=v3 AND a4=v2 AND a2=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f066_N2,2,N2,R6,a3=v1 AND a6=v3 AND a4=v2 AND a2=v2,True,,,"Let's analyze the rules against the query:
+exp2_f066_N2,2,N2,R6,a3=v1 AND a6=v3 AND a4=v2 AND a2=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v1 AND a6=v1 AND a3=v1 AND a5=v2.  This fails because a2=v2 and a6=v3.
 *   **R2:** a3=v3 AND a5=v3 AND a2=v2 AND a1=v1. This fails because a3=v1 and a2=v2.
@@ -3617,7 +3617,7 @@ exp2_f066_N2,2,N2,R6,a3=v1 AND a6=v3 AND a4=v2 AND a2=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f066_N4,2,N4,R6,a3=v1 AND a6=v3 AND a4=v2 AND a2=v2,True,,,"Let's analyze the rules against the query:
+exp2_f066_N4,2,N4,R6,a3=v1 AND a6=v3 AND a4=v2 AND a2=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v1 AND a6=v1 AND a3=v1 AND a5=v2.  This fails because a2=v2, a6=v3, and a3=v1.
 *   **R2:** a3=v1 AND a6=v2 AND a4=v2 AND a2=v2. This fails because a6=v3 and a2=v2.
@@ -3633,7 +3633,7 @@ exp2_f066_N4,2,N4,R6,a3=v1 AND a6=v3 AND a4=v2 AND a2=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f067_N0,2,N0,R9,a2=v1 AND a3=v2 AND a5=v1 AND a6=v3,True,,,"Let's analyze the rules against the query:
+exp2_f067_N0,2,N0,R9,a2=v1 AND a3=v2 AND a5=v1 AND a6=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v3 AND a3=v1 - Does not match (a1=v2, a3=v2)
 *   **R2:** a4=v3 AND a2=v3 AND a3=v2 AND a5=v1 - Does not match (a4=v1, a2=v1, a3=v2, a5=v1)
@@ -3649,7 +3649,7 @@ exp2_f067_N0,2,N0,R9,a2=v1 AND a3=v2 AND a5=v1 AND a6=v3,True,,,"Let's analyze t
 None of the rules match.
 
 ANSWER: None"
-exp2_f067_N1,2,N1,R9,a2=v1 AND a3=v2 AND a5=v1 AND a6=v3,True,,,"Let's analyze the rules against the query:
+exp2_f067_N1,2,N1,R9,a2=v1 AND a3=v2 AND a5=v1 AND a6=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v3 AND a3=v1 - Does not match (a1=v2, a3=v2)
 *   **R2:** a4=v3 AND a2=v3 AND a3=v2 AND a5=v1 - Does not match (a4=v1, a2=v1, a3=v2, a5=v1)
@@ -3665,7 +3665,7 @@ exp2_f067_N1,2,N1,R9,a2=v1 AND a3=v2 AND a5=v1 AND a6=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f067_N2,2,N2,R9,a2=v1 AND a3=v2 AND a5=v1 AND a6=v3,True,,,"Let's analyze the rules against the query:
+exp2_f067_N2,2,N2,R9,a2=v1 AND a3=v2 AND a5=v1 AND a6=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v3 AND a3=v1 - Does not match (a1=v2, a3=v2)
 *   **R2:** a4=v3 AND a2=v3 AND a3=v2 AND a5=v1 - Does not match (a4=v1, a2=v1, a3=v2, a5=v1)
@@ -3681,7 +3681,7 @@ exp2_f067_N2,2,N2,R9,a2=v1 AND a3=v2 AND a5=v1 AND a6=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f068_N0,2,N0,R1,a1=v2 AND a3=v1 AND a4=v2 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp2_f068_N0,2,N0,R1,a1=v2 AND a3=v1 AND a4=v2 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v2 AND a3=v1 AND a4=v2 AND a6=v1.  This fails because a2 is not v2.
 *   **R2:** a3=v3 AND a4=v1 AND a6=v1 AND a1=v2. This fails because a2 is not v3 and a3 is not v3.
@@ -3697,7 +3697,7 @@ exp2_f068_N0,2,N0,R1,a1=v2 AND a3=v1 AND a4=v2 AND a6=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f068_N1,2,N1,R1,a1=v2 AND a3=v1 AND a4=v2 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp2_f068_N1,2,N1,R1,a1=v2 AND a3=v1 AND a4=v2 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v2 AND a3=v1 AND a4=v2 AND a6=v1.  This fails because a2 is not v2.
 *   **R2:** a3=v3 AND a4=v1 AND a6=v1 AND a1=v2. This fails because a2 is not v3 and a3 is not v3.
@@ -3713,7 +3713,7 @@ exp2_f068_N1,2,N1,R1,a1=v2 AND a3=v1 AND a4=v2 AND a6=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f069_N0,2,N0,R8,a3=v1 AND a2=v3 AND a6=v2 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp2_f069_N0,2,N0,R8,a3=v1 AND a2=v3 AND a6=v2 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v3 AND a1=v1 AND a4=v1 AND a5=v3.  This fails because a3=v1, not v3.
 *   **R2:** a5=v2 AND a3=v2 AND a6=v2 AND a2=v3. This fails because a5=v3, not v2.
@@ -3729,7 +3729,7 @@ exp2_f069_N0,2,N0,R8,a3=v1 AND a2=v3 AND a6=v2 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f069_N1,2,N1,R8,a3=v1 AND a2=v3 AND a6=v2 AND a1=v2,True,,,"Let's evaluate each rule against the query:
+exp2_f069_N1,2,N1,R8,a3=v1 AND a2=v3 AND a6=v2 AND a1=v2,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a3=v3 AND a1=v1 AND a4=v1 AND a5=v3.  This fails because a3=v1, a1=v2, and a4=v1.
 *   **R2:** a5=v2 AND a3=v2 AND a6=v2 AND a2=v3. This fails because a5=v3, a3=v1, a6=v2, and a2=v3.
@@ -3745,7 +3745,7 @@ exp2_f069_N1,2,N1,R8,a3=v1 AND a2=v3 AND a6=v2 AND a1=v2,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f069_N2,2,N2,R8,a3=v1 AND a2=v3 AND a6=v2 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp2_f069_N2,2,N2,R8,a3=v1 AND a2=v3 AND a6=v2 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v3 AND a1=v1 AND a4=v1 AND a5=v3.  This fails because a3=v1, not v3.
 *   **R2:** a5=v2 AND a3=v2 AND a6=v2 AND a2=v3. This fails because a5=v3, not v2.
@@ -3761,7 +3761,7 @@ exp2_f069_N2,2,N2,R8,a3=v1 AND a2=v3 AND a6=v2 AND a1=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f069_N4,2,N4,R8,a3=v1 AND a2=v3 AND a6=v2 AND a1=v2,True,,,"Let's evaluate each rule against the query:
+exp2_f069_N4,2,N4,R8,a3=v1 AND a2=v3 AND a6=v2 AND a1=v2,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a3=v3 AND a1=v1 AND a4=v1 AND a5=v3.  This fails because a1=v2, a3=v1, a4=v1, and a5=v3.
 *   **R2:** a5=v2 AND a3=v2 AND a6=v2 AND a2=v3. This fails because a5=v3, a3=v1, a6=v2, and a2=v3.
@@ -3777,7 +3777,7 @@ exp2_f069_N4,2,N4,R8,a3=v1 AND a2=v3 AND a6=v2 AND a1=v2,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f070_N0,2,N0,R9,a3=v1 AND a5=v3 AND a4=v2 AND a2=v2,True,,,"Let's analyze each rule against the query:
+exp2_f070_N0,2,N0,R9,a3=v1 AND a5=v3 AND a4=v2 AND a2=v2,True,"Let's analyze each rule against the query:
 
 *   **R1:** a6=v3 AND a1=v2 AND a3=v1 AND a4=v2 - Does not match (a6=v1, a1=v3, a3=v1, a4=v2)
 *   **R2:** a6=v3 AND a2=v3 AND a4=v2 AND a5=v3 - Does not match (a6=v1, a2=v2, a4=v2, a5=v3)
@@ -3793,7 +3793,7 @@ exp2_f070_N0,2,N0,R9,a3=v1 AND a5=v3 AND a4=v2 AND a2=v2,True,,,"Let's analyze e
 No rules match the query.
 
 ANSWER: None"
-exp2_f070_N1,2,N1,R9,a3=v1 AND a5=v3 AND a4=v2 AND a2=v2,True,,,"Let's analyze the rules against the query:
+exp2_f070_N1,2,N1,R9,a3=v1 AND a5=v3 AND a4=v2 AND a2=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a1=v2 AND a3=v1 AND a4=v2 - Does not match (a6=v1, a1=v3, a3=v1, a4=v2)
 *   **R2:** a6=v3 AND a2=v3 AND a4=v2 AND a5=v3 - Does not match (a6=v1, a2=v2, a4=v2, a5=v3)
@@ -3809,7 +3809,7 @@ exp2_f070_N1,2,N1,R9,a3=v1 AND a5=v3 AND a4=v2 AND a2=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f070_N2,2,N2,R9,a3=v1 AND a5=v3 AND a4=v2 AND a2=v2,True,,,"Let's analyze the rules against the query:
+exp2_f070_N2,2,N2,R9,a3=v1 AND a5=v3 AND a4=v2 AND a2=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a1=v2 AND a3=v1 AND a4=v2 - Does not match (a6=v1, a1=v3, a3=v1, a4=v2)
 *   **R2:** a6=v3 AND a2=v3 AND a4=v2 AND a5=v3 - Does not match (a6=v1, a2=v2, a4=v2, a5=v3)
@@ -3825,7 +3825,7 @@ exp2_f070_N2,2,N2,R9,a3=v1 AND a5=v3 AND a4=v2 AND a2=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f071_N0,2,N0,R5,a1=v3 AND a6=v1 AND a4=v3 AND a2=v3,True,,,"Let's analyze the rules against the query:
+exp2_f071_N0,2,N0,R5,a1=v3 AND a6=v1 AND a4=v3 AND a2=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a3=v1 AND a4=v3 AND a1=v3.  This fails because a3=v1 and a6=v1.
 *   **R2:** a3=v1 AND a5=v2 AND a1=v3 AND a2=v3. This fails because a5=v3 and a2=v3.
@@ -3841,7 +3841,7 @@ exp2_f071_N0,2,N0,R5,a1=v3 AND a6=v1 AND a4=v3 AND a2=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f071_N1,2,N1,R5,a1=v3 AND a6=v1 AND a4=v3 AND a2=v3,True,,,"Let's evaluate each rule against the query:
+exp2_f071_N1,2,N1,R5,a1=v3 AND a6=v1 AND a4=v3 AND a2=v3,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a6=v3 AND a3=v1 AND a4=v3 AND a1=v3.  This fails because a3=v1 and a6=v3, not v3.
 *   **R2:** a3=v1 AND a5=v2 AND a1=v3 AND a2=v3. This fails because a3=v3 and a5=v3, not v2 and a2=v3, not v3.
@@ -3857,7 +3857,7 @@ exp2_f071_N1,2,N1,R5,a1=v3 AND a6=v1 AND a4=v3 AND a2=v3,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f072_N0,2,N0,R10,a4=v3 AND a5=v1 AND a2=v3 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp2_f072_N0,2,N0,R10,a4=v3 AND a5=v1 AND a2=v3 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v3 AND a2=v1 AND a6=v1 AND a4=v3.  This fails because a2=v3, not v1.
 *   **R2:** a6=v2 AND a1=v1 AND a5=v1 AND a3=v2. This fails because a1=v2, not v1.
@@ -3873,7 +3873,7 @@ exp2_f072_N0,2,N0,R10,a4=v3 AND a5=v1 AND a2=v3 AND a6=v1,True,,,"Let's analyze 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f072_N1,2,N1,R10,a4=v3 AND a5=v1 AND a2=v3 AND a6=v1,True,,,"Let's evaluate the rules against the query:
+exp2_f072_N1,2,N1,R10,a4=v3 AND a5=v1 AND a2=v3 AND a6=v1,True,"Let's evaluate the rules against the query:
 
 *   **R1:** a3=v3 AND a2=v1 AND a6=v1 AND a4=v3.  This fails because a2=v3 and a3=v2.
 *   **R2:** a6=v2 AND a1=v1 AND a5=v1 AND a3=v2. This fails because a6=v1 and a1=v2.
@@ -3889,7 +3889,7 @@ exp2_f072_N1,2,N1,R10,a4=v3 AND a5=v1 AND a2=v3 AND a6=v1,True,,,"Let's evaluate
 None of the rules apply.
 
 ANSWER: None"
-exp2_f072_N4,2,N4,R10,a4=v3 AND a5=v1 AND a2=v3 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp2_f072_N4,2,N4,R10,a4=v3 AND a5=v1 AND a2=v3 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v3 AND a5=v2 AND a2=v3 AND a6=v1.  This fails because a5 is not v2.
 *   **R2:** a6=v2 AND a1=v1 AND a5=v1 AND a3=v2. This fails because a6 is not v2.
@@ -3905,7 +3905,7 @@ exp2_f072_N4,2,N4,R10,a4=v3 AND a5=v1 AND a2=v3 AND a6=v1,True,,,"Let's analyze 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f075_N4,2,N4,R7,a3=v3 AND a4=v3 AND a5=v1 AND a2=v2,True,,,"Let's analyze the rules against the query:
+exp2_f075_N4,2,N4,R7,a3=v3 AND a4=v3 AND a5=v1 AND a2=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v3 AND a4=v3 AND a5=v1 AND a2=v3.  This fails because a2=v2 in the query, not v3.
 *   **R2:** a5=v2 AND a2=v1. This fails because a5=v1 and a2=v2 in the query.
@@ -3921,7 +3921,7 @@ exp2_f075_N4,2,N4,R7,a3=v3 AND a4=v3 AND a5=v1 AND a2=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f076_N1,2,N1,R3,a5=v3 AND a4=v2 AND a2=v2 AND a1=v1,True,,,"Let's analyze the rules against the query:
+exp2_f076_N1,2,N1,R3,a5=v3 AND a4=v2 AND a2=v2 AND a1=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v1 AND a1=v2 AND a3=v2 AND a6=v1.  This fails because a2=v2 and a1=v1.
 *   **R2:** a5=v3 AND a4=v3 AND a2=v2 AND a1=v1. This fails because a5=v3 and a4=v2.
@@ -3937,7 +3937,7 @@ exp2_f076_N1,2,N1,R3,a5=v3 AND a4=v2 AND a2=v2 AND a1=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f077_N0,2,N0,R9,a5=v2 AND a2=v3 AND a3=v3 AND a1=v3,False,,,"Let's analyze the rules against the query:
+exp2_f077_N0,2,N0,R9,a5=v2 AND a2=v3 AND a3=v3 AND a1=v3,False,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a6=v2.  This fails because a6=v1, not v2.
 *   **R2:** a1=v2 AND a2=v2 AND a4=v2 AND a6=v1. This fails because a1=v3, a2=v3, and a4=v2.
@@ -3953,7 +3953,7 @@ exp2_f077_N0,2,N0,R9,a5=v2 AND a2=v3 AND a3=v3 AND a1=v3,False,,,"Let's analyze 
 None of the rules match the query exactly.
 
 ANSWER: None"
-exp2_f077_N1,2,N1,R9,a5=v2 AND a2=v3 AND a3=v3 AND a1=v3,True,,,"Let's analyze the rules against the query:
+exp2_f077_N1,2,N1,R9,a5=v2 AND a2=v3 AND a3=v3 AND a1=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a6=v2.  This fails because a6=v1, not v2.
 *   **R2:** a1=v2 AND a2=v2 AND a4=v2 AND a6=v1. This fails because a1=v3, a2=v3, and a6=v1.
@@ -3969,7 +3969,7 @@ exp2_f077_N1,2,N1,R9,a5=v2 AND a2=v3 AND a3=v3 AND a1=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f080_N0,2,N0,R10,a2=v1 AND a5=v1 AND a4=v2 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp2_f080_N0,2,N0,R10,a2=v1 AND a5=v1 AND a4=v2 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a5=v3 AND a3=v2.  This fails because a5 is not v3 and a6 is not v1.
 *   **R2:** a3=v1 AND a5=v3 AND a1=v3 AND a2=v1. This fails because a3 is not v1 and a5 is not v3.
@@ -3985,7 +3985,7 @@ exp2_f080_N0,2,N0,R10,a2=v1 AND a5=v1 AND a4=v2 AND a6=v2,True,,,"Let's analyze 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f080_N1,2,N1,R10,a2=v1 AND a5=v1 AND a4=v2 AND a6=v2,True,,,"Let's evaluate each rule against the query:
+exp2_f080_N1,2,N1,R10,a2=v1 AND a5=v1 AND a4=v2 AND a6=v2,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a6=v1 AND a5=v3 AND a3=v2.  This fails because a5 is not v3 and a6 is not v1.
 *   **R2:** a2=v1 AND a5=v1 AND a4=v1 AND a6=v2. This fails because a4 is not v1.
@@ -4003,7 +4003,7 @@ Since none of the rules apply, we return an empty string.
 ANSWER: 
 
 "
-exp2_f080_N2,2,N2,R10,a2=v1 AND a5=v1 AND a4=v2 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp2_f080_N2,2,N2,R10,a2=v1 AND a5=v1 AND a4=v2 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a5=v3 AND a3=v2.  This fails because a6=v2, a5=v1, and a3=v2.
 *   **R2:** a2=v1 AND a5=v1 AND a4=v1 AND a6=v2. This fails because a2=v1, a5=v1, a4=v2, and a6=v2.
@@ -4019,7 +4019,7 @@ exp2_f080_N2,2,N2,R10,a2=v1 AND a5=v1 AND a4=v2 AND a6=v2,True,,,"Let's analyze 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f081_N0,2,N0,R5,a2=v2 AND a4=v3 AND a6=v3 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp2_f081_N0,2,N0,R5,a2=v2 AND a4=v3 AND a6=v3 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a5=v2 AND a3=v2 - Does not match (a6=v3, a5=v1, a3=v2)
 *   **R2:** a4=v2 AND a5=v3 AND a6=v3 AND a3=v2 - Does not match (a4=v3, a5=v1, a6=v3, a3=v2)
@@ -4035,7 +4035,7 @@ exp2_f081_N0,2,N0,R5,a2=v2 AND a4=v3 AND a6=v3 AND a1=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f081_N1,2,N1,R5,a2=v2 AND a4=v3 AND a6=v3 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp2_f081_N1,2,N1,R5,a2=v2 AND a4=v3 AND a6=v3 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a5=v2 AND a3=v2 - Does not match (a6=v3, a5=v1, a3=v2)
 *   **R2:** a4=v2 AND a5=v3 AND a6=v3 AND a3=v2 - Does not match (a4=v3, a5=v1, a6=v3, a3=v2)
@@ -4051,7 +4051,7 @@ exp2_f081_N1,2,N1,R5,a2=v2 AND a4=v3 AND a6=v3 AND a1=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f081_N2,2,N2,R5,a2=v2 AND a4=v3 AND a6=v3 AND a1=v2,True,,,"Let's analyze the rules against the query:
+exp2_f081_N2,2,N2,R5,a2=v2 AND a4=v3 AND a6=v3 AND a1=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a5=v2 AND a3=v2 - Does not match (a6=v3, a5=v1, a3=v2)
 *   **R2:** a4=v2 AND a5=v3 AND a6=v3 AND a3=v2 - Does not match (a4=v3, a5=v1, a6=v3, a3=v2)
@@ -4067,7 +4067,7 @@ exp2_f081_N2,2,N2,R5,a2=v2 AND a4=v3 AND a6=v3 AND a1=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f082_N0,2,N0,R8,a4=v2 AND a5=v2 AND a3=v1 AND a2=v3,True,,,"Let's analyze the rules against the query:
+exp2_f082_N0,2,N0,R8,a4=v2 AND a5=v2 AND a3=v1 AND a2=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a2=v2 AND a6=v3 AND a4=v2.  This fails because a3=v1, a2=v3, and a6=v3.
 *   **R2:** a6=v2 AND a5=v1 AND a3=v1 AND a1=v2. This fails because a6=v3, a5=v2, a3=v1, and a1=v2.
@@ -4083,7 +4083,7 @@ exp2_f082_N0,2,N0,R8,a4=v2 AND a5=v2 AND a3=v1 AND a2=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f082_N1,2,N1,R8,a4=v2 AND a5=v2 AND a3=v1 AND a2=v3,True,,,"Let's analyze the rules against the query:
+exp2_f082_N1,2,N1,R8,a4=v2 AND a5=v2 AND a3=v1 AND a2=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a2=v2 AND a6=v3 AND a4=v2.  This fails because a3=v1, a2=v3, a6=v3, and a4=v2.
 *   **R2:** a4=v2 AND a5=v2 AND a3=v1 AND a2=v1. This fails because a3=v1, a2=v3, a4=v2, and a5=v2.
@@ -4099,7 +4099,7 @@ exp2_f082_N1,2,N1,R8,a4=v2 AND a5=v2 AND a3=v1 AND a2=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f082_N2,2,N2,R8,a4=v2 AND a5=v2 AND a3=v1 AND a2=v3,True,,,"Let's analyze the rules against the query:
+exp2_f082_N2,2,N2,R8,a4=v2 AND a5=v2 AND a3=v1 AND a2=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a2=v2 AND a6=v3 AND a4=v2.  This fails because a3=v1, a2=v3, a6=v3, and a4=v2.
 *   **R2:** a4=v2 AND a5=v2 AND a3=v1 AND a2=v1. This fails because a3=v1, a2=v3, a4=v2, and a5=v2.
@@ -4115,7 +4115,7 @@ exp2_f082_N2,2,N2,R8,a4=v2 AND a5=v2 AND a3=v1 AND a2=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f082_N4,2,N4,R8,a4=v2 AND a5=v2 AND a3=v1 AND a2=v3,True,,,"Let's analyze the rules against the query:
+exp2_f082_N4,2,N4,R8,a4=v2 AND a5=v2 AND a3=v1 AND a2=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v2 AND a2=v2 AND a6=v3 AND a4=v2.  This fails because a3=v1, a2=v3, and a6=v3.
 *   **R2:** a4=v2 AND a5=v2 AND a3=v1 AND a2=v1. This fails because a2=v3, a3=v1, a4=v2, and a5=v2.
@@ -4131,7 +4131,7 @@ exp2_f082_N4,2,N4,R8,a4=v2 AND a5=v2 AND a3=v1 AND a2=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f084_N0,2,N0,R5,a3=v2 AND a6=v1 AND a2=v1 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp2_f084_N0,2,N0,R5,a3=v2 AND a6=v1 AND a2=v1 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v1 AND a6=v2 AND a5=v2 AND a3=v2.  This fails because a4=v1 and a6=v1, not v2.
 *   **R2:** a2=v2 AND a3=v3 AND a4=v2 AND a5=v2. This fails because a2=v1 and a3=v2, not v3.
@@ -4147,7 +4147,7 @@ exp2_f084_N0,2,N0,R5,a3=v2 AND a6=v1 AND a2=v1 AND a4=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f084_N1,2,N1,R5,a3=v2 AND a6=v1 AND a2=v1 AND a4=v2,True,,,"Let's analyze the rules against the query:
+exp2_f084_N1,2,N1,R5,a3=v2 AND a6=v1 AND a2=v1 AND a4=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v1 AND a6=v2 AND a5=v2 AND a3=v2.  This fails because a4=v2, not v1, and a6=v1, not v2.
 *   **R2:** a2=v2 AND a3=v3 AND a4=v2 AND a5=v2. This fails because a3=v2, not v3, and a2=v1, not v2.
@@ -4163,7 +4163,7 @@ exp2_f084_N1,2,N1,R5,a3=v2 AND a6=v1 AND a2=v1 AND a4=v2,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f085_N0,2,N0,R6,a3=v2 AND a4=v1 AND a1=v2 AND a6=v3,True,,,"Let's analyze the rules against the query:
+exp2_f085_N0,2,N0,R6,a3=v2 AND a4=v1 AND a1=v2 AND a6=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a1=v1 AND a3=v2 AND a5=v3.  This fails because a2=v3, a1=v2, and a5=v3.
 *   **R2:** a5=v1 AND a1=v1. This fails because a5=v3 and a1=v2.
@@ -4179,7 +4179,7 @@ exp2_f085_N0,2,N0,R6,a3=v2 AND a4=v1 AND a1=v2 AND a6=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f085_N4,2,N4,R6,a3=v2 AND a4=v1 AND a1=v2 AND a6=v3,True,,,"Let's analyze the rules against the query:
+exp2_f085_N4,2,N4,R6,a3=v2 AND a4=v1 AND a1=v2 AND a6=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a1=v1 AND a3=v2 AND a5=v3.  This fails because a2=v3, a1=v2, and a5=v3.
 *   **R2:** a5=v1 AND a1=v1. This fails because a5=v3 and a1=v2.
@@ -4195,7 +4195,7 @@ exp2_f085_N4,2,N4,R6,a3=v2 AND a4=v1 AND a1=v2 AND a6=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f086_N0,2,N0,R8,a3=v1 AND a2=v3 AND a4=v2 AND a1=v1,True,,,"Let's evaluate each rule against the query:
+exp2_f086_N0,2,N0,R8,a3=v1 AND a2=v3 AND a4=v2 AND a1=v1,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a4=v1 AND a6=v3 AND a2=v3 AND a1=v1.  This fails because a4=v2, a6=v1, and a2=v3.
 *   **R2:** a6=v2 AND a5=v3 AND a4=v2 AND a1=v1. This fails because a6=v1, a5=v1, and a4=v2.
@@ -4211,7 +4211,7 @@ exp2_f086_N0,2,N0,R8,a3=v1 AND a2=v3 AND a4=v2 AND a1=v1,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f086_N1,2,N1,R8,a3=v1 AND a2=v3 AND a4=v2 AND a1=v1,True,,,"Let's analyze the rules against the query:
+exp2_f086_N1,2,N1,R8,a3=v1 AND a2=v3 AND a4=v2 AND a1=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v1 AND a6=v3 AND a2=v3 AND a1=v1.  This fails because a4=v2, a6=v1, and a2=v3.
 *   **R2:** a3=v1 AND a2=v1 AND a4=v2 AND a1=v1. This fails because a2=v3.
@@ -4227,7 +4227,7 @@ exp2_f086_N1,2,N1,R8,a3=v1 AND a2=v3 AND a4=v2 AND a1=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f086_N2,2,N2,R8,a3=v1 AND a2=v3 AND a4=v2 AND a1=v1,True,,,"Let's analyze the rules against the query:
+exp2_f086_N2,2,N2,R8,a3=v1 AND a2=v3 AND a4=v2 AND a1=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v1 AND a6=v3 AND a2=v3 AND a1=v1.  This fails because a4=v2, a6=v1, and a2=v3.
 *   **R2:** a3=v1 AND a2=v1 AND a4=v2 AND a1=v1. This fails because a2=v3.
@@ -4243,7 +4243,7 @@ exp2_f086_N2,2,N2,R8,a3=v1 AND a2=v3 AND a4=v2 AND a1=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f086_N4,2,N4,R8,a3=v1 AND a2=v3 AND a4=v2 AND a1=v1,True,,,"Let's analyze the rules against the query:
+exp2_f086_N4,2,N4,R8,a3=v1 AND a2=v3 AND a4=v2 AND a1=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v1 AND a2=v3 AND a4=v2 AND a1=v2.  This does *not* match because a1=v1 and a2=v3.
 *   **R2:** a3=v1 AND a2=v1 AND a4=v2 AND a1=v1. This does *not* match because a2=v3.
@@ -4259,7 +4259,7 @@ exp2_f086_N4,2,N4,R8,a3=v1 AND a2=v3 AND a4=v2 AND a1=v1,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f087_N1,2,N1,R4,a6=v1 AND a1=v2 AND a2=v2 AND a5=v1,True,,,"Let's analyze the rules against the query:
+exp2_f087_N1,2,N1,R4,a6=v1 AND a1=v2 AND a2=v2 AND a5=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a4=v1 AND a2=v2 AND a5=v1.  This fails because a6=v1 and a4=v2.
 *   **R2:** a2=v1 AND a3=v2 AND a6=v1 AND a1=v2. This fails because a2=v2 and a3=v3.
@@ -4275,7 +4275,7 @@ exp2_f087_N1,2,N1,R4,a6=v1 AND a1=v2 AND a2=v2 AND a5=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f087_N2,2,N2,R4,a6=v1 AND a1=v2 AND a2=v2 AND a5=v1,True,,,"Let's analyze the rules against the query:
+exp2_f087_N2,2,N2,R4,a6=v1 AND a1=v2 AND a2=v2 AND a5=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v2 AND a4=v1 AND a2=v2 AND a5=v1 - Does not match (a6=v1, a4=v2, a2=v2, a5=v1)
 *   **R2:** a2=v1 AND a3=v2 AND a6=v1 AND a1=v2 - Does not match (a2=v2, a3=v3, a6=v1, a1=v2)
@@ -4291,7 +4291,7 @@ exp2_f087_N2,2,N2,R4,a6=v1 AND a1=v2 AND a2=v2 AND a5=v1,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f087_N4,2,N4,R4,a6=v1 AND a1=v2 AND a2=v2 AND a5=v1,True,,,"Let's analyze the rules against the query:
+exp2_f087_N4,2,N4,R4,a6=v1 AND a1=v2 AND a2=v2 AND a5=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a1=v2 AND a2=v1 AND a5=v1.  This fails because a6=v1 but a5=v1, and a2=v1 but a2=v2.
 *   **R2:** a2=v1 AND a3=v2 AND a6=v1 AND a1=v2. This fails because a2=v2 but a2=v1, and a3=v3 but a3=v2.
@@ -4307,7 +4307,7 @@ exp2_f087_N4,2,N4,R4,a6=v1 AND a1=v2 AND a2=v2 AND a5=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f089_N0,2,N0,R1,a6=v3 AND a2=v3 AND a5=v1 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f089_N0,2,N0,R1,a6=v3 AND a2=v3 AND a5=v1 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v3 AND a2=v3 AND a5=v1 AND a4=v3.  This fails because a2=v3 is not true.
 *   **R2:** a3=v1 AND a6=v2 AND a4=v3 AND a2=v3. This fails because a3=v1 is not true.
@@ -4323,7 +4323,7 @@ exp2_f089_N0,2,N0,R1,a6=v3 AND a2=v3 AND a5=v1 AND a4=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f090_N4,2,N4,R7,a4=v1 AND a3=v2 AND a5=v2 AND a1=v3,True,,,"Let's analyze the rules against the query:
+exp2_f090_N4,2,N4,R7,a4=v1 AND a3=v2 AND a5=v2 AND a1=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v2 AND a2=v2 AND a6=v1 AND a5=v2.  This fails because a4=v1, a2=v1, a6=v1, and a5=v2.
 *   **R2:** a4=v2 AND a3=v2 AND a5=v2 AND a1=v3. This fails because a4=v1, a3=v2, a5=v2, and a1=v3.
@@ -4339,7 +4339,7 @@ exp2_f090_N4,2,N4,R7,a4=v1 AND a3=v2 AND a5=v2 AND a1=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f091_N0,2,N0,R5,a5=v3 AND a6=v1 AND a2=v2 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f091_N0,2,N0,R5,a5=v3 AND a6=v1 AND a2=v2 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v3 AND a4=v2 - Does not match (a1=v1, a4=v3)
 *   **R2:** a2=v1 AND a4=v2 AND a3=v1 AND a5=v3 - Does not match (a2=v2, a4=v3, a3=v1, a5=v3)
@@ -4355,7 +4355,7 @@ exp2_f091_N0,2,N0,R5,a5=v3 AND a6=v1 AND a2=v2 AND a4=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f091_N1,2,N1,R5,a5=v3 AND a6=v1 AND a2=v2 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f091_N1,2,N1,R5,a5=v3 AND a6=v1 AND a2=v2 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v3 AND a4=v2 - Does not match (a1=v1, a4=v3)
 *   **R2:** a5=v3 AND a6=v1 AND a2=v2 AND a4=v2 - Does not match (a5=v3, a6=v1, a2=v2, a4=v3)
@@ -4371,7 +4371,7 @@ exp2_f091_N1,2,N1,R5,a5=v3 AND a6=v1 AND a2=v2 AND a4=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f091_N2,2,N2,R5,a5=v3 AND a6=v1 AND a2=v2 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f091_N2,2,N2,R5,a5=v3 AND a6=v1 AND a2=v2 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v3 AND a4=v2 - Does not match (a1=v1, a4=v3)
 *   **R2:** a5=v3 AND a6=v1 AND a2=v2 AND a4=v2 - Does not match (a5=v3, a6=v1, a2=v2, a4=v3)
@@ -4387,7 +4387,7 @@ exp2_f091_N2,2,N2,R5,a5=v3 AND a6=v1 AND a2=v2 AND a4=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f091_N4,2,N4,R5,a5=v3 AND a6=v1 AND a2=v2 AND a4=v3,True,,,"Let's evaluate each rule against the query:
+exp2_f091_N4,2,N4,R5,a5=v3 AND a6=v1 AND a2=v2 AND a4=v3,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a1=v3 AND a4=v2.  This fails because a1=v1 and a4=v3.
 *   **R2:** a5=v3 AND a6=v1 AND a2=v2 AND a4=v2. This fails because a2=v2 but a4=v3.
@@ -4403,7 +4403,7 @@ exp2_f091_N4,2,N4,R5,a5=v3 AND a6=v1 AND a2=v2 AND a4=v3,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f093_N2,2,N2,R2,a5=v1 AND a6=v3 AND a1=v1 AND a2=v1,True,,,"Let's analyze the rules against the query:
+exp2_f093_N2,2,N2,R2,a5=v1 AND a6=v3 AND a1=v1 AND a2=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a6=v1 AND a5=v1 AND a4=v1.  This fails because a2=v1 and a6=v3.
 *   **R2:** a5=v1 AND a6=v3 AND a1=v1 AND a2=v1. This fails because a6=v3.
@@ -4419,7 +4419,7 @@ exp2_f093_N2,2,N2,R2,a5=v1 AND a6=v3 AND a1=v1 AND a2=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f093_N4,2,N4,R2,a5=v1 AND a6=v3 AND a1=v1 AND a2=v1,True,,,"Let's analyze the rules against the query:
+exp2_f093_N4,2,N4,R2,a5=v1 AND a6=v3 AND a1=v1 AND a2=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v1 AND a6=v1 AND a1=v1 AND a2=v1.  This fails because a3 is not v3.
 *   **R2:** a5=v1 AND a6=v3 AND a1=v1 AND a2=v1. This fails because a3 is not v3.
@@ -4435,7 +4435,7 @@ exp2_f093_N4,2,N4,R2,a5=v1 AND a6=v3 AND a1=v1 AND a2=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f094_N0,2,N0,R7,a2=v3 AND a3=v1 AND a6=v3 AND a5=v1,True,,,"Let's analyze the rules against the query:
+exp2_f094_N0,2,N0,R7,a2=v3 AND a3=v1 AND a6=v3 AND a5=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a1=v2 AND a4=v3 AND a2=v3.  This fails because a6=v3, a1=v1, a4=v3, and a2=v3.
 *   **R2:** a2=v1 AND a5=v3 AND a6=v3 AND a4=v3. This fails because a2=v3, a5=v1, a6=v3, and a4=v3.
@@ -4451,7 +4451,7 @@ exp2_f094_N0,2,N0,R7,a2=v3 AND a3=v1 AND a6=v3 AND a5=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f094_N1,2,N1,R7,a2=v3 AND a3=v1 AND a6=v3 AND a5=v1,True,,,"Let's analyze the rules against the query:
+exp2_f094_N1,2,N1,R7,a2=v3 AND a3=v1 AND a6=v3 AND a5=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a6=v1 AND a1=v2 AND a4=v3 AND a2=v3.  This fails because a6=v3, a1=v1, a4=v3, and a2=v3.
 *   **R2:** a2=v1 AND a5=v3 AND a6=v3 AND a4=v3. This fails because a2=v3, a5=v1, a6=v3, and a4=v3.
@@ -4467,7 +4467,7 @@ exp2_f094_N1,2,N1,R7,a2=v3 AND a3=v1 AND a6=v3 AND a5=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f094_N2,2,N2,R7,a2=v3 AND a3=v1 AND a6=v3 AND a5=v1,True,,,"Let's evaluate the rules against the query:
+exp2_f094_N2,2,N2,R7,a2=v3 AND a3=v1 AND a6=v3 AND a5=v1,True,"Let's evaluate the rules against the query:
 
 *   **R1:** a6=v1 AND a1=v2 AND a4=v3 AND a2=v3.  This fails because a6=v3, a1=v1, a4=v3, and a2=v3.
 *   **R2:** a2=v1 AND a3=v1 AND a6=v3 AND a5=v1. This fails because a2=v3, a3=v1, a6=v3, and a5=v1.
@@ -4483,7 +4483,7 @@ exp2_f094_N2,2,N2,R7,a2=v3 AND a3=v1 AND a6=v3 AND a5=v1,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f094_N4,2,N4,R7,a2=v3 AND a3=v1 AND a6=v3 AND a5=v1,True,,,"Let's evaluate each rule against the query:
+exp2_f094_N4,2,N4,R7,a2=v3 AND a3=v1 AND a6=v3 AND a5=v1,True,"Let's evaluate each rule against the query:
 
 *   **R1:** a6=v1 AND a1=v2 AND a4=v3 AND a2=v3.  This fails because a6=v3, a1=v1, a4=v3, and a2=v3.
 *   **R2:** a2=v1 AND a3=v1 AND a6=v3 AND a5=v1. This fails because a2=v3, a3=v1, a6=v3, and a5=v1.
@@ -4499,7 +4499,7 @@ exp2_f094_N4,2,N4,R7,a2=v3 AND a3=v1 AND a6=v3 AND a5=v1,True,,,"Let's evaluate 
 None of the rules apply.
 
 ANSWER: None"
-exp2_f095_N0,2,N0,R4,a4=v2 AND a6=v3 AND a3=v2 AND a1=v3,True,,,"Let's analyze the rules against the query:
+exp2_f095_N0,2,N0,R4,a4=v2 AND a6=v3 AND a3=v2 AND a1=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v3 AND a6=v2 AND a3=v2 AND a2=v2 - Does not match (a4=v2, a6=v3, a3=v2, a2=v2)
 *   **R2:** a4=v3 AND a1=v1 AND a2=v2 AND a6=v3 - Does not match (a4=v2, a1=v3, a2=v2, a6=v3)
@@ -4515,7 +4515,7 @@ exp2_f095_N0,2,N0,R4,a4=v2 AND a6=v3 AND a3=v2 AND a1=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f095_N1,2,N1,R4,a4=v2 AND a6=v3 AND a3=v2 AND a1=v3,True,,,"Let's analyze the rules against the query:
+exp2_f095_N1,2,N1,R4,a4=v2 AND a6=v3 AND a3=v2 AND a1=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v3 AND a6=v2 AND a3=v2 AND a2=v2 - Does not match (a4=v2, a6=v3, a3=v2, a2=v2)
 *   **R2:** a4=v3 AND a1=v1 AND a2=v2 AND a6=v3 - Does not match (a4=v2, a1=v3, a2=v2, a6=v3)
@@ -4531,7 +4531,7 @@ exp2_f095_N1,2,N1,R4,a4=v2 AND a6=v3 AND a3=v2 AND a1=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f095_N2,2,N2,R4,a4=v2 AND a6=v3 AND a3=v2 AND a1=v3,True,,,"Let's analyze the rules against the query:
+exp2_f095_N2,2,N2,R4,a4=v2 AND a6=v3 AND a3=v2 AND a1=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v3 AND a6=v2 AND a3=v2 AND a2=v2 - Does not match (a4=v2, a6=v3, a3=v2, a2=v2)
 *   **R2:** a4=v3 AND a6=v3 AND a3=v2 AND a1=v3 - Does not match (a4=v2, a6=v3, a3=v2, a1=v3)
@@ -4547,7 +4547,7 @@ exp2_f095_N2,2,N2,R4,a4=v2 AND a6=v3 AND a3=v2 AND a1=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f095_N4,2,N4,R4,a4=v2 AND a6=v3 AND a3=v2 AND a1=v3,True,,,"Let's analyze the rules against the query:
+exp2_f095_N4,2,N4,R4,a4=v2 AND a6=v3 AND a3=v2 AND a1=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a4=v3 AND a6=v2 AND a3=v2 AND a2=v2 - Does not match (a4=v2, a6=v3, a3=v2, a2=v2)
 *   **R2:** a4=v3 AND a6=v3 AND a3=v2 AND a1=v3 - Does not match (a4=v2, a6=v3, a3=v2, a1=v3)
@@ -4563,7 +4563,7 @@ exp2_f095_N4,2,N4,R4,a4=v2 AND a6=v3 AND a3=v2 AND a1=v3,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f096_N0,2,N0,R5,a3=v2 AND a6=v2 AND a1=v2 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f096_N0,2,N0,R5,a3=v2 AND a6=v2 AND a1=v2 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a1=v3 AND a3=v2 AND a5=v3.  This fails because a2=v3 and a1=v2.
 *   **R2:** a4=v2 AND a5=v1. This fails because a4=v3 and a5=v3.
@@ -4580,7 +4580,7 @@ Since none of the rules apply, we return an empty string.
 
 ANSWER: 
 "
-exp2_f096_N1,2,N1,R5,a3=v2 AND a6=v2 AND a1=v2 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f096_N1,2,N1,R5,a3=v2 AND a6=v2 AND a1=v2 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a1=v3 AND a3=v2 AND a5=v3.  This fails because a2=v3 and a1=v2.
 *   **R2:** a4=v2 AND a5=v1. This fails because a4=v3 and a5=v3.
@@ -4596,7 +4596,7 @@ exp2_f096_N1,2,N1,R5,a3=v2 AND a6=v2 AND a1=v2 AND a4=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f096_N2,2,N2,R5,a3=v2 AND a6=v2 AND a1=v2 AND a4=v3,True,,,"Let's analyze the rules against the query:
+exp2_f096_N2,2,N2,R5,a3=v2 AND a6=v2 AND a1=v2 AND a4=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a1=v3 AND a3=v2 AND a5=v3.  This fails because a2=v3 and a1=v2.
 *   **R2:** a4=v2 AND a5=v1. This fails because a4=v3 and a5=v3.
@@ -4612,7 +4612,7 @@ exp2_f096_N2,2,N2,R5,a3=v2 AND a6=v2 AND a1=v2 AND a4=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f097_N0,2,N0,R2,a1=v1 AND a5=v3 AND a3=v3 AND a2=v3,True,,,"Let's analyze the rules against the query:
+exp2_f097_N0,2,N0,R2,a1=v1 AND a5=v3 AND a3=v3 AND a2=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v2 AND a3=v1 AND a4=v1 AND a6=v3.  This fails because a5=v3, a3=v3, and a6=v3.
 *   **R2:** a1=v1 AND a5=v3 AND a3=v3 AND a2=v3. This fails because a1=v1, a2=v3, a3=v3, and a5=v3. However, a2=v3 is true, but the other conditions are not.
@@ -4628,7 +4628,7 @@ exp2_f097_N0,2,N0,R2,a1=v1 AND a5=v3 AND a3=v3 AND a2=v3,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f097_N1,2,N1,R2,a1=v1 AND a5=v3 AND a3=v3 AND a2=v3,True,,,"Let's analyze the rules against the query:
+exp2_f097_N1,2,N1,R2,a1=v1 AND a5=v3 AND a3=v3 AND a2=v3,True,"Let's analyze the rules against the query:
 
 *   **R1:** a1=v1 AND a5=v3 AND a3=v3 AND a2=v1.  This matches: a1=v1, a2=v3, a3=v3, a4=v1, a5=v3, a6=v3.  However, a2=v1 is false.  So R1 does not apply.
 *   **R2:** a1=v1 AND a5=v3 AND a3=v3 AND a2=v3. This matches: a1=v1, a2=v3, a3=v3, a4=v1, a5=v3, a6=v3. However, a2=v3 is false. So R2 does not apply.
@@ -4645,7 +4645,7 @@ Since none of the rules apply, we return an empty string.
 
 ANSWER: 
 "
-exp2_f098_N1,2,N1,R9,a3=v2 AND a5=v1 AND a2=v1 AND a6=v2,True,,,"Let's analyze the rules against the query:
+exp2_f098_N1,2,N1,R9,a3=v2 AND a5=v1 AND a2=v1 AND a6=v2,True,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a3=v3 AND a1=v1 AND a2=v1 - Does not match (a5=v1, a3=v2, a1=v1, a2=v1)
 *   **R2:** a3=v1 AND a5=v3 AND a4=v1 AND a6=v2 - Does not match (a3=v2, a5=v1, a4=v1, a6=v2)
@@ -4661,7 +4661,7 @@ exp2_f098_N1,2,N1,R9,a3=v2 AND a5=v1 AND a2=v1 AND a6=v2,True,,,"Let's analyze t
 None of the rules match the query.
 
 ANSWER: None"
-exp2_f099_N2,2,N2,R3,a5=v3 AND a2=v3 AND a4=v2 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp2_f099_N2,2,N2,R3,a5=v3 AND a2=v3 AND a4=v2 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a3=v1 AND a4=v1 AND a6=v1 AND a2=v3.  This fails because a3=v3, a4=v2, and a6=v1.
 *   **R2:** a5=v3 AND a2=v2 AND a4=v2 AND a6=v1. This fails because a2=v3, a5=v3, and a6=v1.
@@ -4677,7 +4677,7 @@ exp2_f099_N2,2,N2,R3,a5=v3 AND a2=v3 AND a4=v2 AND a6=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f100_N0,2,N0,R9,a4=v3 AND a2=v3 AND a3=v3 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp2_f100_N0,2,N0,R9,a4=v3 AND a2=v3 AND a3=v3 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a4=v2 AND a6=v1 AND a1=v3.  This fails because a2=v3, a4=v3, a6=v1, and a1=v3.
 *   **R2:** a1=v2 AND a6=v3 AND a4=v3 AND a5=v1. This fails because a1=v3, a6=v1, a4=v3, and a5=v1.
@@ -4693,7 +4693,7 @@ exp2_f100_N0,2,N0,R9,a4=v3 AND a2=v3 AND a3=v3 AND a6=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f100_N1,2,N1,R9,a4=v3 AND a2=v3 AND a3=v3 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp2_f100_N1,2,N1,R9,a4=v3 AND a2=v3 AND a3=v3 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a4=v2 AND a6=v1 AND a1=v3.  This fails because a2=v3, a4=v3, a6=v1, and a1=v3.
 *   **R2:** a1=v2 AND a6=v3 AND a4=v3 AND a5=v1. This fails because a1=v3, a6=v1, a4=v3, and a5=v1.
@@ -4709,7 +4709,7 @@ exp2_f100_N1,2,N1,R9,a4=v3 AND a2=v3 AND a3=v3 AND a6=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f100_N2,2,N2,R9,a4=v3 AND a2=v3 AND a3=v3 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp2_f100_N2,2,N2,R9,a4=v3 AND a2=v3 AND a3=v3 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a4=v2 AND a6=v1 AND a1=v3.  This fails because a2=v3, a4=v3, a6=v1, and a1=v3.
 *   **R2:** a1=v2 AND a6=v3 AND a4=v3 AND a5=v1. This fails because a1=v3, a6=v1, a4=v3, and a5=v1.
@@ -4725,7 +4725,7 @@ exp2_f100_N2,2,N2,R9,a4=v3 AND a2=v3 AND a3=v3 AND a6=v1,True,,,"Let's analyze t
 None of the rules apply.
 
 ANSWER: None"
-exp2_f100_N4,2,N4,R9,a4=v3 AND a2=v3 AND a3=v3 AND a6=v1,True,,,"Let's analyze the rules against the query:
+exp2_f100_N4,2,N4,R9,a4=v3 AND a2=v3 AND a3=v3 AND a6=v1,True,"Let's analyze the rules against the query:
 
 *   **R1:** a2=v2 AND a4=v2 AND a6=v1 AND a1=v3.  This fails because a2=v3, a4=v3, a6=v1, and a1=v3.
 *   **R2:** a1=v2 AND a6=v3 AND a4=v3 AND a5=v1. This fails because a1=v3, a6=v1, a4=v3, and a5=v1.
