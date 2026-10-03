@@ -1,4 +1,4 @@
-id,experiment,condition,winner,winner_conditions,winner_negative_mention_heuristic,manual_winner_said_not_to_match,manual_verdict_evidence_mismatch,raw_response
+id,experiment,condition,winner,winner_conditions,winner_negative_mention_heuristic,raw_response
 exp1_f003_L0,1,L0,R2,a1=v3 AND a3=v2 AND a2=v3 AND a6=v3,True,,,"Let's analyze the rules against the query:
 
 *   **R1:** a5=v3 AND a2=v1 AND a6=v3 - Does not match (a5=v1, a2=v3, a6=v3)
