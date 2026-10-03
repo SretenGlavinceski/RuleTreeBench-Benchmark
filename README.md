@@ -364,10 +364,8 @@ The official RuleTreeBench runs used **Ollama 0.32.6**, temperature **0**, seed 
 |---|---|---|---:|---:|
 | `qwen3_4b` | `qwen3:4b-q4_K_M` | `2bfd38a7daaf` | 8192 | 4096 |
 | `qwen3_8b` | `qwen3:8b-q4_K_M` | `500a1f067a9f` | 8192 | 4096 |
-| `gemma3_4b` | `gemma3:4b` | `a2af6cc3eb7f` | 4096 | 1024 |
+| `gemma3_4b` | `gemma3:4b` | `a2af6cc3eb7f` | 8192 | 4096 |
 | `gemma4_12b` | `gemma4:12b-it-q4_K_M` | `4eb23ef187e2` | 8192 | 4096 |
-
-The default values in `config/inference.yaml` are 8192 context tokens and a 4096-token generation cap. `config/models.yaml` automatically overrides these to 4096 / 1024 for Gemma 3 4B.
 
 The exact settings of the completed RuleTreeBench runs are preserved in `results/raw/<model_name>/run_manifest.json`.
 
